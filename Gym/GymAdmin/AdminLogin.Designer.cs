@@ -1,6 +1,6 @@
 ﻿namespace GymAdmin
 {
-    partial class Form1
+    partial class AdminLogin
     {
         /// <summary>
         /// Required designer variable.
