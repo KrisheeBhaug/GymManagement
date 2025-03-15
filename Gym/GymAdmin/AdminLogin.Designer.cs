@@ -162,7 +162,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AdminLogin";
-            this.Text = "Form1";
+            this.Text = "Admin Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(688, 450);
             this.Name = "Form1";
-            this.Text = "Admin Login";
+            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
