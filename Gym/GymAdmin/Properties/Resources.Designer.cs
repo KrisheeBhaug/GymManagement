@@ -129,5 +129,15 @@ namespace GymAdmin.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_an_empty_gym_with_some_machines_picture_image_3105884 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree_an_empty_gym_with_some_machines_picture_image_3105884", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
