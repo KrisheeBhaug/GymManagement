@@ -235,6 +235,23 @@
             this.comboBox1.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "6:00 AM",
+            "7:00 AM  ",
+            "8:00 AM  ",
+            "9:00 AM  ",
+            "10:00 AM  ",
+            "11:00 AM  ",
+            "12:00 PM  ",
+            "1:00 PM  ",
+            "2:00 PM",
+            "3:00 PM",
+            "4:00 PM ",
+            "5:00 PM  ",
+            "6:00 PM  ",
+            "7:00 PM",
+            "8:00 PM",
+            "9:00 PM"});
             this.comboBox1.Location = new System.Drawing.Point(580, 124);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(181, 28);
@@ -257,6 +274,13 @@
             this.comboBox2.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Basic Membership",
+            "Standard Membership",
+            "Premium Membership",
+            "Family Membership",
+            "Student Membership",
+            "Trial Membership"});
             this.comboBox2.Location = new System.Drawing.Point(580, 274);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(181, 28);

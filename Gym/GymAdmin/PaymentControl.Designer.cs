@@ -48,6 +48,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 448);
             this.dataGridView1.Name = "dataGridView1";
@@ -155,6 +156,13 @@
             this.comboBox1.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Basic Membership",
+            "Standard Membership",
+            "Premium Membership",
+            "Family Membership",
+            "Student Membership",
+            "Trial Membership"});
             this.comboBox1.Location = new System.Drawing.Point(377, 154);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(260, 27);

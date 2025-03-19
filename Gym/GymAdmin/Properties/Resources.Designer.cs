@@ -63,6 +63,16 @@ namespace GymAdmin.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2968326 {
+            get {
+                object obj = ResourceManager.GetObject("_2968326", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _8d04c7fe77604f55786d06f9ec0cd92b {
             get {
                 object obj = ResourceManager.GetObject("_8d04c7fe77604f55786d06f9ec0cd92b", resourceCulture);

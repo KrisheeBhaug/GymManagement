@@ -58,6 +58,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Equipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Equipment.Designer.cs">
+      <DependentUpon>Equipment.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemberControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment.resx">
+      <DependentUpon>Equipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberControl.resx">
       <DependentUpon>MemberControl.cs</DependentUpon>
@@ -142,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\leisure_centers-gym.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2968326.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
