@@ -16,5 +16,15 @@ namespace Gym
         {
             InitializeComponent();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BillingInfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
