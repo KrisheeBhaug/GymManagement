@@ -36,9 +36,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.joinUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feesAndMembershipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,13 +140,21 @@
             this.joinUsToolStripMenuItem.Name = "joinUsToolStripMenuItem";
             this.joinUsToolStripMenuItem.Size = new System.Drawing.Size(75, 23);
             this.joinUsToolStripMenuItem.Text = "Join Us";
+            this.joinUsToolStripMenuItem.Click += new System.EventHandler(this.joinUsToolStripMenuItem_Click);
+            // 
+            // registerToolStripMenuItem
+            // 
+            this.registerToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
+            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.registerToolStripMenuItem.Text = "Register";
             // 
             // contactUsToolStripMenuItem
             // 
             this.contactUsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
             this.contactUsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactUsToolStripMenuItem.Name = "contactUsToolStripMenuItem";
-            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(186, 23);
+            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(103, 23);
             this.contactUsToolStripMenuItem.Text = "Contact Us";
             // 
             // feesAndMembershipsToolStripMenuItem
@@ -154,15 +162,8 @@
             this.feesAndMembershipsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
             this.feesAndMembershipsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.feesAndMembershipsToolStripMenuItem.Name = "feesAndMembershipsToolStripMenuItem";
-            this.feesAndMembershipsToolStripMenuItem.Size = new System.Drawing.Size(186, 23);
-            this.feesAndMembershipsToolStripMenuItem.Text = "Fees and Memberships";
-            // 
-            // registerToolStripMenuItem
-            // 
-            this.registerToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
-            this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.registerToolStripMenuItem.Text = "Register";
+            this.feesAndMembershipsToolStripMenuItem.Size = new System.Drawing.Size(116, 23);
+            this.feesAndMembershipsToolStripMenuItem.Text = "Membership";
             // 
             // Home
             // 

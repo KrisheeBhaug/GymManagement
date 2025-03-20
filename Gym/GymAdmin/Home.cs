@@ -31,5 +31,10 @@ namespace GymAdmin
         {
 
         }
+
+        private void joinUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

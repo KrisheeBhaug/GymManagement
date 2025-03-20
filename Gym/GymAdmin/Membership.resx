@@ -117,10 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>77</value>
-  </metadata>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Fee: Rs2500.00 per month
+Benefits:
+• Unlimited gym access 24/7
+• Access to all group classes and advanced equipment
+• Two personal training sessions per month
+• Access to member-exclusive workshops</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Fee: Rs3500.00 per month
+Benefits:
+• All Standard benefits plus:
+• Unlimited personal training sessions
+• Complimentary access to premium fitness programs
+• Discount on gym merchandise and nutritional supplements
+• Priority booking for special events and classes</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Additional Details
+No Long-Term Contract:
+Members can cancel at any time with a 30-day notice.
+
+Registration Fee:
+A one-time registration fee of Rs500.00 may apply.
+
+Family &amp; Student Discounts:
+Special rates available for families and students – contact us for details.
+
+Payment Options:
+We accept credit/debit cards and Juice. Members can securely save payment details for convenience.</value>
+  </data>
 </root>
