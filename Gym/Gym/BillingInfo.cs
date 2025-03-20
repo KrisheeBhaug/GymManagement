@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GymAdmin
+namespace Gym
 {
-    public partial class Equipment: UserControl
+    public partial class BillingInfo: Form
     {
-        public Equipment()
+        public BillingInfo()
         {
             InitializeComponent();
-        }
-
-        private void Equipment_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
