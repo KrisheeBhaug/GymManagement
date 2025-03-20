@@ -1,15 +1,15 @@
 Project: Gym Management System
-Team Members: [Aba], [Member 2], [Member 3], [Member 4]
-Date: YYYY-MM-DD
-Time: HH:MM AM/PM
-Location: [Online/In-person]
-Facilitator: [Who led the meeting]
-Note Taker: [Who recorded the minutes]
+Team Members: [Aba], [Kushmandaa], [Diksha], [Leynah], [Kritisha]
+Date: 2025-03-20
+Time: 8:30 AM
+Location: [Online]
+Facilitator: [Diksha]
+Note Taker: [Kushmandaa]
 
 📌 Agenda
-[Agenda Item 1]
-[Agenda Item 2]
-[Agenda Item 3]
+[TRYING TO SOLVE GITHUB PROBLEM]
+[Rating the frontends]
+[Login/Sign Up Backend Work]
 
 📝 Discussion & Decisions
 Topic	Discussion Summary	Decisions Made
