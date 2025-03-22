@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gym", "Gym\Gym.csproj", "{FFEE76CD-2C08-4077-8B20-843117977104}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymAdmin", "GymAdmin\GymAdmin.csproj", "{DA46638E-FD4E-4B2B-AC2F-716759D78E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymMember", "..\..\..\..\OneDrive\Desktop\Software Engineering and Management Module\GymProject\test\GymMember.csproj", "{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FFEE76CD-2C08-4077-8B20-843117977104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFEE76CD-2C08-4077-8B20-843117977104}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFEE76CD-2C08-4077-8B20-843117977104}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFEE76CD-2C08-4077-8B20-843117977104}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA46638E-FD4E-4B2B-AC2F-716759D78E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA46638E-FD4E-4B2B-AC2F-716759D78E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA46638E-FD4E-4B2B-AC2F-716759D78E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA46638E-FD4E-4B2B-AC2F-716759D78E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
