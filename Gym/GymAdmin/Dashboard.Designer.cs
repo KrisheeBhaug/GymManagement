@@ -37,10 +37,10 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -94,7 +94,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(122, 40);
             this.button5.TabIndex = 5;
-            this.button5.Text = "  Classes";
+            this.button5.Text = "  Class";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -151,6 +151,33 @@
             this.button2.Text = " Trainer";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::GymAdmin.Properties.Resources._8d04c7fe77604f55786d06f9ec0cd92b;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(190, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(978, 640);
+            this.panel2.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Info;
+            this.label1.Location = new System.Drawing.Point(192, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(563, 408);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "using System;\r\n\r\nnamespace WelcomeApp\r\n{\r\n    class Program\r\n    {\r\n        stati" +
+    "c void Main(string[] args)\r\n        {\r\n            Console.WriteLine(\"Welcome Ba" +
+    "ck, Admin\");\r\n        }\r\n    }\r\n}";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -172,33 +199,6 @@
             this.label3.Size = new System.Drawing.Size(276, 45);
             this.label3.TabIndex = 13;
             this.label3.Text = "Gym Hive Limited";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(192, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(563, 408);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "using System;\r\n\r\nnamespace WelcomeApp\r\n{\r\n    class Program\r\n    {\r\n        stati" +
-    "c void Main(string[] args)\r\n        {\r\n            Console.WriteLine(\"Welcome Ba" +
-    "ck, Admin\");\r\n        }\r\n    }\r\n}";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::GymAdmin.Properties.Resources._8d04c7fe77604f55786d06f9ec0cd92b;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(190, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(978, 640);
-            this.panel2.TabIndex = 2;
             // 
             // Dashboard
             // 
