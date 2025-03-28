@@ -5,7 +5,7 @@ VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymAdmin", "GymAdmin\GymAdmin.csproj", "{DA46638E-FD4E-4B2B-AC2F-716759D78E3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymMember", "..\..\..\..\OneDrive\Desktop\Software Engineering and Management Module\GymProject\test\GymMember.csproj", "{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymMember", "GymMember\GymMember.csproj", "{F258ED50-2E03-402A-A26D-ADDB7C13FDA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

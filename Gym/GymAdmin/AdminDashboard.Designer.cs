@@ -1,6 +1,6 @@
 ﻿namespace GymAdmin
 {
-    partial class Dashboard
+    partial class AdminDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -57,17 +57,19 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 640);
+            this.panel1.Size = new System.Drawing.Size(257, 788);
             this.panel1.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 34);
+            this.label4.Location = new System.Drawing.Point(40, 42);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 29);
+            this.label4.Size = new System.Drawing.Size(172, 37);
             this.label4.TabIndex = 14;
             this.label4.Text = "DASHBOARD";
             // 
@@ -77,9 +79,10 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(35, 566);
+            this.button6.Location = new System.Drawing.Point(47, 697);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 40);
+            this.button6.Size = new System.Drawing.Size(163, 49);
             this.button6.TabIndex = 6;
             this.button6.Text = " Logout";
             this.button6.UseVisualStyleBackColor = false;
@@ -90,9 +93,10 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(35, 465);
+            this.button5.Location = new System.Drawing.Point(47, 572);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(122, 40);
+            this.button5.Size = new System.Drawing.Size(163, 49);
             this.button5.TabIndex = 5;
             this.button5.Text = "  Class";
             this.button5.UseVisualStyleBackColor = false;
@@ -103,9 +107,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(35, 105);
+            this.button1.Location = new System.Drawing.Point(47, 129);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 44);
+            this.button1.Size = new System.Drawing.Size(163, 54);
             this.button1.TabIndex = 1;
             this.button1.Text = "  Member";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -118,9 +123,10 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(35, 368);
+            this.button4.Location = new System.Drawing.Point(47, 453);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 40);
+            this.button4.Size = new System.Drawing.Size(163, 49);
             this.button4.TabIndex = 4;
             this.button4.Text = "     Equipment";
             this.button4.UseVisualStyleBackColor = false;
@@ -131,9 +137,10 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(35, 279);
+            this.button3.Location = new System.Drawing.Point(47, 343);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 40);
+            this.button3.Size = new System.Drawing.Size(163, 49);
             this.button3.TabIndex = 3;
             this.button3.Text = "      Payment";
             this.button3.UseVisualStyleBackColor = false;
@@ -144,9 +151,10 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(35, 191);
+            this.button2.Location = new System.Drawing.Point(47, 235);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 40);
+            this.button2.Size = new System.Drawing.Size(163, 49);
             this.button2.TabIndex = 2;
             this.button2.Text = " Trainer";
             this.button2.UseVisualStyleBackColor = false;
@@ -159,9 +167,10 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(190, 0);
+            this.panel2.Location = new System.Drawing.Point(253, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(978, 640);
+            this.panel2.Size = new System.Drawing.Size(1304, 788);
             this.panel2.TabIndex = 2;
             // 
             // label1
@@ -170,9 +179,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(192, 118);
+            this.label1.Location = new System.Drawing.Point(256, 145);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(563, 408);
+            this.label1.Size = new System.Drawing.Size(701, 504);
             this.label1.TabIndex = 14;
             this.label1.Text = "using System;\r\n\r\nnamespace WelcomeApp\r\n{\r\n    class Program\r\n    {\r\n        stati" +
     "c void Main(string[] args)\r\n        {\r\n            Console.WriteLine(\"Welcome Ba" +
@@ -181,9 +191,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(887, 9);
+            this.label2.Location = new System.Drawing.Point(1183, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 1;
             // 
             // label3
@@ -194,22 +205,24 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(702, 0);
+            this.label3.Location = new System.Drawing.Point(959, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(276, 45);
+            this.label3.Size = new System.Drawing.Size(345, 56);
             this.label3.TabIndex = 13;
             this.label3.Text = "Gym Hive Limited";
             // 
-            // Dashboard
+            // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1168, 640);
+            this.ClientSize = new System.Drawing.Size(1557, 788);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Dashboard";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "AdminDashboard";
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
