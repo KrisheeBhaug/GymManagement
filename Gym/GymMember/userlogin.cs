@@ -81,7 +81,7 @@ namespace test
                 this.Hide(); // Hide login form
 
                 // Open another form (Example: Dashboard)
-                Dashboard dashboard = new Dashboard();
+                MemberDashboard dashboard = new MemberDashboard();
                 dashboard.Show();
             }
         }

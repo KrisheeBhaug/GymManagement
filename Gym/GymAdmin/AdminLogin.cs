@@ -15,6 +15,7 @@ namespace GymAdmin
         public AdminLogin()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,10 +34,10 @@ namespace GymAdmin
                 // Successful login
                 MessageBox.Show("Login successful! Welcome, Admin.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Navigate to the admin dashboard or main application form
-                AdminDashboard adminDashboard = new AdminDashboard(); // Assuming you have an AdminDashboard form
+                // Navigate to the admin dashboard
+                AdminDashboard adminDashboard = new AdminDashboard(); 
                 adminDashboard.Show();
-                this.Hide(); // Hide the login form
+                this.Hide(); 
             }
             else
             {
@@ -51,7 +52,7 @@ namespace GymAdmin
             txtUsername.Clear(); 
             txtPassword.Clear();
 
-            // Optionally, disable the login button until the user enters new data
+            // Disable login button until the user enters new data
             Login_Button.Enabled = false; 
         }
 
@@ -74,7 +75,7 @@ namespace GymAdmin
     if (txtUsername.Text.Length < 3)
     {
         // If the username is less than 3 characters, Change txt box colour
-        txtUsername.BackColor = Color.LightCoral; // Red background for invalid input
+        txtUsername.BackColor = Color.LightCoral; 
     }
     else
     {
@@ -86,11 +87,11 @@ namespace GymAdmin
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            // Check if the password TextBox is empty
+            // Check if password TextBox is empty
             if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 // If empty, disable the login button
-                Login_Button.Enabled = false; // Assuming button1 is your login button
+                Login_Button.Enabled = false; 
             }
             else
             {
@@ -101,13 +102,13 @@ namespace GymAdmin
             // Optional: Provide feedback on password strength
             if (txtPassword.Text.Length < 6)
             {
-                // If the password is less than 6 characters, you can show a message or change the UI
-                txtPassword.BackColor = Color.LightCoral; // Red background for weak password
+                // If the password is less than 6 characters,Red background for weak password
+                txtPassword.BackColor = Color.LightCoral; 
             }
             else
             {
                 // Reset the background color if the input is valid
-                txtPassword.BackColor = Color.White; // Default background color
+                txtPassword.BackColor = Color.White; 
             }
 
         }

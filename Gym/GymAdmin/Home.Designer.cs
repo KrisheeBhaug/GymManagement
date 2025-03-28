@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LogAsMember = new System.Windows.Forms.Button();
+            this.LogAsAdmin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,30 +42,32 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button2
+            // LogAsMember
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Info;
-            this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(804, 549);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "MEMBER";
-            this.button2.UseVisualStyleBackColor = false;
+            this.LogAsMember.BackColor = System.Drawing.SystemColors.Info;
+            this.LogAsMember.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogAsMember.Location = new System.Drawing.Point(804, 549);
+            this.LogAsMember.Margin = new System.Windows.Forms.Padding(4);
+            this.LogAsMember.Name = "LogAsMember";
+            this.LogAsMember.Size = new System.Drawing.Size(112, 42);
+            this.LogAsMember.TabIndex = 1;
+            this.LogAsMember.Text = "MEMBER";
+            this.LogAsMember.UseVisualStyleBackColor = false;
+            this.LogAsMember.Click += new System.EventHandler(this.LogAsMember_Click);
             // 
-            // button1
+            // LogAsAdmin
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Info;
-            this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(619, 549);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ADMIN";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LogAsAdmin.BackColor = System.Drawing.SystemColors.Info;
+            this.LogAsAdmin.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogAsAdmin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LogAsAdmin.Location = new System.Drawing.Point(619, 549);
+            this.LogAsAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.LogAsAdmin.Name = "LogAsAdmin";
+            this.LogAsAdmin.Size = new System.Drawing.Size(108, 42);
+            this.LogAsAdmin.TabIndex = 0;
+            this.LogAsAdmin.Text = "ADMIN";
+            this.LogAsAdmin.UseVisualStyleBackColor = false;
+            this.LogAsAdmin.Click += new System.EventHandler(this.LogAsAdmin);
             // 
             // label3
             // 
@@ -179,14 +181,14 @@
             this.BackgroundImage = global::GymAdmin.Properties.Resources.OIP;
             this.ClientSize = new System.Drawing.Size(1557, 788);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.LogAsMember);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LogAsAdmin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -198,8 +200,8 @@
 
         #endregion
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LogAsMember;
+        private System.Windows.Forms.Button LogAsAdmin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

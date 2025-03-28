@@ -15,6 +15,7 @@ namespace GymAdmin
         public Home()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -35,6 +36,26 @@ namespace GymAdmin
         private void joinUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LogAsAdmin(object sender, EventArgs e)
+        {
+            // Create an instance of the AdminLogin form
+            AdminLogin adminLoginForm = new AdminLogin();
+
+            // Show AdminLogin form
+            adminLoginForm.Show();
+            this.Hide(); 
+        }
+
+        private void LogAsMember_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the MemberDashboard form
+            MemberDashboard memberDashboardForm = new MemberDashboard();
+
+            memberDashboardForm.Show();
+
+            this.Hide();
         }
     }
 }
