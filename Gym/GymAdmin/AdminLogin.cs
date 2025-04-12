@@ -109,11 +109,14 @@ namespace GymAdmin
             }
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+        }
 
         private void AdminLogin_Load(object sender, EventArgs e)
         {
-            Login_Button.Enabled = true;
-           
+            
         }
     }
 
