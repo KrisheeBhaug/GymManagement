@@ -13,7 +13,7 @@ namespace test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new userlogin()); 
+            Application.Run(new MemberDashboard());
         }
     }
 }

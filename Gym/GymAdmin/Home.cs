@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GymAdmin
 {
     public partial class Home: Form
@@ -18,44 +19,47 @@ namespace GymAdmin
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void LogAsMember_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void contactUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Create an instance of the ContactUs form
+            ContactUs contactUsForm = new ContactUs();
+            contactUsForm.StartPosition = FormStartPosition.CenterScreen; // Center the form
+            // Use ShowDialog if you want it modal (blocks the Home form until closed).
+            contactUsForm.ShowDialog();
+        }
 
+        private void LogAsAdmin_Click_1(object sender, EventArgs e)
+        {
+            // Create an instance of the AdminLogin form
+            AdminLogin adminLoginForm = new AdminLogin();
+            adminLoginForm.StartPosition = FormStartPosition.CenterScreen; // Ensures the login form opens centered
+            adminLoginForm.Show();
+        }
+
+        private void feesAndMembershipsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the Membership form
+            Membership membershipForm = new Membership();
+
+            // Center the form on the screen
+            membershipForm.StartPosition = FormStartPosition.CenterScreen;
+
+            // Open the form as a modal dialog; use Show() if you prefer non-modal
+            membershipForm.ShowDialog();
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+           
+            panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
+            panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
         }
-
-        private void joinUsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LogAsAdmin(object sender, EventArgs e)
-        {
-            // Create an instance of the AdminLogin form
-            AdminLogin adminLoginForm = new AdminLogin();
-
-            // Show AdminLogin form
-            adminLoginForm.Show();
-            this.Hide(); 
-        }
-
-        private void LogAsMember_Click(object sender, EventArgs e)
-        {
-            // Create an instance of the MemberDashboard form
-            MemberDashboard memberDashboardForm = new MemberDashboard();
-
-            memberDashboardForm.Show();
-
-            this.Hide();
-        }
+    
     }
 }
+

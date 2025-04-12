@@ -16,6 +16,7 @@ namespace GymAdmin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Change the entry point to Home form
             Application.Run(new Home());
         }
     }

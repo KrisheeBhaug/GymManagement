@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class Dashboard: Form
+    public partial class MemberDashboard: Form
     {
-        public Dashboard()
+        public MemberDashboard()
         {
             InitializeComponent();
         }

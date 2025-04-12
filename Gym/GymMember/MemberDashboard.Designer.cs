@@ -1,6 +1,6 @@
 ﻿namespace test
 {
-    partial class Dashboard
+    partial class MemberDashboard
     {
         /// <summary>
         /// Required designer variable.
