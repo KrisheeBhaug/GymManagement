@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +95,7 @@
             this.txtPassword.BackColor = System.Drawing.SystemColors.Info;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(60, 242);
+            this.txtPassword.Location = new System.Drawing.Point(60, 218);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(278, 19);
             this.txtPassword.TabIndex = 15;
@@ -137,7 +138,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Info;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(56, 195);
+            this.label2.Location = new System.Drawing.Point(56, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 11;
@@ -157,6 +158,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.chkShowPassword);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label5);
@@ -171,6 +173,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(409, 441);
             this.panel1.TabIndex = 20;
+            // 
+            // chkShowPassword
+            // 
+            this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.Location = new System.Drawing.Point(236, 243);
+            this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkShowPassword.TabIndex = 20;
+            this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.UseVisualStyleBackColor = true;
+            this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
             // AdminLogin
             // 
@@ -201,6 +214,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Reset_Button;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox chkShowPassword;
     }
 }
 

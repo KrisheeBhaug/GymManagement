@@ -37,5 +37,13 @@ namespace GymAdmin
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // Create an instance of the Home form
+            Home homeForm = new Home();
+            homeForm.Show();
+            this.Hide();
+        }
     }
 }
