@@ -12,7 +12,8 @@ namespace GymAdmin
         public AdminLogin()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Normal;
+            this.StartPosition = FormStartPosition.CenterScreen;
             LoadAdminCredentials(); // Load credentials into the hash table
         }
 
@@ -78,10 +79,12 @@ namespace GymAdmin
             // Handle link label click event if needed
         }
 
-        private void AdminLogin_Load(object sender, EventArgs e)
+            private void AdminLogin_Load(object sender, EventArgs e)
         {
-            // Any initialization code can go here
+            panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
+            panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
         }
+    
     }
 
     // HashTable class implementation
