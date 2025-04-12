@@ -101,10 +101,10 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(371, 23);
             this.txtPassword.TabIndex = 15;
-            this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // txtUsername
-            // 
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged); // Updated event handler
+                                                                                                   // 
+                                                                                                   // txtUsername
+                                                                                                   // 
             this.txtUsername.BackColor = System.Drawing.SystemColors.Info;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,10 +113,10 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(371, 23);
             this.txtUsername.TabIndex = 14;
-            this.txtUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label4
-            // 
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged); // Updated event handler
+                                                                                                   // 
+                                                                                                   // label4
+                                                                                                   // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(16, 49);
@@ -181,9 +181,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminLogin";
             this.Text = "Admin Login";
+            this.Load += new System.EventHandler(this.AdminLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

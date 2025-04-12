@@ -67,7 +67,6 @@
             this.LogAsAdmin.TabIndex = 0;
             this.LogAsAdmin.Text = "ADMIN";
             this.LogAsAdmin.UseVisualStyleBackColor = false;
-            this.LogAsAdmin.Click += new System.EventHandler(this.LogAsAdmin);
             // 
             // label3
             // 

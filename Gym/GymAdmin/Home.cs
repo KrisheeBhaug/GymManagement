@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GymAdmin
 {
     public partial class Home: Form
@@ -38,7 +39,7 @@ namespace GymAdmin
 
         }
 
-        private void LogAsAdmin(object sender, EventArgs e)
+        private void LogAsAdmin_Click(object sender, EventArgs e)
         {
             // Create an instance of the AdminLogin form
             AdminLogin adminLoginForm = new AdminLogin();
@@ -50,12 +51,8 @@ namespace GymAdmin
 
         private void LogAsMember_Click(object sender, EventArgs e)
         {
-            // Create an instance of the MemberDashboard form
-            MemberDashboard memberDashboardForm = new MemberDashboard();
-
-            memberDashboardForm.Show();
-
-            this.Hide();
+ 
         }
     }
 }
+

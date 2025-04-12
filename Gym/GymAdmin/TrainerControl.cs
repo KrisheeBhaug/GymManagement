@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace GymAdmin
 {
-    public partial class TrainerControl: UserControl
+    public partial class TrainerControl : UserControl
     {
-        public TrainerControl()
-        {
-            InitializeComponent();
-        }
+        public TrainerControl() { InitializeComponent(); }
 
         private void TrainerControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
