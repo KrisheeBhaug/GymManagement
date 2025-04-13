@@ -53,9 +53,9 @@
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 985);
+            this.panel1.Size = new System.Drawing.Size(257, 788);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -71,7 +71,6 @@
             this.tableLayoutPanel1.Controls.Add(this.PaymentButton, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28654F));
@@ -81,7 +80,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28653F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28653F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28082F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(217, 985);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(193, 788);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label4
@@ -89,10 +88,10 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 48);
+            this.label4.Location = new System.Drawing.Point(10, 37);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 44);
+            this.label4.Size = new System.Drawing.Size(172, 37);
             this.label4.TabIndex = 14;
             this.label4.Text = "DASHBOARD";
             // 
@@ -104,10 +103,10 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(17, 882);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(15, 705);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(183, 61);
+            this.button6.Size = new System.Drawing.Size(163, 49);
             this.button6.TabIndex = 6;
             this.button6.TabStop = false;
             this.button6.Text = " Logout";
@@ -122,10 +121,10 @@
             this.MemberButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MemberButton.Image = ((System.Drawing.Image)(resources.GetObject("MemberButton.Image")));
             this.MemberButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MemberButton.Location = new System.Drawing.Point(17, 176);
-            this.MemberButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MemberButton.Location = new System.Drawing.Point(15, 141);
+            this.MemberButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MemberButton.Name = "MemberButton";
-            this.MemberButton.Size = new System.Drawing.Size(183, 68);
+            this.MemberButton.Size = new System.Drawing.Size(163, 54);
             this.MemberButton.TabIndex = 1;
             this.MemberButton.TabStop = false;
             this.MemberButton.Text = "  Member";
@@ -141,14 +140,15 @@
             this.TrainerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TrainerButton.Image = ((System.Drawing.Image)(resources.GetObject("TrainerButton.Image")));
             this.TrainerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TrainerButton.Location = new System.Drawing.Point(17, 319);
-            this.TrainerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TrainerButton.Location = new System.Drawing.Point(15, 255);
+            this.TrainerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TrainerButton.Name = "TrainerButton";
-            this.TrainerButton.Size = new System.Drawing.Size(183, 61);
+            this.TrainerButton.Size = new System.Drawing.Size(163, 49);
             this.TrainerButton.TabIndex = 2;
             this.TrainerButton.TabStop = false;
             this.TrainerButton.Text = " Trainer";
             this.TrainerButton.UseVisualStyleBackColor = false;
+            this.TrainerButton.Click += new System.EventHandler(this.TrainerButton_Click);
             // 
             // ClassButton
             // 
@@ -158,10 +158,10 @@
             this.ClassButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClassButton.Image = ((System.Drawing.Image)(resources.GetObject("ClassButton.Image")));
             this.ClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ClassButton.Location = new System.Drawing.Point(17, 459);
-            this.ClassButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClassButton.Location = new System.Drawing.Point(15, 367);
+            this.ClassButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClassButton.Name = "ClassButton";
-            this.ClassButton.Size = new System.Drawing.Size(183, 61);
+            this.ClassButton.Size = new System.Drawing.Size(163, 49);
             this.ClassButton.TabIndex = 5;
             this.ClassButton.TabStop = false;
             this.ClassButton.Text = "  Class";
@@ -175,10 +175,10 @@
             this.EquipmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EquipmentButton.Image = ((System.Drawing.Image)(resources.GetObject("EquipmentButton.Image")));
             this.EquipmentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EquipmentButton.Location = new System.Drawing.Point(17, 599);
-            this.EquipmentButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.EquipmentButton.Location = new System.Drawing.Point(15, 479);
+            this.EquipmentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EquipmentButton.Name = "EquipmentButton";
-            this.EquipmentButton.Size = new System.Drawing.Size(183, 61);
+            this.EquipmentButton.Size = new System.Drawing.Size(163, 49);
             this.EquipmentButton.TabIndex = 4;
             this.EquipmentButton.TabStop = false;
             this.EquipmentButton.Text = "     Equipment";
@@ -193,10 +193,10 @@
             this.PaymentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PaymentButton.Image = ((System.Drawing.Image)(resources.GetObject("PaymentButton.Image")));
             this.PaymentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PaymentButton.Location = new System.Drawing.Point(17, 739);
-            this.PaymentButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PaymentButton.Location = new System.Drawing.Point(15, 591);
+            this.PaymentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaymentButton.Name = "PaymentButton";
-            this.PaymentButton.Size = new System.Drawing.Size(183, 61);
+            this.PaymentButton.Size = new System.Drawing.Size(163, 49);
             this.PaymentButton.TabIndex = 3;
             this.PaymentButton.TabStop = false;
             this.PaymentButton.Text = "      Payment";
@@ -211,10 +211,10 @@
             this.panel2.Controls.Add(this.Member);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(285, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(253, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1467, 985);
+            this.panel2.Size = new System.Drawing.Size(1304, 788);
             this.panel2.TabIndex = 2;
             // 
             // label1
@@ -224,22 +224,23 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(288, 181);
+            this.label1.Location = new System.Drawing.Point(256, 145);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1160, 816);
+            this.label1.Size = new System.Drawing.Size(968, 708);
             this.label1.TabIndex = 14;
             this.label1.Text = "using System;\r\n\r\nnamespace WelcomeApp\r\n{\r\n    class Program\r\n    {\r\n        stati" +
     "c void Main(string[] args)\r\n        {\r\n            Console.WriteLine(\"Welcome Ba" +
     "ck, Admin\");\r\n        }\r\n    }\r\n}";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Member
             // 
             this.Member.AutoSize = true;
-            this.Member.Location = new System.Drawing.Point(1331, 14);
+            this.Member.Location = new System.Drawing.Point(1183, 11);
             this.Member.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Member.Name = "Member";
-            this.Member.Size = new System.Drawing.Size(0, 20);
+            this.Member.Size = new System.Drawing.Size(0, 16);
             this.Member.TabIndex = 1;
             // 
             // label3
@@ -250,23 +251,23 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1056, 0);
+            this.label3.Location = new System.Drawing.Point(959, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(411, 67);
+            this.label3.Size = new System.Drawing.Size(345, 56);
             this.label3.TabIndex = 13;
             this.label3.Text = "Gym Hive Limited";
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1752, 985);
+            this.ClientSize = new System.Drawing.Size(1557, 788);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminDashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

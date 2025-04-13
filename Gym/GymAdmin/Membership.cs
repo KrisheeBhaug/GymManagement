@@ -17,5 +17,9 @@ namespace GymAdmin
             InitializeComponent();
         }
 
+        private void Membership_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
