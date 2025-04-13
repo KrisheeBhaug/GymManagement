@@ -64,6 +64,7 @@ namespace GymAdmin
             //Maintenance of equipment text box
         }
 
+        //search equipment
         private void button4_Click(object sender, EventArgs e)
         {
             string equipmentID = textBox2.Text.Trim();
@@ -88,7 +89,7 @@ namespace GymAdmin
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
 
-                    // Bind to DataGridView
+                   
                     dataGridView1.DataSource = dt;
 
                     if (dt.Rows.Count > 0)
@@ -105,7 +106,7 @@ namespace GymAdmin
                     else
                     {
                         MessageBox.Show("Equipment not found.");
-                        dataGridView1.DataSource = null; // Clear DataGridView
+                        dataGridView1.DataSource = null; 
                     }
                 }
                 catch (Exception ex)
@@ -116,7 +117,7 @@ namespace GymAdmin
         }
 
 
-
+        // Add equipment
         private void button1_Click(object sender, EventArgs e)
         {
             string equipmentName = textBox1.Text.Trim();
@@ -127,6 +128,7 @@ namespace GymAdmin
             string equipmentQuantity = textBox4.Text.Trim();
             string equipmentLocation = textBox5.Text.Trim();
             string equipmentMaintenance = comboBox2.SelectedItem?.ToString();
+
 
             // Validation checks
             if (string.IsNullOrEmpty(equipmentName) || string.IsNullOrEmpty(equipmentQuantity) || string.IsNullOrEmpty(equipmentCondition))
@@ -148,7 +150,15 @@ namespace GymAdmin
                 cmd.Parameters.AddWithValue("@EquipmentCondition", equipmentCondition);
                 cmd.Parameters.AddWithValue("@EquipmentQuantity", equipmentQuantity);
                 cmd.Parameters.AddWithValue("@EquipmentLocation", equipmentLocation);
-                cmd.Parameters.AddWithValue("@EquipmentMaintenance", equipmentMaintenance);
+                if (string.IsNullOrEmpty(equipmentMaintenance))
+                {
+                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", DBNull.Value);
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", equipmentMaintenance);
+                }
+
 
                 try
                 {
@@ -163,6 +173,7 @@ namespace GymAdmin
             }
         }
 
+        //Update equipment
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -180,6 +191,7 @@ namespace GymAdmin
             string equipmentQuantity = textBox4.Text.Trim();
             string equipmentLocation = textBox5.Text.Trim();
             string equipmentMaintenance = comboBox2.SelectedItem?.ToString();
+
 
             // Validation checks
             if (string.IsNullOrEmpty(equipmentName) || string.IsNullOrEmpty(equipmentCondition) || string.IsNullOrEmpty(equipmentQuantity))
@@ -203,7 +215,15 @@ namespace GymAdmin
                 cmd.Parameters.AddWithValue("@EquipmentCondition", equipmentCondition);
                 cmd.Parameters.AddWithValue("@EquipmentQuantity", equipmentQuantity);
                 cmd.Parameters.AddWithValue("@EquipmentLocation", equipmentLocation);
-                cmd.Parameters.AddWithValue("@EquipmentMaintenance", equipmentMaintenance);
+                if (string.IsNullOrEmpty(equipmentMaintenance))
+                {
+                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", DBNull.Value);
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", equipmentMaintenance);
+                }
+
 
                 try
                 {
@@ -218,6 +238,7 @@ namespace GymAdmin
             }
         }
 
+        //Delete equipment
 
         private void button3_Click(object sender, EventArgs e)
         {
