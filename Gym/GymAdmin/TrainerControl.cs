@@ -19,12 +19,6 @@ namespace GymAdmin
             InitializeComponent();
         }
 
-        private void TrainerControl_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {    //validation in database for uniqueness
             // Trainer ID should be numeric
@@ -307,5 +301,6 @@ namespace GymAdmin
             }
         }
 
+        
     }
 }

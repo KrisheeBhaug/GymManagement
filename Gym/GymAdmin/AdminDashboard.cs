@@ -11,75 +11,67 @@ using System.Windows.Forms;
 
 namespace GymAdmin
 {
-    public partial class AdminDashboard: Form
+    public partial class AdminDashboard : Form
     {
-        private System.Windows.Forms.Panel panelPaymentControl;
-
         public AdminDashboard()
         {
             InitializeComponent();
-            InitializeCustomComponents();
-
+         
         }
-        private void InitializeCustomComponents()
+
+        // Loads a given UserControl into panel2 so that it fills the panel.
+        private void LoadControl(UserControl control)
         {
-            // Initialize panelPaymentControl
-            panelPaymentControl = new Panel();
-            panelPaymentControl.Size = new Size(1144, 768); // Set the size as needed
-            panelPaymentControl.Location = new Point(300, 0); // Set the location as needed
-            panelPaymentControl.BorderStyle = BorderStyle.FixedSingle;
+            // Clear any existing control in panel2.
+            panel2.Controls.Clear();
 
-            // Add panelPaymentControl to the form
-            this.Controls.Add(panelPaymentControl);
+            // Set docking so the control fills the panel
+            control.Dock = DockStyle.Fill;
 
-
+            // Add and bring the control to the front
+            panel2.Controls.Add(control);
+            control.BringToFront();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        // Button click event for Member
         private void button1_Click(object sender, EventArgs e)
         {
-            // Clear the panel and add MemberControl
-            panelPaymentControl.Controls.Clear();
-
+            // Create a new instance of MemberControl and load it
             MemberControl memberControl = new MemberControl();
-            memberControl.Dock = DockStyle.Fill;
-            panelPaymentControl.Controls.Add(memberControl);
-            // Bring panelPaymentControl to the front
-            panelPaymentControl.BringToFront();
+            LoadControl(memberControl);
         }
 
-
+        // Button click event for Payment
         private void button3_Click(object sender, EventArgs e)
         {
-            // Clear the panel and add PaymentControl
-            panelPaymentControl.Controls.Clear();
-
             PaymentControl paymentControl = new PaymentControl();
-            paymentControl.Dock = DockStyle.Fill;
-            panelPaymentControl.Controls.Add(paymentControl);
-            // Bring panelPaymentControl to the front
-            panelPaymentControl.BringToFront();
+            LoadControl(paymentControl);
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        // Button click event for Trainer (assuming the button's name is TrainerButton)
+        private void TrainerButton_Click(object sender, EventArgs e)
         {
-            // Clear the panel and add EquipmentControl
-            panelPaymentControl.Controls.Clear();
-
-            EquipmentControl equipmentControl = new EquipmentControl();
-            equipmentControl.Dock = DockStyle.Fill;
-            panelPaymentControl.Controls.Add(equipmentControl);
-            // Bring panelPaymentControl to the front
-            panelPaymentControl.BringToFront();
+            TrainerControl trainerControl = new TrainerControl();
+            LoadControl(trainerControl);
         }
 
+        // Button click event for Class (assuming the button's name is ClassButton)
+        private void ClassButton_Click(object sender, EventArgs e)
+        {
+            ClassControl classControl = new ClassControl();
+            LoadControl(classControl);
+        }
+
+        // Button click event for Equipment (assuming the button's name is EquipmentButton)
+        private void EquipmentButton_Click_1(object sender, EventArgs e)
+        {
+            EquipmentControl equipmentControl = new EquipmentControl();
+            LoadControl(equipmentControl);
+        }
+
+        // Logout Button: returns to Home form
         private void button6_Click(object sender, EventArgs e)
         {
-            // Create an instance of the Home form
             Home homeForm = new Home();
             homeForm.Show();
             this.Hide();
@@ -90,30 +82,5 @@ namespace GymAdmin
 
         }
 
-        private void TrainerButton_Click(object sender, EventArgs e)
-        {
-            // Clear the panel and add TrainerControl
-            panelPaymentControl.Controls.Clear();
-
-            TrainerControl trainerControl = new TrainerControl();
-            trainerControl.Dock = DockStyle.Fill;
-            panelPaymentControl.Controls.Add(trainerControl);
-            // Bring panelPaymentControl to the front
-            panelPaymentControl.BringToFront();
-        }
-
-        private void ClassButton_Click(object sender, EventArgs e)
-        {
-            // Clear the panel and add ClassControl
-            panelPaymentControl.Controls.Clear();
-
-            ClassControl classControl = new ClassControl();
-            classControl.Dock = DockStyle.Fill;
-            panelPaymentControl.Controls.Add(classControl);
-
-            // Bring the panel to the front
-            panelPaymentControl.BringToFront();
-
-        }
     }
 }
