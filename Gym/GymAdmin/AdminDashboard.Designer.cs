@@ -166,6 +166,7 @@
             this.ClassButton.TabStop = false;
             this.ClassButton.Text = "  Class";
             this.ClassButton.UseVisualStyleBackColor = false;
+            this.ClassButton.Click += new System.EventHandler(this.ClassButton_Click);
             // 
             // EquipmentButton
             // 
