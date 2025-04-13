@@ -57,24 +57,42 @@ namespace GymAdmin
             //Availabledays
         }
 
+        //Add Trainer data
         private void button1_Click(object sender, EventArgs e)
         {
-            // Get data from textboxes
-            string trainerID = TrainerID.Text.Trim();
             string trainerName = TrainerName.Text.Trim();
-            string mobileNumber = MobileNumber.Text.Trim();
+            string mobileNumber = txtMobileNumber.Text.Trim();
             string trainerEmail = TrainerEmail.Text.Trim();
-            DateTime joinDate = JoinDate.Value;
-            string availableDays = TrainerAvailableDays.Text.Trim();
+            DateTime joinDate = dateTimePicker1.Value;
+            string availableDays = textBox8.Text.Trim();
 
-            if (string.IsNullOrEmpty(trainerID) || string.IsNullOrEmpty(trainerName))
+            // Validate all required fields
+            if (string.IsNullOrEmpty(trainerName))
             {
-                MessageBox.Show("TrainerID and TrainerName are required.");
+                MessageBox.Show("The 'Trainer Name' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(mobileNumber))
+            {
+                MessageBox.Show("The 'Mobile Number' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(trainerEmail))
+            {
+                MessageBox.Show("The 'Email' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(availableDays))
+            {
+                MessageBox.Show("The 'Available Days' field should not be empty.");
                 return;
             }
 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "INSERT INTO TrainerData (TrainerID, TrainerName, MobileNumber, TrainerEmail, JoinDate, AvailableDays) VALUES (@TrainerID, @TrainerName, @MobileNumber, @TrainerEmail, @JoinDate, @AvailableDays)";
+            string query = "INSERT INTO TrainerData (TrainerName, TrainerMobileNumber, TrainerEmail, TrainerJoinDate, TrainerAvailableDays) VALUES (@TrainerName, @TrainerMobileNumber, @TrainerEmail, @TrainerJoinDate, @TrainerAvailableDays)";
 
             try
             {
@@ -83,12 +101,11 @@ namespace GymAdmin
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@TrainerID", trainerID);
                         command.Parameters.AddWithValue("@TrainerName", trainerName);
-                        command.Parameters.AddWithValue("@MobileNumber", mobileNumber);
+                        command.Parameters.AddWithValue("@TrainerMobileNumber", mobileNumber);
                         command.Parameters.AddWithValue("@TrainerEmail", trainerEmail);
-                        command.Parameters.AddWithValue("@JoinDate", joinDate);
-                        command.Parameters.AddWithValue("@AvailableDays", availableDays);
+                        command.Parameters.AddWithValue("@TrainerJoinDate", joinDate);
+                        command.Parameters.AddWithValue("@TrainerAvailableDays", availableDays);
 
                         int result = command.ExecuteNonQuery();
                         if (result > 0)
@@ -109,24 +126,49 @@ namespace GymAdmin
         }
 
 
+
+        //Update Trainer data
         private void button2_Click(object sender, EventArgs e)
         {
-            // Get data from textboxes
             string trainerID = TrainerID.Text.Trim();
             string trainerName = TrainerName.Text.Trim();
-            string mobileNumber = MobileNumber.Text.Trim();
+            string mobileNumber = txtMobileNumber.Text.Trim();
             string trainerEmail = TrainerEmail.Text.Trim();
-            DateTime joinDate = JoinDate.Value;
-            string availableDays = TrainerAvailableDays.Text.Trim();
+            DateTime joinDate = dateTimePicker1.Value;
+            string availableDays = textBox8.Text.Trim();
 
             if (string.IsNullOrEmpty(trainerID))
             {
-                MessageBox.Show("TrainerID is required.");
+                MessageBox.Show("The 'Trainer ID' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(trainerName))
+            {
+                MessageBox.Show("The 'Trainer Name' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(mobileNumber))
+            {
+                MessageBox.Show("The 'Mobile Number' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(trainerEmail))
+            {
+                MessageBox.Show("The 'Email' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(availableDays))
+            {
+                MessageBox.Show("The 'Available Days' field should not be empty.");
                 return;
             }
 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "UPDATE TrainerData SET TrainerName = @TrainerName, MobileNumber = @MobileNumber, TrainerEmail = @TrainerEmail, JoinDate = @JoinDate, AvailableDays = @AvailableDays WHERE TrainerID = @TrainerID";
+            string query = "UPDATE TrainerData SET TrainerName = @TrainerName, TrainerMobileNumber = @TrainerMobileNumber, TrainerEmail = @TrainerEmail, TrainerJoinDate = @TrainerJoinDate, TrainerAvailableDays = @TrainerAvailableDays WHERE TrainerID = @TrainerID";
 
             try
             {
@@ -137,10 +179,10 @@ namespace GymAdmin
                     {
                         command.Parameters.AddWithValue("@TrainerID", trainerID);
                         command.Parameters.AddWithValue("@TrainerName", trainerName);
-                        command.Parameters.AddWithValue("@MobileNumber", mobileNumber);
+                        command.Parameters.AddWithValue("@TrainerMobileNumber", mobileNumber);
                         command.Parameters.AddWithValue("@TrainerEmail", trainerEmail);
-                        command.Parameters.AddWithValue("@JoinDate", joinDate);
-                        command.Parameters.AddWithValue("@AvailableDays", availableDays);
+                        command.Parameters.AddWithValue("@TrainerJoinDate", joinDate);
+                        command.Parameters.AddWithValue("@TrainerAvailableDays", availableDays);
 
                         int result = command.ExecuteNonQuery();
                         if (result > 0)
@@ -159,6 +201,7 @@ namespace GymAdmin
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
+
 
 
         private void button3_Click(object sender, EventArgs e)

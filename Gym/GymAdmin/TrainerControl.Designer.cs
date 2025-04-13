@@ -38,16 +38,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.TrainerID = new System.Windows.Forms.TextBox();
             this.TrainerName = new System.Windows.Forms.TextBox();
-            this.MobileNumber = new System.Windows.Forms.TextBox();
+            this.txtMobileNumber = new System.Windows.Forms.TextBox();
             this.TrainerEmail = new System.Windows.Forms.TextBox();
             this.TrainerCertification = new System.Windows.Forms.TextBox();
-            this.TrainerAvailableDays = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.SearchButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.JoinDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.TrainerSpeciality = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -179,16 +179,16 @@
             this.TrainerName.TabIndex = 11;
             this.TrainerName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // MobileNumber
+            // txtMobileNumber
             // 
-            this.MobileNumber.BackColor = System.Drawing.SystemColors.Info;
-            this.MobileNumber.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MobileNumber.Location = new System.Drawing.Point(311, 252);
-            this.MobileNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.MobileNumber.Name = "MobileNumber";
-            this.MobileNumber.Size = new System.Drawing.Size(247, 32);
-            this.MobileNumber.TabIndex = 12;
-            this.MobileNumber.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtMobileNumber.BackColor = System.Drawing.SystemColors.Info;
+            this.txtMobileNumber.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobileNumber.Location = new System.Drawing.Point(311, 252);
+            this.txtMobileNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMobileNumber.Name = "txtMobileNumber";
+            this.txtMobileNumber.Size = new System.Drawing.Size(247, 32);
+            this.txtMobileNumber.TabIndex = 12;
+            this.txtMobileNumber.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // TrainerEmail
             // 
@@ -211,16 +211,16 @@
             this.TrainerCertification.Size = new System.Drawing.Size(241, 32);
             this.TrainerCertification.TabIndex = 14;
             // 
-            // TrainerAvailableDays
+            // textBox8
             // 
-            this.TrainerAvailableDays.BackColor = System.Drawing.SystemColors.Info;
-            this.TrainerAvailableDays.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TrainerAvailableDays.Location = new System.Drawing.Point(852, 346);
-            this.TrainerAvailableDays.Margin = new System.Windows.Forms.Padding(4);
-            this.TrainerAvailableDays.Name = "TrainerAvailableDays";
-            this.TrainerAvailableDays.Size = new System.Drawing.Size(241, 32);
-            this.TrainerAvailableDays.TabIndex = 17;
-            this.TrainerAvailableDays.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.textBox8.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(852, 346);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(241, 32);
+            this.textBox8.TabIndex = 17;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // DeleteButton
             // 
@@ -285,14 +285,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(1304, 236);
             this.dataGridView1.TabIndex = 28;
             // 
-            // JoinDate
+            // dateTimePicker1
             // 
-            this.JoinDate.Location = new System.Drawing.Point(852, 261);
-            this.JoinDate.Margin = new System.Windows.Forms.Padding(4);
-            this.JoinDate.Name = "JoinDate";
-            this.JoinDate.Size = new System.Drawing.Size(241, 22);
-            this.JoinDate.TabIndex = 29;
-            this.JoinDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePicker1.Location = new System.Drawing.Point(852, 261);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(241, 22);
+            this.dateTimePicker1.TabIndex = 29;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // TrainerSpeciality
             // 
@@ -334,16 +334,16 @@
             this.BackgroundImage = global::GymAdmin.Properties.Resources.pngtree_an_empty_gym_with_some_machines_picture_image_3105884;
             this.Controls.Add(this.label9);
             this.Controls.Add(this.TrainerSpeciality);
-            this.Controls.Add(this.JoinDate);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.AddButton);
-            this.Controls.Add(this.TrainerAvailableDays);
+            this.Controls.Add(this.textBox8);
             this.Controls.Add(this.TrainerCertification);
             this.Controls.Add(this.TrainerEmail);
-            this.Controls.Add(this.MobileNumber);
+            this.Controls.Add(this.txtMobileNumber);
             this.Controls.Add(this.TrainerName);
             this.Controls.Add(this.TrainerID);
             this.Controls.Add(this.label8);
@@ -376,16 +376,16 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox TrainerID;
         private System.Windows.Forms.TextBox TrainerName;
-        private System.Windows.Forms.TextBox MobileNumber;
+        private System.Windows.Forms.TextBox txtMobileNumber;
         private System.Windows.Forms.TextBox TrainerEmail;
         private System.Windows.Forms.TextBox TrainerCertification;
-        private System.Windows.Forms.TextBox TrainerAvailableDays;
+        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker JoinDate;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox TrainerSpeciality;
         private System.Windows.Forms.Label label9;
     }
