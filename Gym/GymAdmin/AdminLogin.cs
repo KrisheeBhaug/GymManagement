@@ -81,6 +81,8 @@ namespace GymAdmin
             txtUsername.BackColor = Color.LightYellow;
             txtPassword.BackColor = Color.LightYellow;
 
+            Login_Button.Enabled = true; 
+
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)

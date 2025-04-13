@@ -159,24 +159,24 @@
             // 
             // TrainerID
             // 
-            this.txtTrainerName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTrainerName.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTrainerName.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainerName.Location = new System.Drawing.Point(233, 81);
-            this.txtTrainerName.Name = "txtTrainerName";
-            this.txtTrainerName.Size = new System.Drawing.Size(186, 27);
-            this.txtTrainerName.TabIndex = 10;
-            this.txtTrainerName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.TrainerID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TrainerID.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerID.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F);
+            this.TrainerID.Location = new System.Drawing.Point(233, 84);
+            this.TrainerID.Name = "TrainerID";
+            this.TrainerID.Size = new System.Drawing.Size(186, 27);
+            this.TrainerID.TabIndex = 32;
             // 
             // TrainerName
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(233, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 27);
-            this.textBox2.TabIndex = 11;
+            this.TrainerName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TrainerName.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerName.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerName.Location = new System.Drawing.Point(233, 137);
+            this.TrainerName.Name = "TrainerName";
+            this.TrainerName.Size = new System.Drawing.Size(186, 27);
+            this.TrainerName.TabIndex = 11;
+            this.TrainerName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtMobileNumber
             // 
@@ -191,23 +191,23 @@
             // 
             // TrainerEmail
             // 
-            this.txtTrainerEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTrainerEmail.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTrainerEmail.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainerEmail.Location = new System.Drawing.Point(233, 277);
-            this.txtTrainerEmail.Name = "txtTrainerEmail";
-            this.txtTrainerEmail.Size = new System.Drawing.Size(186, 27);
-            this.txtTrainerEmail.TabIndex = 13;
+            this.TrainerEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TrainerEmail.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerEmail.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerEmail.Location = new System.Drawing.Point(233, 277);
+            this.TrainerEmail.Name = "TrainerEmail";
+            this.TrainerEmail.Size = new System.Drawing.Size(186, 27);
+            this.TrainerEmail.TabIndex = 13;
             // 
             // TrainerCertification
             // 
-            this.txtTrainerCertification.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTrainerCertification.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTrainerCertification.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainerCertification.Location = new System.Drawing.Point(639, 81);
-            this.txtTrainerCertification.Name = "txtTrainerCertification";
-            this.txtTrainerCertification.Size = new System.Drawing.Size(182, 27);
-            this.txtTrainerCertification.TabIndex = 14;
+            this.TrainerCertification.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TrainerCertification.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerCertification.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerCertification.Location = new System.Drawing.Point(639, 81);
+            this.TrainerCertification.Name = "TrainerCertification";
+            this.TrainerCertification.Size = new System.Drawing.Size(182, 27);
+            this.TrainerCertification.TabIndex = 14;
             // 
             // textBox8
             // 
@@ -222,51 +222,55 @@
             // 
             // DeleteButton
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.SystemColors.Info;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(581, 379);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 32);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DeleteButton.BackColor = System.Drawing.SystemColors.Info;
+            this.DeleteButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.Location = new System.Drawing.Point(581, 379);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(100, 32);
+            this.DeleteButton.TabIndex = 26;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.button3_Click);
             // 
             // UpdateButton
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.SystemColors.Info;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(451, 379);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 32);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UpdateButton.BackColor = System.Drawing.SystemColors.Info;
+            this.UpdateButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateButton.Location = new System.Drawing.Point(451, 379);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(100, 32);
+            this.UpdateButton.TabIndex = 25;
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseVisualStyleBackColor = false;
+            this.UpdateButton.Click += new System.EventHandler(this.button2_Click);
             // 
             // AddButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.SystemColors.Info;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(319, 379);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 32);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddButton.BackColor = System.Drawing.SystemColors.Info;
+            this.AddButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.Location = new System.Drawing.Point(319, 379);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(100, 32);
+            this.AddButton.TabIndex = 24;
+            this.AddButton.Text = "Add";
+            this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // SearchButton
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.SystemColors.Info;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(841, 18);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 44);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = false;
+            this.SearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SearchButton.BackColor = System.Drawing.SystemColors.Info;
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.Location = new System.Drawing.Point(841, 18);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(122, 44);
+            this.SearchButton.TabIndex = 27;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            this.SearchButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
@@ -290,11 +294,11 @@
             // 
             // TrainerSpeciality
             // 
-            this.txtSpeciality.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSpeciality.BackColor = System.Drawing.SystemColors.Info;
-            this.txtSpeciality.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSpeciality.FormattingEnabled = true;
-            this.txtSpeciality.Items.AddRange(new object[] {
+            this.TrainerSpeciality.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TrainerSpeciality.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerSpeciality.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerSpeciality.FormattingEnabled = true;
+            this.TrainerSpeciality.Items.AddRange(new object[] {
             "Personal Training  ",
             "Strength and Conditioning  ",
             "Cardio Fitness  ",
@@ -303,10 +307,10 @@
             "Nutrition Coaching  ",
             "Functional Training  ",
             "Sports Performance"});
-            this.txtSpeciality.Location = new System.Drawing.Point(639, 145);
-            this.txtSpeciality.Name = "txtSpeciality";
-            this.txtSpeciality.Size = new System.Drawing.Size(182, 27);
-            this.txtSpeciality.TabIndex = 30;
+            this.TrainerSpeciality.Location = new System.Drawing.Point(639, 145);
+            this.TrainerSpeciality.Name = "TrainerSpeciality";
+            this.TrainerSpeciality.Size = new System.Drawing.Size(182, 27);
+            this.TrainerSpeciality.TabIndex = 30;
             // 
             // label9
             // 
@@ -350,7 +354,6 @@
             this.Controls.Add(this.label1);
             this.Name = "TrainerControl";
             this.Size = new System.Drawing.Size(978, 640);
-            this.Load += new System.EventHandler(this.TrainerControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
