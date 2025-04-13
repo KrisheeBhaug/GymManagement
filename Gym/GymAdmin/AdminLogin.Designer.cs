@@ -67,6 +67,7 @@
             // Reset_Button
             // 
             this.Reset_Button.BackColor = System.Drawing.Color.Black;
+            this.Reset_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Reset_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Reset_Button.ForeColor = System.Drawing.SystemColors.Window;
             this.Reset_Button.Location = new System.Drawing.Point(222, 303);
@@ -80,9 +81,10 @@
             // Login_Button
             // 
             this.Login_Button.BackColor = System.Drawing.Color.Black;
+            this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_Button.ForeColor = System.Drawing.Color.Snow;
-            this.Login_Button.Location = new System.Drawing.Point(89, 303);
+            this.Login_Button.ForeColor = System.Drawing.SystemColors.Window;
+            this.Login_Button.Location = new System.Drawing.Point(77, 303);
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(92, 41);
             this.Login_Button.TabIndex = 16;
@@ -158,12 +160,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Login_Button);
             this.panel1.Controls.Add(this.chkShowPassword);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.Reset_Button);
-            this.panel1.Controls.Add(this.Login_Button);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Controls.Add(this.label4);
@@ -189,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 439);
+            this.ClientSize = new System.Drawing.Size(419, 439);
             this.Controls.Add(this.panel1);
             this.Name = "AdminLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -1,6 +1,6 @@
 ﻿namespace GymAdmin
 {
-    partial class ForgotPassword
+    partial class ForgotPasswordForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,65 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblDOB = new System.Windows.Forms.Label();
+            this.btnRecover = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.dtpDOB = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // label1
+            // lblUsername
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(70, 40);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(156, 16);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Enter your Username:\r\n";
             // 
-            // label2
+            // lblDOB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.BackColor = System.Drawing.Color.Transparent;
+            this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDOB.Location = new System.Drawing.Point(90, 84);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(117, 16);
+            this.lblDOB.TabIndex = 1;
+            this.lblDOB.Text = "Enter your DOB:\r\n";
             // 
-            // button1
+            // btnRecover
             // 
-            this.button1.Location = new System.Drawing.Point(192, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRecover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnRecover.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecover.Location = new System.Drawing.Point(297, 128);
+            this.btnRecover.Name = "btnRecover";
+            this.btnRecover.Size = new System.Drawing.Size(84, 36);
+            this.btnRecover.TabIndex = 2;
+            this.btnRecover.Text = "Submit";
+            this.btnRecover.UseVisualStyleBackColor = false;
+            this.btnRecover.Click += new System.EventHandler(this.btnRecover_Click);
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(250, 35);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(185, 21);
+            this.txtUsername.TabIndex = 3;
             // 
-            // textBox2
+            // lblResult
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(209, 9);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(0, 13);
+            this.lblResult.TabIndex = 5;
             // 
-            // ForgotPassword
+            // dtpDOB
+            // 
+            this.dtpDOB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpDOB.CustomFormat = "yyyy-MM-dd";
+            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDOB.Location = new System.Drawing.Point(250, 84);
+            this.dtpDOB.Name = "dtpDOB";
+            this.dtpDOB.Size = new System.Drawing.Size(184, 20);
+            this.dtpDOB.TabIndex = 6;
+            // 
+            // ForgotPasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 211);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "ForgotPassword";
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(487, 190);
+            this.Controls.Add(this.dtpDOB);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.btnRecover);
+            this.Controls.Add(this.lblDOB);
+            this.Controls.Add(this.lblUsername);
+            this.Name = "ForgotPasswordForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPassword";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,10 +118,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblDOB;
+        private System.Windows.Forms.Button btnRecover;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.DateTimePicker dtpDOB;
     }
 }

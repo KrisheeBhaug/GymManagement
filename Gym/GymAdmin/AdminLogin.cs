@@ -30,6 +30,11 @@ namespace GymAdmin
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                MessageBox.Show("Please enter both username and password.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             string connectionString = ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -66,25 +71,36 @@ namespace GymAdmin
                 }
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            // Clear inputs
+            // Clear fields
             txtUsername.Clear();
             txtPassword.Clear();
-            Login_Button.Enabled = false;
+
+            // Reset colors
+            txtUsername.BackColor = Color.LightYellow;
+            txtPassword.BackColor = Color.LightYellow;
+
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            Login_Button.Enabled = !string.IsNullOrWhiteSpace(txtUsername.Text) && !string.IsNullOrWhiteSpace(txtPassword.Text);
-            txtUsername.BackColor = txtUsername.Text.Length < 3 ? Color.LightCoral : Color.White;
+        { 
+
+            // Visual validation: highlight if too short
+            if (txtUsername.Text.Length > 0 && txtUsername.Text.Length < 3)
+                txtUsername.BackColor = Color.LightCoral;
+            else
+                txtUsername.BackColor = Color.White;
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             Login_Button.Enabled = !string.IsNullOrWhiteSpace(txtUsername.Text) && !string.IsNullOrWhiteSpace(txtPassword.Text);
-            txtPassword.BackColor = txtPassword.Text.Length < 6 ? Color.LightCoral : Color.White;
+
+            if (txtPassword.Text.Length > 0 && txtPassword.Text.Length < 6)
+                txtPassword.BackColor = Color.LightCoral;
+            else
+                txtPassword.BackColor = Color.White;
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -95,7 +111,9 @@ namespace GymAdmin
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            // Optional: Open "Forgot Password" form
+            // Open Forgot Password form
+            ForgotPasswordForm forgotForm = new ForgotPasswordForm();
+            forgotForm.ShowDialog();
         }
     }
 }
