@@ -118,7 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Whey_proteinpowder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whey_proteinpowder.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GYM Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GYM Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qr-code" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qr-code.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplementbg (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplementbg (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplementsbg3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplementsbg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shopbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shopbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qr-code1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qr-code.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplementsbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplementsbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplementsbg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplementsbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whey-protein (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whey-protein (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplementsbg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplementsbg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whey_proteinpowder1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whey_proteinpowder1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Why Does Protein Matter for Building Gym Muscle_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Why Does Protein Matter for Building Gym Muscle_.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mikael's Playground _ Black and white pictures, Photo, Black and white photography" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mikael's Playground _ Black and white pictures, Photo, Black and white photography.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
