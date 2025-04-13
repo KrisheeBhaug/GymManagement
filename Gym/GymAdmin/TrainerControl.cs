@@ -21,40 +21,69 @@ namespace GymAdmin
 
         private void TrainerControl_Load(object sender, EventArgs e)
         {
-            // get trainer certification data from TrainerCertification text box
+
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            // Get the TrainerID from textBox1 
+        {    //validation in database for uniqueness
+            // Trainer ID should be numeric
+            if (!System.Text.RegularExpressions.Regex.IsMatch(TrainerID.Text, @"^\d*$"))
+            {
+                MessageBox.Show("Trainer ID must be numeric.");
+                TrainerID.Text = "";
+            }
 
         }
-        
 
-      
+
+
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            // Trainer Mobile Number
+            // Mobile number should contain only digits and be exactly 8 digits
+            if (!System.Text.RegularExpressions.Regex.IsMatch(txtMobileNumber.Text, @"^\d{0,8}$"))
+            {
+                MessageBox.Show("Mobile number must contain only digits and be 8 digits long.");
+                txtMobileNumber.Text = "";
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            //TrainerName
+            // Trainer Name should contain only letters and spaces
+            if (!System.Text.RegularExpressions.Regex.IsMatch(TrainerName.Text, @"^[a-zA-Z\s]*$"))
+            {
+                MessageBox.Show("Trainer Name must contain only letters.");
+                TrainerName.Text = "";
+            }
         }
 
         private void txtTrainerEmail_TextChanged(object sender, EventArgs e)
         {
-            //TrainerEmaill 
+            // Validate email format in other methods(Add,Delete..)
+     
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            //JoinDate
+            DateTime selectedDate = dateTimePicker1.Value;
+            DateTime today = DateTime.Today;
+
+            if (selectedDate > today)
+            {
+                MessageBox.Show("Join Date cannot be in the future. Please select a valid date.");
+                dateTimePicker1.Value = today; // Reset to today's date
+            }
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
-            //Availabledays
+            // Available Days should be letters or comma-separated values
+            if (!System.Text.RegularExpressions.Regex.IsMatch(textBox8.Text, @"^[a-zA-Z,\s]*$"))
+            {
+                MessageBox.Show("Available days must contain only letters and commas.");
+                textBox8.Text = "";
+            }
         }
 
         //Add Trainer data
@@ -204,6 +233,7 @@ namespace GymAdmin
 
 
 
+        //Delete Trainer        
         private void button3_Click(object sender, EventArgs e)
         {
             string trainerID = TrainerID.Text.Trim();
@@ -244,7 +274,7 @@ namespace GymAdmin
             }
         }
 
-
+        //Search Trainer    
         private void button4_Click(object sender, EventArgs e)
         {
             string trainerID = TrainerID.Text.Trim();
@@ -267,7 +297,6 @@ namespace GymAdmin
                         DataTable dataTable = new DataTable();
                         dataAdapter.Fill(dataTable);
 
-                        // Assuming you have a DataGridView named dataGridView1
                         dataGridView1.DataSource = dataTable;
                     }
                 }
