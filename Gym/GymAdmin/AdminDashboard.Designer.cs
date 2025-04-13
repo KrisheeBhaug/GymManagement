@@ -53,7 +53,7 @@
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 788);
             this.panel1.TabIndex = 0;
@@ -104,7 +104,7 @@
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.Location = new System.Drawing.Point(15, 705);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(163, 49);
             this.button6.TabIndex = 6;
@@ -122,7 +122,7 @@
             this.MemberButton.Image = ((System.Drawing.Image)(resources.GetObject("MemberButton.Image")));
             this.MemberButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.MemberButton.Location = new System.Drawing.Point(15, 141);
-            this.MemberButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MemberButton.Margin = new System.Windows.Forms.Padding(4);
             this.MemberButton.Name = "MemberButton";
             this.MemberButton.Size = new System.Drawing.Size(163, 54);
             this.MemberButton.TabIndex = 1;
@@ -141,7 +141,7 @@
             this.TrainerButton.Image = ((System.Drawing.Image)(resources.GetObject("TrainerButton.Image")));
             this.TrainerButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TrainerButton.Location = new System.Drawing.Point(15, 255);
-            this.TrainerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TrainerButton.Margin = new System.Windows.Forms.Padding(4);
             this.TrainerButton.Name = "TrainerButton";
             this.TrainerButton.Size = new System.Drawing.Size(163, 49);
             this.TrainerButton.TabIndex = 2;
@@ -159,7 +159,7 @@
             this.ClassButton.Image = ((System.Drawing.Image)(resources.GetObject("ClassButton.Image")));
             this.ClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClassButton.Location = new System.Drawing.Point(15, 367);
-            this.ClassButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClassButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClassButton.Name = "ClassButton";
             this.ClassButton.Size = new System.Drawing.Size(163, 49);
             this.ClassButton.TabIndex = 5;
@@ -177,7 +177,7 @@
             this.EquipmentButton.Image = ((System.Drawing.Image)(resources.GetObject("EquipmentButton.Image")));
             this.EquipmentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EquipmentButton.Location = new System.Drawing.Point(15, 479);
-            this.EquipmentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EquipmentButton.Margin = new System.Windows.Forms.Padding(4);
             this.EquipmentButton.Name = "EquipmentButton";
             this.EquipmentButton.Size = new System.Drawing.Size(163, 49);
             this.EquipmentButton.TabIndex = 4;
@@ -195,7 +195,7 @@
             this.PaymentButton.Image = ((System.Drawing.Image)(resources.GetObject("PaymentButton.Image")));
             this.PaymentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PaymentButton.Location = new System.Drawing.Point(15, 591);
-            this.PaymentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaymentButton.Margin = new System.Windows.Forms.Padding(4);
             this.PaymentButton.Name = "PaymentButton";
             this.PaymentButton.Size = new System.Drawing.Size(163, 49);
             this.PaymentButton.TabIndex = 3;
@@ -213,7 +213,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(253, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1304, 788);
             this.panel2.TabIndex = 2;
@@ -268,7 +268,7 @@
             this.ClientSize = new System.Drawing.Size(1557, 788);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminDashboard";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
