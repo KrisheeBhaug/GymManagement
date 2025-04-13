@@ -21,7 +21,7 @@ namespace GymAdmin
 
         private void Equipment_Load(object sender, EventArgs e)
         {
-            textBox1.Enabled = true; // set to true
+            textBox1.Enabled = true; 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
