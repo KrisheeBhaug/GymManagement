@@ -145,19 +145,14 @@ namespace GymAdmin
             {
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@EquipmentName", equipmentName);
-                cmd.Parameters.AddWithValue("@EquipmentDescription", equipmentDescription);
-                cmd.Parameters.AddWithValue("@EquipmentCategory", equipmentCategory);
+                cmd.Parameters.AddWithValue("@EquipmentDescription", string.IsNullOrEmpty(equipmentDescription) ? (object)DBNull.Value : equipmentDescription);
+                cmd.Parameters.AddWithValue("@EquipmentCategory", string.IsNullOrEmpty(equipmentCategory) ? (object)DBNull.Value : equipmentCategory);
                 cmd.Parameters.AddWithValue("@EquipmentCondition", equipmentCondition);
                 cmd.Parameters.AddWithValue("@EquipmentQuantity", equipmentQuantity);
-                cmd.Parameters.AddWithValue("@EquipmentLocation", equipmentLocation);
-                if (string.IsNullOrEmpty(equipmentMaintenance))
-                {
-                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", DBNull.Value);
-                }
-                else
-                {
-                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", equipmentMaintenance);
-                }
+                cmd.Parameters.AddWithValue("@EquipmentLocation", string.IsNullOrEmpty(equipmentLocation) ? (object)DBNull.Value : equipmentLocation);
+                cmd.Parameters.AddWithValue("@EquipmentMaintenance", string.IsNullOrEmpty(equipmentMaintenance) ? (object)DBNull.Value : equipmentMaintenance);
+   
+
 
 
                 try
@@ -215,14 +210,8 @@ namespace GymAdmin
                 cmd.Parameters.AddWithValue("@EquipmentCondition", equipmentCondition);
                 cmd.Parameters.AddWithValue("@EquipmentQuantity", equipmentQuantity);
                 cmd.Parameters.AddWithValue("@EquipmentLocation", equipmentLocation);
-                if (string.IsNullOrEmpty(equipmentMaintenance))
-                {
-                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", DBNull.Value);
-                }
-                else
-                {
-                    cmd.Parameters.AddWithValue("@EquipmentMaintenance", equipmentMaintenance);
-                }
+                cmd.Parameters.AddWithValue("@EquipmentMaintenance", string.IsNullOrEmpty(equipmentMaintenance) ? (object)DBNull.Value : equipmentMaintenance);
+
 
 
                 try
