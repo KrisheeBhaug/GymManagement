@@ -36,19 +36,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTrainerName = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtMobileNumber = new System.Windows.Forms.TextBox();
-            this.txtTrainerEmail = new System.Windows.Forms.TextBox();
-            this.txtTrainerCertification = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.TrainerID = new System.Windows.Forms.TextBox();
+            this.TrainerName = new System.Windows.Forms.TextBox();
+            this.MobileNumber = new System.Windows.Forms.TextBox();
+            this.TrainerEmail = new System.Windows.Forms.TextBox();
+            this.TrainerCertification = new System.Windows.Forms.TextBox();
+            this.TrainerAvailableDays = new System.Windows.Forms.TextBox();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtSpeciality = new System.Windows.Forms.ComboBox();
+            this.JoinDate = new System.Windows.Forms.DateTimePicker();
+            this.TrainerSpeciality = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -157,141 +157,149 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Available Days";
             // 
-            // txtTrainerName
+            // TrainerID
             // 
-            this.txtTrainerName.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTrainerName.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainerName.Location = new System.Drawing.Point(311, 100);
-            this.txtTrainerName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTrainerName.Name = "txtTrainerName";
-            this.txtTrainerName.Size = new System.Drawing.Size(247, 32);
-            this.txtTrainerName.TabIndex = 10;
-            this.txtTrainerName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.TrainerID.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerID.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerID.Location = new System.Drawing.Point(311, 100);
+            this.TrainerID.Margin = new System.Windows.Forms.Padding(4);
+            this.TrainerID.Name = "TrainerID";
+            this.TrainerID.Size = new System.Drawing.Size(247, 32);
+            this.TrainerID.TabIndex = 10;
+            this.TrainerID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // TrainerName
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(311, 169);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 32);
-            this.textBox2.TabIndex = 11;
+            this.TrainerName.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerName.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerName.Location = new System.Drawing.Point(311, 169);
+            this.TrainerName.Margin = new System.Windows.Forms.Padding(4);
+            this.TrainerName.Name = "TrainerName";
+            this.TrainerName.Size = new System.Drawing.Size(247, 32);
+            this.TrainerName.TabIndex = 11;
+            this.TrainerName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // txtMobileNumber
+            // MobileNumber
             // 
-            this.txtMobileNumber.BackColor = System.Drawing.SystemColors.Info;
-            this.txtMobileNumber.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobileNumber.Location = new System.Drawing.Point(311, 252);
-            this.txtMobileNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtMobileNumber.Name = "txtMobileNumber";
-            this.txtMobileNumber.Size = new System.Drawing.Size(247, 32);
-            this.txtMobileNumber.TabIndex = 12;
-            this.txtMobileNumber.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.MobileNumber.BackColor = System.Drawing.SystemColors.Info;
+            this.MobileNumber.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MobileNumber.Location = new System.Drawing.Point(311, 252);
+            this.MobileNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.MobileNumber.Name = "MobileNumber";
+            this.MobileNumber.Size = new System.Drawing.Size(247, 32);
+            this.MobileNumber.TabIndex = 12;
+            this.MobileNumber.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // txtTrainerEmail
+            // TrainerEmail
             // 
-            this.txtTrainerEmail.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTrainerEmail.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainerEmail.Location = new System.Drawing.Point(311, 341);
-            this.txtTrainerEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTrainerEmail.Name = "txtTrainerEmail";
-            this.txtTrainerEmail.Size = new System.Drawing.Size(247, 32);
-            this.txtTrainerEmail.TabIndex = 13;
+            this.TrainerEmail.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerEmail.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerEmail.Location = new System.Drawing.Point(311, 341);
+            this.TrainerEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.TrainerEmail.Name = "TrainerEmail";
+            this.TrainerEmail.Size = new System.Drawing.Size(247, 32);
+            this.TrainerEmail.TabIndex = 13;
+            this.TrainerEmail.TextChanged += new System.EventHandler(this.txtTrainerEmail_TextChanged);
             // 
-            // txtTrainerCertification
+            // TrainerCertification
             // 
-            this.txtTrainerCertification.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTrainerCertification.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrainerCertification.Location = new System.Drawing.Point(852, 100);
-            this.txtTrainerCertification.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTrainerCertification.Name = "txtTrainerCertification";
-            this.txtTrainerCertification.Size = new System.Drawing.Size(241, 32);
-            this.txtTrainerCertification.TabIndex = 14;
+            this.TrainerCertification.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerCertification.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerCertification.Location = new System.Drawing.Point(852, 100);
+            this.TrainerCertification.Margin = new System.Windows.Forms.Padding(4);
+            this.TrainerCertification.Name = "TrainerCertification";
+            this.TrainerCertification.Size = new System.Drawing.Size(241, 32);
+            this.TrainerCertification.TabIndex = 14;
             // 
-            // textBox8
+            // TrainerAvailableDays
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(852, 346);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(241, 32);
-            this.textBox8.TabIndex = 17;
+            this.TrainerAvailableDays.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerAvailableDays.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerAvailableDays.Location = new System.Drawing.Point(852, 346);
+            this.TrainerAvailableDays.Margin = new System.Windows.Forms.Padding(4);
+            this.TrainerAvailableDays.Name = "TrainerAvailableDays";
+            this.TrainerAvailableDays.Size = new System.Drawing.Size(241, 32);
+            this.TrainerAvailableDays.TabIndex = 17;
+            this.TrainerAvailableDays.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // button3
+            // DeleteButton
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Info;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(775, 466);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 39);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteButton.BackColor = System.Drawing.SystemColors.Info;
+            this.DeleteButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.Location = new System.Drawing.Point(775, 466);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(133, 39);
+            this.DeleteButton.TabIndex = 26;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // UpdateButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Info;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(601, 466);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 39);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateButton.BackColor = System.Drawing.SystemColors.Info;
+            this.UpdateButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateButton.Location = new System.Drawing.Point(601, 466);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(4);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(133, 39);
+            this.UpdateButton.TabIndex = 25;
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseVisualStyleBackColor = false;
+            this.UpdateButton.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // AddButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Info;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(425, 466);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 39);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddButton.BackColor = System.Drawing.SystemColors.Info;
+            this.AddButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.Location = new System.Drawing.Point(425, 466);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(4);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(133, 39);
+            this.AddButton.TabIndex = 24;
+            this.AddButton.Text = "Add";
+            this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button4
+            // SearchButton
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Info;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1121, 22);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 54);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = false;
+            this.SearchButton.BackColor = System.Drawing.SystemColors.Info;
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchButton.Location = new System.Drawing.Point(1121, 22);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(163, 54);
+            this.SearchButton.TabIndex = 27;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = false;
+            this.SearchButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 548);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1304, 236);
             this.dataGridView1.TabIndex = 28;
             // 
-            // dateTimePicker1
+            // JoinDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(852, 261);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 22);
-            this.dateTimePicker1.TabIndex = 29;
+            this.JoinDate.Location = new System.Drawing.Point(852, 261);
+            this.JoinDate.Margin = new System.Windows.Forms.Padding(4);
+            this.JoinDate.Name = "JoinDate";
+            this.JoinDate.Size = new System.Drawing.Size(241, 22);
+            this.JoinDate.TabIndex = 29;
+            this.JoinDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // txtSpeciality
+            // TrainerSpeciality
             // 
-            this.txtSpeciality.BackColor = System.Drawing.SystemColors.Info;
-            this.txtSpeciality.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSpeciality.FormattingEnabled = true;
-            this.txtSpeciality.Items.AddRange(new object[] {
+            this.TrainerSpeciality.BackColor = System.Drawing.SystemColors.Info;
+            this.TrainerSpeciality.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainerSpeciality.FormattingEnabled = true;
+            this.TrainerSpeciality.Items.AddRange(new object[] {
             "Personal Training  ",
             "Strength and Conditioning  ",
             "Cardio Fitness  ",
@@ -300,11 +308,11 @@
             "Nutrition Coaching  ",
             "Functional Training  ",
             "Sports Performance"});
-            this.txtSpeciality.Location = new System.Drawing.Point(852, 178);
-            this.txtSpeciality.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSpeciality.Name = "txtSpeciality";
-            this.txtSpeciality.Size = new System.Drawing.Size(241, 34);
-            this.txtSpeciality.TabIndex = 30;
+            this.TrainerSpeciality.Location = new System.Drawing.Point(852, 178);
+            this.TrainerSpeciality.Margin = new System.Windows.Forms.Padding(4);
+            this.TrainerSpeciality.Name = "TrainerSpeciality";
+            this.TrainerSpeciality.Size = new System.Drawing.Size(241, 34);
+            this.TrainerSpeciality.TabIndex = 30;
             // 
             // label9
             // 
@@ -325,19 +333,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GymAdmin.Properties.Resources.pngtree_an_empty_gym_with_some_machines_picture_image_3105884;
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtSpeciality);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.TrainerSpeciality);
+            this.Controls.Add(this.JoinDate);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.txtTrainerCertification);
-            this.Controls.Add(this.txtTrainerEmail);
-            this.Controls.Add(this.txtMobileNumber);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtTrainerName);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.UpdateButton);
+            this.Controls.Add(this.AddButton);
+            this.Controls.Add(this.TrainerAvailableDays);
+            this.Controls.Add(this.TrainerCertification);
+            this.Controls.Add(this.TrainerEmail);
+            this.Controls.Add(this.MobileNumber);
+            this.Controls.Add(this.TrainerName);
+            this.Controls.Add(this.TrainerID);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -346,7 +354,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrainerControl";
             this.Size = new System.Drawing.Size(1304, 788);
             this.Load += new System.EventHandler(this.TrainerControl_Load);
@@ -366,19 +374,19 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTrainerName;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txtMobileNumber;
-        private System.Windows.Forms.TextBox txtTrainerEmail;
-        private System.Windows.Forms.TextBox txtTrainerCertification;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox TrainerID;
+        private System.Windows.Forms.TextBox TrainerName;
+        private System.Windows.Forms.TextBox MobileNumber;
+        private System.Windows.Forms.TextBox TrainerEmail;
+        private System.Windows.Forms.TextBox TrainerCertification;
+        private System.Windows.Forms.TextBox TrainerAvailableDays;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button AddButton;
+        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox txtSpeciality;
+        private System.Windows.Forms.DateTimePicker JoinDate;
+        private System.Windows.Forms.ComboBox TrainerSpeciality;
         private System.Windows.Forms.Label label9;
     }
 }
