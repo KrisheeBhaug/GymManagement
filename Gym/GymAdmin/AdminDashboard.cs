@@ -13,9 +13,26 @@ namespace GymAdmin
 {
     public partial class AdminDashboard: Form
     {
+        private System.Windows.Forms.Panel panelPaymentControl;
+
         public AdminDashboard()
         {
             InitializeComponent();
+            InitializeCustomComponents();
+
+        }
+        private void InitializeCustomComponents()
+        {
+            // Initialize panelPaymentControl
+            panelPaymentControl = new Panel();
+            panelPaymentControl.Size = new Size(1144, 768); // Set the size as needed
+            panelPaymentControl.Location = new Point(300, 0); // Set the location as needed
+            panelPaymentControl.BorderStyle = BorderStyle.FixedSingle;
+
+            // Add panelPaymentControl to the form
+            this.Controls.Add(panelPaymentControl);
+
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -25,12 +42,27 @@ namespace GymAdmin
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Clear the panel and add MemberControl
+            panelPaymentControl.Controls.Clear();
 
+            MemberControl memberControl = new MemberControl();
+            memberControl.Dock = DockStyle.Fill;
+            panelPaymentControl.Controls.Add(memberControl);
+            // Bring panelPaymentControl to the front
+            panelPaymentControl.BringToFront();
         }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // Clear the panel and add PaymentControl
+            panelPaymentControl.Controls.Clear();
 
+            PaymentControl paymentControl = new PaymentControl();
+            paymentControl.Dock = DockStyle.Fill;
+            panelPaymentControl.Controls.Add(paymentControl);
+            // Bring panelPaymentControl to the front
+            panelPaymentControl.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
