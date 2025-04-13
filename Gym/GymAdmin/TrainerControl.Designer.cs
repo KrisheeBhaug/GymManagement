@@ -36,19 +36,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTrainerName = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TrainerID = new System.Windows.Forms.TextBox();
+            this.TrainerName = new System.Windows.Forms.TextBox();
             this.txtMobileNumber = new System.Windows.Forms.TextBox();
-            this.txtTrainerEmail = new System.Windows.Forms.TextBox();
-            this.txtTrainerCertification = new System.Windows.Forms.TextBox();
+            this.TrainerEmail = new System.Windows.Forms.TextBox();
+            this.TrainerCertification = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.txtSpeciality = new System.Windows.Forms.ComboBox();
+            this.TrainerSpeciality = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -157,7 +157,7 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Available Days";
             // 
-            // txtTrainerName
+            // TrainerID
             // 
             this.txtTrainerName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTrainerName.BackColor = System.Drawing.SystemColors.Info;
@@ -168,7 +168,7 @@
             this.txtTrainerName.TabIndex = 10;
             this.txtTrainerName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // TrainerName
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox2.BackColor = System.Drawing.SystemColors.Info;
@@ -189,7 +189,7 @@
             this.txtMobileNumber.TabIndex = 12;
             this.txtMobileNumber.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // txtTrainerEmail
+            // TrainerEmail
             // 
             this.txtTrainerEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTrainerEmail.BackColor = System.Drawing.SystemColors.Info;
@@ -199,7 +199,7 @@
             this.txtTrainerEmail.Size = new System.Drawing.Size(186, 27);
             this.txtTrainerEmail.TabIndex = 13;
             // 
-            // txtTrainerCertification
+            // TrainerCertification
             // 
             this.txtTrainerCertification.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTrainerCertification.BackColor = System.Drawing.SystemColors.Info;
@@ -218,8 +218,9 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(182, 27);
             this.textBox8.TabIndex = 17;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // button3
+            // DeleteButton
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.SystemColors.Info;
@@ -231,7 +232,7 @@
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // UpdateButton
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.SystemColors.Info;
@@ -243,7 +244,7 @@
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddButton
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.SystemColors.Info;
@@ -255,7 +256,7 @@
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // SearchButton
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.SystemColors.Info;
@@ -285,8 +286,9 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
             this.dateTimePicker1.TabIndex = 29;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // txtSpeciality
+            // TrainerSpeciality
             // 
             this.txtSpeciality.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSpeciality.BackColor = System.Drawing.SystemColors.Info;
@@ -325,19 +327,19 @@
             this.BackgroundImage = global::GymAdmin.Properties.Resources.pngtree_an_empty_gym_with_some_machines_picture_image_3105884;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtSpeciality);
+            this.Controls.Add(this.TrainerSpeciality);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SearchButton);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.UpdateButton);
+            this.Controls.Add(this.AddButton);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.txtTrainerCertification);
-            this.Controls.Add(this.txtTrainerEmail);
+            this.Controls.Add(this.TrainerCertification);
+            this.Controls.Add(this.TrainerEmail);
             this.Controls.Add(this.txtMobileNumber);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtTrainerName);
+            this.Controls.Add(this.TrainerName);
+            this.Controls.Add(this.TrainerID);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -365,19 +367,19 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTrainerName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TrainerID;
+        private System.Windows.Forms.TextBox TrainerName;
         private System.Windows.Forms.TextBox txtMobileNumber;
-        private System.Windows.Forms.TextBox txtTrainerEmail;
-        private System.Windows.Forms.TextBox txtTrainerCertification;
+        private System.Windows.Forms.TextBox TrainerEmail;
+        private System.Windows.Forms.TextBox TrainerCertification;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button AddButton;
+        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox txtSpeciality;
+        private System.Windows.Forms.ComboBox TrainerSpeciality;
         private System.Windows.Forms.Label label9;
     }
 }

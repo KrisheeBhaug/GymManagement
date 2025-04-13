@@ -76,5 +76,36 @@ namespace GymAdmin
             homeForm.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TrainerButton_Click(object sender, EventArgs e)
+        {
+            // Clear the panel and add TrainerControl
+            panelPaymentControl.Controls.Clear();
+
+            TrainerControl trainerControl = new TrainerControl();
+            trainerControl.Dock = DockStyle.Fill;
+            panelPaymentControl.Controls.Add(trainerControl);
+            // Bring panelPaymentControl to the front
+            panelPaymentControl.BringToFront();
+        }
+
+        private void ClassButton_Click(object sender, EventArgs e)
+        {
+            // Clear the panel and add ClassControl
+            panelPaymentControl.Controls.Clear();
+
+            ClassControl classControl = new ClassControl();
+            classControl.Dock = DockStyle.Fill;
+            panelPaymentControl.Controls.Add(classControl);
+
+            // Bring the panel to the front
+            panelPaymentControl.BringToFront();
+
+        }
     }
 }

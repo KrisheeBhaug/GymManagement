@@ -224,6 +224,7 @@
             this.label1.Text = "using System;\r\n\r\nnamespace WelcomeApp\r\n{\r\n    class Program\r\n    {\r\n        stati" +
     "c void Main(string[] args)\r\n        {\r\n            Console.WriteLine(\"Welcome Ba" +
     "ck, Admin\");\r\n        }\r\n    }\r\n}";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Member
             // 
