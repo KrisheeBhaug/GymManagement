@@ -169,7 +169,7 @@
             this.EquipmentButton.BackColor = System.Drawing.Color.White;
             this.EquipmentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EquipmentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EquipmentButton.Image = ((System.Drawing.Image)(resources.GetObject("EquipmentButton.Image")));
+            this.EquipmentButton.Image = global::GymAdmin.Properties.Resources.gym;
             this.EquipmentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EquipmentButton.Location = new System.Drawing.Point(35, 389);
             this.EquipmentButton.Name = "EquipmentButton";
@@ -186,7 +186,7 @@
             this.PaymentButton.BackColor = System.Drawing.Color.White;
             this.PaymentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PaymentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaymentButton.Image = ((System.Drawing.Image)(resources.GetObject("PaymentButton.Image")));
+            this.PaymentButton.Image = global::GymAdmin.Properties.Resources.credit_card;
             this.PaymentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PaymentButton.Location = new System.Drawing.Point(35, 480);
             this.PaymentButton.Name = "PaymentButton";

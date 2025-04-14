@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GymMembership
 {
-    public partial class Recipes: Form
+    public partial class LoginMember: Form
     {
-        public Recipes()
+        public LoginMember()
         {
             InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

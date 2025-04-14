@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GymMembership
 {
-    public partial class PersonalisedDiet: Form
+    public partial class MemberRegistration: Form
     {
-        public PersonalisedDiet()
+        public MemberRegistration()
         {
             InitializeComponent();
         }

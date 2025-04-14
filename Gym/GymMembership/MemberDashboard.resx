@@ -117,56 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Welcome to Gym Hive Limites  Member Portal!
+
+We’re excited to support you on your fitness journey. 
+
+Your dashboard provides access to your workout 
+
+plans, health metrics, and billing details. 
+
+Explore your personalized tools and track your 
+
+progress effortlessly. 
+
+Have a productive and energizing session today!</value>
   </data>
-  <data name="gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="group_class" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\group-class.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Crossfit_9667" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crossfit-9667.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1633729" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1633729.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gym_equipment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gym-equipment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_2968326" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2968326.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wp7661160" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wp7661160.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_5416547_crossfit_wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5416547-crossfit-wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wp7661139" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wp7661139.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blog_4_reasons_powerlifting_gym_01_1024x683" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blog-4-reasons-powerlifting-gym-01-1024x683.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="credit_card" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\credit-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="workout_limitless_endurance_gym_colorful_smoke_3440x1440_929" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\workout-limitless-endurance-gym-colorful-smoke-3440x1440-929.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1633741" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1633741.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7067484_finance_calculate_calculator_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7067484_finance_calculate_calculator_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LogoutButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAH6SURBVEhL3ZY9
+        rylRFIZ3ISHoSEQkJCSEWiFCFOIjolLwH1BJ6LRIRKNQ+AMiSkFBQaHW+WiUKvFRKdc9a581M+Yy5zjm
+        5Bb3SVbM++619zsmezZsv9+DXq8HxtiPymAwwGAwgFdgGGAymSCbzT4s5HK5oF6vQ7VahUKhIFapVAKH
+        w8F7FosFLaXMRx+DcrlMEmA0GkEymZSF1Wo1GpWDY+l0mpQyH30MisUiSTmTyQQCgQBfbD6fkyuBfiwW
+        I6XMlyEC2NPpdEhJoJ9IJEgp823I5XLhi3W7XXIk/llIPB4nBbBcLsHr9ZKSUB0SCoVIAd9p6OH2vkdV
+        yGazgdPpROqT2Wz2EKQqRIn1es3nGI1Grt8KmU6n3NPpdE/LYrGAVqvlPXa7/b2Q1WoFHo8H/H7/00ql
+        UuJRFQ6H3wv5jn6/z+f4fD6uVYUMh0PYbrekPmm327IARFUI+sFgkNTjNxBQHXL/Mu52O8jlcqQkVIf8
+        P2fXrxz1Qkiv1yNHAv1MJkNKGR5SqVRIPiKEuN1uiEajEIlE+N2jh/X3Fn4Gw993bG42m3C73ciWOJ/P
+        4oL3ZbVa+dH+CuxwOIBGoxEnm81maDQaskD0nz2uV2H0Ccfjkf8rEQ42LJvNxp85Xo/HY+r8OWLIPdfr
+        FVqtFjidTh6Qz+dp5B0A/gAnZ7PK5w56KwAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>
