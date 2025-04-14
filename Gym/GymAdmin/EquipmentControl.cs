@@ -67,51 +67,83 @@ namespace GymAdmin
         //search equipment
         private void button4_Click(object sender, EventArgs e)
         {
-            string equipmentID = textBox2.Text.Trim();
-            if (string.IsNullOrEmpty(equipmentID))
             {
-                MessageBox.Show("Enter Equipment ID to search.");
-                return;
-            }
+                string equipmentID = textBox2.Text.Trim();
+                string equipmentName = textBox1.Text.Trim();
+                string equipmentCategory = comboBox1.SelectedItem?.ToString();
+                string equipmentMaintenance = comboBox2.SelectedItem?.ToString();
 
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "SELECT * FROM EquipmentData WHERE EquipmentID=@EquipmentID";
+                // Create a base query
+                string query = "SELECT * FROM EquipmentData WHERE 1=1";
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@EquipmentID", equipmentID);
+                // List of parameters to add to the query
+                List<SqlParameter> parameters = new List<SqlParameter>();
 
-                try
+                // Add conditions to the query based on user input
+                if (!string.IsNullOrEmpty(equipmentID))
                 {
-                    conn.Open();
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-
-                   
-                    dataGridView1.DataSource = dt;
-
-                    if (dt.Rows.Count > 0)
-                    {
-                        DataRow row = dt.Rows[0];
-                        textBox1.Text = row["EquipmentName"].ToString();
-                        richTextBox1.Text = row["EquipmentDescription"].ToString();
-                        comboBox1.SelectedItem = row["EquipmentCategory"].ToString();
-                        textBox3.Text = row["EquipmentCondition"].ToString();
-                        textBox4.Text = row["EquipmentQuantity"].ToString();
-                        textBox5.Text = row["EquipmentLocation"].ToString();
-                        comboBox2.SelectedItem = row["EquipmentMaintenance"].ToString();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Equipment not found.");
-                        dataGridView1.DataSource = null; 
-                    }
+                    query += " AND EquipmentID = @EquipmentID";
+                    parameters.Add(new SqlParameter("@EquipmentID", equipmentID));
                 }
-                catch (Exception ex)
+
+                if (!string.IsNullOrEmpty(equipmentName))
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    query += " AND EquipmentName LIKE @EquipmentName";
+                    parameters.Add(new SqlParameter("@EquipmentName", "%" + equipmentName + "%"));
+                }
+
+                if (!string.IsNullOrEmpty(equipmentCategory))
+                {
+                    query += " AND EquipmentCategory = @EquipmentCategory";
+                    parameters.Add(new SqlParameter("@EquipmentCategory", equipmentCategory));
+                }
+
+                if (!string.IsNullOrEmpty(equipmentMaintenance))
+                {
+                    query += " AND EquipmentMaintenance = @EquipmentMaintenance";
+                    parameters.Add(new SqlParameter("@EquipmentMaintenance", equipmentMaintenance));
+                }
+
+                // Connection string
+                string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddRange(parameters.ToArray());
+
+                    try
+                    {
+                        conn.Open();
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+
+                        // Bind the result to the DataGridView
+                        dataGridView1.DataSource = dt;
+
+                        if (dt.Rows.Count > 0)
+                        {
+                            DataRow row = dt.Rows[0];
+                            textBox2.Text = row["EquipmentID"].ToString(); // Show the EquipmentID in the textBox2
+                            textBox1.Text = row["EquipmentName"].ToString();
+                            richTextBox1.Text = row["EquipmentDescription"].ToString();
+                            comboBox1.SelectedItem = row["EquipmentCategory"].ToString();
+                            textBox3.Text = row["EquipmentCondition"].ToString();
+                            textBox4.Text = row["EquipmentQuantity"].ToString();
+                            textBox5.Text = row["EquipmentLocation"].ToString();
+                            comboBox2.SelectedItem = row["EquipmentMaintenance"].ToString();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No matching equipment found.");
+                            dataGridView1.DataSource = null;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
                 }
             }
         }
@@ -168,14 +200,22 @@ namespace GymAdmin
             }
         }
 
-        //Update equipment
+       
 
+        // Update equipment with ID validation
         private void button2_Click(object sender, EventArgs e)
         {
             string equipmentID = textBox2.Text.Trim();
             if (string.IsNullOrEmpty(equipmentID))
             {
                 MessageBox.Show("Please provide Equipment ID to update.");
+                return;
+            }
+
+            // Validate that the EquipmentID is not already used by another record
+            if (IsEquipmentIDExists(equipmentID))
+            {
+                MessageBox.Show("Equipment ID already exists. Please provide a unique ID.");
                 return;
             }
 
@@ -186,7 +226,6 @@ namespace GymAdmin
             string equipmentQuantity = textBox4.Text.Trim();
             string equipmentLocation = textBox5.Text.Trim();
             string equipmentMaintenance = comboBox2.SelectedItem?.ToString();
-
 
             // Validation checks
             if (string.IsNullOrEmpty(equipmentName) || string.IsNullOrEmpty(equipmentCondition) || string.IsNullOrEmpty(equipmentQuantity))
@@ -212,8 +251,6 @@ namespace GymAdmin
                 cmd.Parameters.AddWithValue("@EquipmentLocation", equipmentLocation);
                 cmd.Parameters.AddWithValue("@EquipmentMaintenance", string.IsNullOrEmpty(equipmentMaintenance) ? (object)DBNull.Value : equipmentMaintenance);
 
-
-
                 try
                 {
                     conn.Open();
@@ -226,6 +263,32 @@ namespace GymAdmin
                 }
             }
         }
+
+        // Method to check if the EquipmentID already exists in the database
+        private bool IsEquipmentIDExists(string equipmentID)
+        {
+            string query = "SELECT COUNT(*) FROM EquipmentData WHERE EquipmentID=@EquipmentID";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@EquipmentID", equipmentID);
+
+                try
+                {
+                    conn.Open();
+                    int count = (int)cmd.ExecuteScalar();
+                    return count > 0;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                    return false;
+                }
+            }
+        }
+
 
         //Delete equipment
 

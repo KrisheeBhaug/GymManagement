@@ -48,9 +48,10 @@
             // 
             this.LogAsMember.BackColor = System.Drawing.SystemColors.Info;
             this.LogAsMember.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogAsMember.Location = new System.Drawing.Point(533, 333);
+            this.LogAsMember.Location = new System.Drawing.Point(711, 410);
+            this.LogAsMember.Margin = new System.Windows.Forms.Padding(4);
             this.LogAsMember.Name = "LogAsMember";
-            this.LogAsMember.Size = new System.Drawing.Size(84, 34);
+            this.LogAsMember.Size = new System.Drawing.Size(112, 42);
             this.LogAsMember.TabIndex = 1;
             this.LogAsMember.Text = "MEMBER";
             this.LogAsMember.UseVisualStyleBackColor = false;
@@ -61,9 +62,10 @@
             this.LogAsAdmin.BackColor = System.Drawing.SystemColors.Info;
             this.LogAsAdmin.Font = new System.Drawing.Font("Perpetua Titling MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogAsAdmin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LogAsAdmin.Location = new System.Drawing.Point(394, 333);
+            this.LogAsAdmin.Location = new System.Drawing.Point(525, 410);
+            this.LogAsAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.LogAsAdmin.Name = "LogAsAdmin";
-            this.LogAsAdmin.Size = new System.Drawing.Size(81, 34);
+            this.LogAsAdmin.Size = new System.Drawing.Size(108, 42);
             this.LogAsAdmin.TabIndex = 0;
             this.LogAsAdmin.Text = "ADMIN";
             this.LogAsAdmin.UseVisualStyleBackColor = false;
@@ -77,9 +79,10 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Right;
             this.label3.Font = new System.Drawing.Font("Impact", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(892, 0);
+            this.label3.Location = new System.Drawing.Point(1212, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(276, 45);
+            this.label3.Size = new System.Drawing.Size(345, 56);
             this.label3.TabIndex = 14;
             this.label3.Text = "Gym Hive Limited";
             // 
@@ -89,9 +92,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(17, 40);
+            this.label1.Location = new System.Drawing.Point(23, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(985, 44);
+            this.label1.Size = new System.Drawing.Size(1247, 57);
             this.label1.TabIndex = 15;
             this.label1.Text = "Welcome to Gym Hive Limited—Your Path to a Healthier Lifestyle!";
             // 
@@ -101,9 +105,10 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Info;
-            this.label2.Location = new System.Drawing.Point(273, 160);
+            this.label2.Location = new System.Drawing.Point(364, 197);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(446, 34);
+            this.label2.Size = new System.Drawing.Size(566, 44);
             this.label2.TabIndex = 16;
             this.label2.Text = "Train Hard, Live Strong";
             // 
@@ -113,9 +118,10 @@
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Info;
-            this.label4.Location = new System.Drawing.Point(403, 274);
+            this.label4.Location = new System.Drawing.Point(537, 337);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 19);
+            this.label4.Size = new System.Drawing.Size(247, 26);
             this.label4.TabIndex = 17;
             this.label4.Text = "Please choose an option:";
             // 
@@ -128,10 +134,10 @@
             this.joinUsToolStripMenuItem,
             this.contactUsToolStripMenuItem,
             this.feesAndMembershipsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 613);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 754);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1168, 27);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1557, 34);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -142,14 +148,14 @@
             this.registerToolStripMenuItem});
             this.joinUsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.joinUsToolStripMenuItem.Name = "joinUsToolStripMenuItem";
-            this.joinUsToolStripMenuItem.Size = new System.Drawing.Size(75, 23);
+            this.joinUsToolStripMenuItem.Size = new System.Drawing.Size(95, 30);
             this.joinUsToolStripMenuItem.Text = "Join Us";
             // 
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(177, 30);
             this.registerToolStripMenuItem.Text = "Register";
             // 
             // contactUsToolStripMenuItem
@@ -157,7 +163,7 @@
             this.contactUsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
             this.contactUsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactUsToolStripMenuItem.Name = "contactUsToolStripMenuItem";
-            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(103, 23);
+            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(130, 30);
             this.contactUsToolStripMenuItem.Text = "Contact Us";
             this.contactUsToolStripMenuItem.Click += new System.EventHandler(this.contactUsToolStripMenuItem_Click);
             // 
@@ -166,7 +172,7 @@
             this.feesAndMembershipsToolStripMenuItem.BackColor = System.Drawing.SystemColors.Info;
             this.feesAndMembershipsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.feesAndMembershipsToolStripMenuItem.Name = "feesAndMembershipsToolStripMenuItem";
-            this.feesAndMembershipsToolStripMenuItem.Size = new System.Drawing.Size(116, 23);
+            this.feesAndMembershipsToolStripMenuItem.Size = new System.Drawing.Size(148, 30);
             this.feesAndMembershipsToolStripMenuItem.Text = "Membership";
             this.feesAndMembershipsToolStripMenuItem.Click += new System.EventHandler(this.feesAndMembershipsToolStripMenuItem_Click);
             // 
@@ -179,21 +185,23 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.LogAsAdmin);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(70, 113);
+            this.panel1.Location = new System.Drawing.Point(93, 139);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 429);
+            this.panel1.Size = new System.Drawing.Size(1361, 528);
             this.panel1.TabIndex = 19;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GymAdmin.Properties.Resources.OIP;
-            this.ClientSize = new System.Drawing.Size(1168, 640);
+            this.ClientSize = new System.Drawing.Size(1557, 788);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.menuStrip1.ResumeLayout(false);
