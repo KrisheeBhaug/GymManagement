@@ -35,6 +35,10 @@ namespace GymAdmin
                 MessageBox.Show("Please enter both username and password.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 056858665c17e49a5cd43040fffd6b0b4005e095
             string connectionString = ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -76,6 +80,13 @@ namespace GymAdmin
             // Clear fields
             txtUsername.Clear();
             txtPassword.Clear();
+<<<<<<< HEAD
+            Login_Button.Enabled = true ;
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+=======
 
             // Reset colors
             txtUsername.BackColor = Color.LightYellow;
@@ -88,6 +99,7 @@ namespace GymAdmin
         private void txtUsername_TextChanged(object sender, EventArgs e)
         { 
 
+>>>>>>> 056858665c17e49a5cd43040fffd6b0b4005e095
             // Visual validation: highlight if too short
             if (txtUsername.Text.Length > 0 && txtUsername.Text.Length < 3)
                 txtUsername.BackColor = Color.LightCoral;
@@ -116,6 +128,11 @@ namespace GymAdmin
             // Open Forgot Password form
             ForgotPasswordForm forgotForm = new ForgotPasswordForm();
             forgotForm.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
