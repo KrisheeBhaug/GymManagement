@@ -153,9 +153,81 @@ namespace GymAdmin
             //Category
         }
 
+        //updateclass
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            //updateclass
+            string connectionString = ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                // Validate ClassID
+                if (!int.TryParse(textBox1.Text, out int classId))
+                {
+                    MessageBox.Show("Please enter a valid Class ID (integer).");
+                    return;
+                }
+
+                // Check if class exists
+                SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM Classes WHERE ClassID = @id", conn);
+                checkCmd.Parameters.AddWithValue("@id", classId);
+                int exists = (int)checkCmd.ExecuteScalar();
+                if (exists == 0)
+                {
+                    MessageBox.Show("Class ID does not exist.");
+                    return;
+                }
+
+                // Validate MaxCapacity
+                if (!int.TryParse(textBox5.Text, out int maxCapacity))
+                {
+                    MessageBox.Show("Please enter a valid Max Capacity (integer).");
+                    return;
+                }
+
+                // Get TrainerID from TrainerName
+                SqlCommand trainerCmd = new SqlCommand("SELECT TrainerID FROM TrainerData WHERE TrainerName = @name", conn);
+                trainerCmd.Parameters.AddWithValue("@name", comboBox1.Text);
+                object result = trainerCmd.ExecuteScalar();
+                if (result == null)
+                {
+                    MessageBox.Show("Trainer not found!");
+                    return;
+                }
+                int trainerId = (int)result;
+
+                // Update query
+                SqlCommand updateCmd = new SqlCommand(@"
+            UPDATE Classes 
+            SET ClassName = @name,
+                TrainerID = @trainerId,
+                Duration = @duration,
+                Location = @loc,
+                MaxCapacity = @cap,
+                Category = @cat
+            WHERE ClassID = @id", conn);
+
+                updateCmd.Parameters.AddWithValue("@id", classId);
+                updateCmd.Parameters.AddWithValue("@name", textBox2.Text);
+                updateCmd.Parameters.AddWithValue("@trainerId", trainerId);
+                updateCmd.Parameters.AddWithValue("@duration", comboBox3.Text);
+                updateCmd.Parameters.AddWithValue("@loc", textBox4.Text);
+                updateCmd.Parameters.AddWithValue("@cap", maxCapacity);
+                updateCmd.Parameters.AddWithValue("@cat", comboBox2.Text);
+
+                int rowsAffected = updateCmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Class updated successfully!");
+                }
+                else
+                {
+                    MessageBox.Show("Update failed.");
+                }
+            }
+
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -166,6 +238,11 @@ namespace GymAdmin
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             //SearchClass
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //datagridview
         }
     }
 }
