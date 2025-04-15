@@ -235,9 +235,66 @@ namespace GymAdmin
             //DeletedClass
         }
 
+        //searchClass
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            //SearchClass
+            string connectionString = ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                string query = "";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+
+                bool isIdSearch = int.TryParse(textBox1.Text, out int classId);
+                if (isIdSearch)
+                {
+                    query = @"SELECT c.ClassID, c.ClassName, t.TrainerName, c.Duration, c.Location, c.MaxCapacity, c.Category 
+                      FROM Classes c 
+                      JOIN TrainerData t ON c.TrainerID = t.TrainerID 
+                      WHERE c.ClassID = @value";
+                    cmd.Parameters.AddWithValue("@value", classId);
+                }
+                else if (!string.IsNullOrWhiteSpace(textBox2.Text))
+                {
+                    query = @"SELECT c.ClassID, c.ClassName, t.TrainerName, c.Duration, c.Location, c.MaxCapacity, c.Category 
+                      FROM Classes c 
+                      JOIN TrainerData t ON c.TrainerID = t.TrainerID 
+                      WHERE c.ClassName LIKE @value";
+                    cmd.Parameters.AddWithValue("@value", "%" + textBox2.Text + "%");
+                }
+                else
+                {
+                    MessageBox.Show("Enter either Class ID or Class Name to search.");
+                    return;
+                }
+
+                cmd.CommandText = query;
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                dataGridView1.DataSource = table;
+
+                // If searching by ID and exactly one result found, fill the form fields
+                if (isIdSearch && table.Rows.Count == 1)
+                {
+                    DataRow row = table.Rows[0];
+                    textBox1.Text = row["ClassID"].ToString();
+                    textBox2.Text = row["ClassName"].ToString();
+                    comboBox1.Text = row["TrainerName"].ToString();
+                    comboBox3.Text = row["Duration"].ToString();
+                    textBox4.Text = row["Location"].ToString();
+                    textBox5.Text = row["MaxCapacity"].ToString();
+                    comboBox2.Text = row["Category"].ToString();
+                }
+                else if (table.Rows.Count == 0)
+                {
+                    MessageBox.Show("No class found.");
+                }
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
