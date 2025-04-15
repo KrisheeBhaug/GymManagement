@@ -316,9 +316,18 @@ namespace GymAdmin
                       WHERE c.ClassName LIKE @value";
                     cmd.Parameters.AddWithValue("@value", "%" + textBox2.Text + "%");
                 }
+                else if (!string.IsNullOrWhiteSpace(comboBox1.Text))
+                {
+                    query = @"SELECT c.ClassID, c.ClassName, t.TrainerName, c.Duration, c.Location, c.MaxCapacity, c.Category 
+              FROM Classes c 
+              JOIN TrainerData t ON c.TrainerID = t.TrainerID 
+              WHERE t.TrainerName LIKE @value";
+                    cmd.Parameters.AddWithValue("@value", "%" + comboBox1.Text + "%");
+                }
+
                 else
                 {
-                    MessageBox.Show("Enter either Class ID or Class Name to search.");
+                    MessageBox.Show("Enter either Class ID, Class Name or Trainer to search.");
                     return;
                 }
 
