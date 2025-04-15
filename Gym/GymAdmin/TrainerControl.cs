@@ -88,6 +88,9 @@ namespace GymAdmin
             string trainerEmail = TrainerEmail.Text.Trim();
             DateTime joinDate = dateTimePicker1.Value;
             string availableDays = textBox8.Text.Trim();
+            string trainerCertification = TrainerCertification.Text.Trim();
+            string trainerSpeciality = TrainerSpeciality.Text.Trim();
+
 
             // Validate all required fields
             if (string.IsNullOrEmpty(trainerName))
@@ -113,9 +116,23 @@ namespace GymAdmin
                 MessageBox.Show("The 'Available Days' field should not be empty.");
                 return;
             }
+            if (string.IsNullOrEmpty(trainerCertification))
+            {
+                MessageBox.Show("The 'Trainer Certification' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(trainerSpeciality))
+            {
+                MessageBox.Show("The 'Trainer Speciality' field should not be empty.");
+                return;
+            }
+
+
 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "INSERT INTO TrainerData (TrainerName, TrainerMobileNumber, TrainerEmail, TrainerJoinDate, TrainerAvailableDays) VALUES (@TrainerName, @TrainerMobileNumber, @TrainerEmail, @TrainerJoinDate, @TrainerAvailableDays)";
+            string query = "INSERT INTO TrainerData (TrainerName, TrainerMobileNumber, TrainerEmail, TrainerJoinDate, TrainerAvailableDays, TrainerCertification, TrainerSpeciality) VALUES (@TrainerName, @TrainerMobileNumber, @TrainerEmail, @TrainerJoinDate, @TrainerAvailableDays, @TrainerCertification, @TrainerSpeciality)";
+
 
             try
             {
@@ -129,6 +146,9 @@ namespace GymAdmin
                         command.Parameters.AddWithValue("@TrainerEmail", trainerEmail);
                         command.Parameters.AddWithValue("@TrainerJoinDate", joinDate);
                         command.Parameters.AddWithValue("@TrainerAvailableDays", availableDays);
+                        command.Parameters.AddWithValue("@TrainerCertification", trainerCertification);
+                        command.Parameters.AddWithValue("@TrainerSpeciality", trainerSpeciality);
+
 
                         int result = command.ExecuteNonQuery();
                         if (result > 0)
@@ -239,27 +259,30 @@ namespace GymAdmin
             }
 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "DELETE FROM TrainerData WHERE TrainerID = @TrainerID";
 
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        command.Parameters.AddWithValue("@TrainerID", trainerID);
 
-                        int result = command.ExecuteNonQuery();
-                        if (result > 0)
-                        {
-                            MessageBox.Show("Trainer deleted successfully.");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Failed to delete trainer.");
-                        }
+                    // Step 1: Delete dependent rows in Classes table (based on TrainerID)
+                    string deleteClassesQuery = "DELETE FROM Classes WHERE TrainerID = @TrainerID";
+                    using (SqlCommand deleteClassesCommand = new SqlCommand(deleteClassesQuery, connection))
+                    {
+                        deleteClassesCommand.Parameters.AddWithValue("@TrainerID", trainerID);
+                        deleteClassesCommand.ExecuteNonQuery();
                     }
+
+                    // Step 2: Delete the trainer from the TrainerData table
+                    string deleteTrainerQuery = "DELETE FROM TrainerData WHERE TrainerID = @TrainerID";
+                    using (SqlCommand deleteTrainerCommand = new SqlCommand(deleteTrainerQuery, connection))
+                    {
+                        deleteTrainerCommand.Parameters.AddWithValue("@TrainerID", trainerID);
+                        deleteTrainerCommand.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Trainer and associated classes deleted successfully.");
                 }
             }
             catch (Exception ex)
