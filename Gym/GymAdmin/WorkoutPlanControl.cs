@@ -52,5 +52,10 @@ namespace GymAdmin
             planManager.AddOrUpdatePlan(LoggedInUsername, currentPlan);
             lblStatus.Text = "Workout plan saved successfully!";
         }
+
+        private void txtReps_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

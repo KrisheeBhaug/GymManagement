@@ -49,9 +49,10 @@
             this.lblPlanName.BackColor = System.Drawing.Color.Transparent;
             this.lblPlanName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlanName.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblPlanName.Location = new System.Drawing.Point(288, 86);
+            this.lblPlanName.Location = new System.Drawing.Point(384, 106);
+            this.lblPlanName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlanName.Name = "lblPlanName";
-            this.lblPlanName.Size = new System.Drawing.Size(100, 20);
+            this.lblPlanName.Size = new System.Drawing.Size(124, 25);
             this.lblPlanName.TabIndex = 0;
             this.lblPlanName.Text = "Plan Name:";
             // 
@@ -61,9 +62,10 @@
             this.lblExercise.BackColor = System.Drawing.Color.Transparent;
             this.lblExercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExercise.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblExercise.Location = new System.Drawing.Point(288, 180);
+            this.lblExercise.Location = new System.Drawing.Point(384, 222);
+            this.lblExercise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblExercise.Name = "lblExercise";
-            this.lblExercise.Size = new System.Drawing.Size(133, 20);
+            this.lblExercise.Size = new System.Drawing.Size(164, 25);
             this.lblExercise.TabIndex = 1;
             this.lblExercise.Text = "Exercise Name:";
             // 
@@ -73,9 +75,10 @@
             this.lblSets.BackColor = System.Drawing.Color.Transparent;
             this.lblSets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSets.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblSets.Location = new System.Drawing.Point(288, 264);
+            this.lblSets.Location = new System.Drawing.Point(384, 325);
+            this.lblSets.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSets.Name = "lblSets";
-            this.lblSets.Size = new System.Drawing.Size(51, 20);
+            this.lblSets.Size = new System.Drawing.Size(63, 25);
             this.lblSets.TabIndex = 2;
             this.lblSets.Text = "Sets:";
             // 
@@ -85,9 +88,10 @@
             this.lblReps.BackColor = System.Drawing.Color.Transparent;
             this.lblReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReps.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblReps.Location = new System.Drawing.Point(288, 348);
+            this.lblReps.Location = new System.Drawing.Point(384, 428);
+            this.lblReps.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblReps.Name = "lblReps";
-            this.lblReps.Size = new System.Drawing.Size(56, 20);
+            this.lblReps.Size = new System.Drawing.Size(68, 25);
             this.lblReps.TabIndex = 3;
             this.lblReps.Text = "Reps:";
             // 
@@ -96,9 +100,10 @@
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblStatus.Location = new System.Drawing.Point(373, 486);
+            this.lblStatus.Location = new System.Drawing.Point(497, 598);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(126, 18);
+            this.lblStatus.Size = new System.Drawing.Size(155, 24);
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "(Plan save status)";
             // 
@@ -107,9 +112,10 @@
             this.txtPlanName.BackColor = System.Drawing.SystemColors.Info;
             this.txtPlanName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlanName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtPlanName.Location = new System.Drawing.Point(464, 86);
+            this.txtPlanName.Location = new System.Drawing.Point(619, 106);
+            this.txtPlanName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPlanName.Name = "txtPlanName";
-            this.txtPlanName.Size = new System.Drawing.Size(222, 26);
+            this.txtPlanName.Size = new System.Drawing.Size(295, 30);
             this.txtPlanName.TabIndex = 5;
             // 
             // txtExerciseName
@@ -117,9 +123,10 @@
             this.txtExerciseName.BackColor = System.Drawing.SystemColors.Info;
             this.txtExerciseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExerciseName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtExerciseName.Location = new System.Drawing.Point(464, 180);
+            this.txtExerciseName.Location = new System.Drawing.Point(619, 222);
+            this.txtExerciseName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtExerciseName.Name = "txtExerciseName";
-            this.txtExerciseName.Size = new System.Drawing.Size(222, 26);
+            this.txtExerciseName.Size = new System.Drawing.Size(295, 30);
             this.txtExerciseName.TabIndex = 6;
             // 
             // txtSets
@@ -127,9 +134,10 @@
             this.txtSets.BackColor = System.Drawing.SystemColors.Info;
             this.txtSets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSets.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSets.Location = new System.Drawing.Point(464, 260);
+            this.txtSets.Location = new System.Drawing.Point(619, 320);
+            this.txtSets.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSets.Name = "txtSets";
-            this.txtSets.Size = new System.Drawing.Size(222, 26);
+            this.txtSets.Size = new System.Drawing.Size(295, 30);
             this.txtSets.TabIndex = 7;
             // 
             // txtReps
@@ -137,19 +145,22 @@
             this.txtReps.BackColor = System.Drawing.SystemColors.Info;
             this.txtReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReps.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtReps.Location = new System.Drawing.Point(464, 348);
+            this.txtReps.Location = new System.Drawing.Point(619, 428);
+            this.txtReps.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtReps.Name = "txtReps";
-            this.txtReps.Size = new System.Drawing.Size(222, 26);
+            this.txtReps.Size = new System.Drawing.Size(295, 30);
             this.txtReps.TabIndex = 8;
+            this.txtReps.TextChanged += new System.EventHandler(this.txtReps_TextChanged);
             // 
             // btnAddExercise
             // 
             this.btnAddExercise.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnAddExercise.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddExercise.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnAddExercise.Location = new System.Drawing.Point(371, 411);
+            this.btnAddExercise.Location = new System.Drawing.Point(495, 506);
+            this.btnAddExercise.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddExercise.Name = "btnAddExercise";
-            this.btnAddExercise.Size = new System.Drawing.Size(128, 47);
+            this.btnAddExercise.Size = new System.Drawing.Size(171, 58);
             this.btnAddExercise.TabIndex = 9;
             this.btnAddExercise.Text = "Add Exercise";
             this.btnAddExercise.UseVisualStyleBackColor = false;
@@ -159,9 +170,10 @@
             this.btnSavePlan.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnSavePlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSavePlan.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnSavePlan.Location = new System.Drawing.Point(516, 411);
+            this.btnSavePlan.Location = new System.Drawing.Point(688, 506);
+            this.btnSavePlan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSavePlan.Name = "btnSavePlan";
-            this.btnSavePlan.Size = new System.Drawing.Size(128, 47);
+            this.btnSavePlan.Size = new System.Drawing.Size(171, 58);
             this.btnSavePlan.TabIndex = 10;
             this.btnSavePlan.Text = "Save Plan";
             this.btnSavePlan.UseVisualStyleBackColor = false;
@@ -172,12 +184,13 @@
             this.lbExercises.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExercises.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lbExercises.FormattingEnabled = true;
-            this.lbExercises.ItemHeight = 18;
+            this.lbExercises.ItemHeight = 24;
             this.lbExercises.Items.AddRange(new object[] {
             "(List of added exercises)"});
-            this.lbExercises.Location = new System.Drawing.Point(516, 486);
+            this.lbExercises.Location = new System.Drawing.Point(688, 598);
+            this.lbExercises.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbExercises.Name = "lbExercises";
-            this.lbExercises.Size = new System.Drawing.Size(170, 94);
+            this.lbExercises.Size = new System.Drawing.Size(225, 100);
             this.lbExercises.TabIndex = 11;
             // 
             // lbTitle
@@ -186,15 +199,16 @@
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Impact", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.SystemColors.Info;
-            this.lbTitle.Location = new System.Drawing.Point(415, 15);
+            this.lbTitle.Location = new System.Drawing.Point(553, 18);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(187, 36);
+            this.lbTitle.Size = new System.Drawing.Size(234, 45);
             this.lbTitle.TabIndex = 12;
             this.lbTitle.Text = "Workout Plan";
             // 
             // WorkoutPlanControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::GymAdmin.Properties.Resources._2968326;
@@ -212,8 +226,9 @@
             this.Controls.Add(this.lblSets);
             this.Controls.Add(this.lblExercise);
             this.Controls.Add(this.lblPlanName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "WorkoutPlanControl";
-            this.Size = new System.Drawing.Size(978, 640);
+            this.Size = new System.Drawing.Size(1304, 788);
             this.ResumeLayout(false);
             this.PerformLayout();
 

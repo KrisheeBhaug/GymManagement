@@ -58,5 +58,10 @@ namespace GymAdmin
                 MessageBox.Show("Please fill all fields correctly.\n\n" + ex.Message);
             }
         }
+
+        private void txtHeight_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -52,9 +52,10 @@
             this.lblUsername.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblUsername.Location = new System.Drawing.Point(118, 120);
+            this.lblUsername.Location = new System.Drawing.Point(157, 148);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(96, 20);
+            this.lblUsername.Size = new System.Drawing.Size(117, 25);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username:";
             // 
@@ -64,9 +65,10 @@
             this.lblWeight.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWeight.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblWeight.Location = new System.Drawing.Point(118, 239);
+            this.lblWeight.Location = new System.Drawing.Point(157, 294);
+            this.lblWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWeight.Name = "lblWeight";
-            this.lblWeight.Size = new System.Drawing.Size(106, 20);
+            this.lblWeight.Size = new System.Drawing.Size(132, 25);
             this.lblWeight.TabIndex = 1;
             this.lblWeight.Text = "Weight (kg):";
             // 
@@ -76,9 +78,10 @@
             this.lblHeight.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeight.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblHeight.Location = new System.Drawing.Point(118, 347);
+            this.lblHeight.Location = new System.Drawing.Point(157, 427);
+            this.lblHeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHeight.Name = "lblHeight";
-            this.lblHeight.Size = new System.Drawing.Size(107, 20);
+            this.lblHeight.Size = new System.Drawing.Size(131, 25);
             this.lblHeight.TabIndex = 2;
             this.lblHeight.Text = "Height (cm):";
             // 
@@ -88,9 +91,10 @@
             this.lblAge.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAge.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblAge.Location = new System.Drawing.Point(522, 122);
+            this.lblAge.Location = new System.Drawing.Point(696, 150);
+            this.lblAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(46, 20);
+            this.lblAge.Size = new System.Drawing.Size(58, 25);
             this.lblAge.TabIndex = 3;
             this.lblAge.Text = "Age:";
             // 
@@ -100,9 +104,10 @@
             this.lblGender.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblGender.Location = new System.Drawing.Point(509, 239);
+            this.lblGender.Location = new System.Drawing.Point(679, 294);
+            this.lblGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(74, 20);
+            this.lblGender.Size = new System.Drawing.Size(90, 25);
             this.lblGender.TabIndex = 4;
             this.lblGender.Text = "Gender:";
             // 
@@ -112,9 +117,10 @@
             this.lblActivity.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActivity.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblActivity.Location = new System.Drawing.Point(494, 347);
+            this.lblActivity.Location = new System.Drawing.Point(659, 427);
+            this.lblActivity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblActivity.Name = "lblActivity";
-            this.lblActivity.Size = new System.Drawing.Size(118, 20);
+            this.lblActivity.Size = new System.Drawing.Size(147, 25);
             this.lblActivity.TabIndex = 5;
             this.lblActivity.Text = "Activity Level:";
             // 
@@ -124,9 +130,10 @@
             this.lblResult.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.ForeColor = System.Drawing.SystemColors.Info;
-            this.lblResult.Location = new System.Drawing.Point(459, 530);
+            this.lblResult.Location = new System.Drawing.Point(612, 652);
+            this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 25);
+            this.lblResult.Size = new System.Drawing.Size(0, 31);
             this.lblResult.TabIndex = 6;
             // 
             // txtUsername
@@ -134,9 +141,10 @@
             this.txtUsername.BackColor = System.Drawing.SystemColors.Info;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtUsername.Location = new System.Drawing.Point(268, 122);
+            this.txtUsername.Location = new System.Drawing.Point(357, 150);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(134, 22);
+            this.txtUsername.Size = new System.Drawing.Size(177, 26);
             this.txtUsername.TabIndex = 7;
             // 
             // txtWeight
@@ -144,9 +152,10 @@
             this.txtWeight.BackColor = System.Drawing.SystemColors.Info;
             this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWeight.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtWeight.Location = new System.Drawing.Point(268, 238);
+            this.txtWeight.Location = new System.Drawing.Point(357, 293);
+            this.txtWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(134, 22);
+            this.txtWeight.Size = new System.Drawing.Size(177, 26);
             this.txtWeight.TabIndex = 8;
             // 
             // txtHeight
@@ -154,19 +163,22 @@
             this.txtHeight.BackColor = System.Drawing.SystemColors.Info;
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHeight.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtHeight.Location = new System.Drawing.Point(268, 347);
+            this.txtHeight.Location = new System.Drawing.Point(357, 427);
+            this.txtHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(134, 22);
+            this.txtHeight.Size = new System.Drawing.Size(177, 26);
             this.txtHeight.TabIndex = 9;
+            this.txtHeight.TextChanged += new System.EventHandler(this.txtHeight_TextChanged);
             // 
             // txtAge
             // 
             this.txtAge.BackColor = System.Drawing.SystemColors.Info;
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtAge.Location = new System.Drawing.Point(652, 122);
+            this.txtAge.Location = new System.Drawing.Point(869, 150);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(134, 22);
+            this.txtAge.Size = new System.Drawing.Size(177, 26);
             this.txtAge.TabIndex = 10;
             // 
             // cbGender
@@ -178,9 +190,10 @@
             this.cbGender.Items.AddRange(new object[] {
             " Male",
             " Female"});
-            this.cbGender.Location = new System.Drawing.Point(652, 238);
+            this.cbGender.Location = new System.Drawing.Point(869, 293);
+            this.cbGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbGender.Name = "cbGender";
-            this.cbGender.Size = new System.Drawing.Size(134, 24);
+            this.cbGender.Size = new System.Drawing.Size(177, 28);
             this.cbGender.TabIndex = 11;
             // 
             // cbActivityLevel
@@ -194,9 +207,10 @@
             "Lightly Active",
             "Active",
             "Very Active"});
-            this.cbActivityLevel.Location = new System.Drawing.Point(652, 343);
+            this.cbActivityLevel.Location = new System.Drawing.Point(869, 422);
+            this.cbActivityLevel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbActivityLevel.Name = "cbActivityLevel";
-            this.cbActivityLevel.Size = new System.Drawing.Size(134, 24);
+            this.cbActivityLevel.Size = new System.Drawing.Size(177, 28);
             this.cbActivityLevel.TabIndex = 12;
             // 
             // btnCalculate
@@ -204,9 +218,10 @@
             this.btnCalculate.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculate.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnCalculate.Location = new System.Drawing.Point(403, 430);
+            this.btnCalculate.Location = new System.Drawing.Point(537, 529);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(117, 46);
+            this.btnCalculate.Size = new System.Drawing.Size(156, 57);
             this.btnCalculate.TabIndex = 13;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = false;
@@ -217,12 +232,13 @@
             this.lbHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHistory.FormattingEnabled = true;
-            this.lbHistory.ItemHeight = 16;
+            this.lbHistory.ItemHeight = 20;
             this.lbHistory.Items.AddRange(new object[] {
             "BMI Calculation History"});
-            this.lbHistory.Location = new System.Drawing.Point(695, 530);
+            this.lbHistory.Location = new System.Drawing.Point(927, 652);
+            this.lbHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbHistory.Name = "lbHistory";
-            this.lbHistory.Size = new System.Drawing.Size(250, 80);
+            this.lbHistory.Size = new System.Drawing.Size(333, 80);
             this.lbHistory.TabIndex = 14;
             // 
             // lblTitle
@@ -231,15 +247,16 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Impact", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblTitle.Location = new System.Drawing.Point(344, 37);
+            this.lblTitle.Location = new System.Drawing.Point(459, 46);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(245, 39);
+            this.lblTitle.Size = new System.Drawing.Size(300, 48);
             this.lblTitle.TabIndex = 15;
             this.lblTitle.Text = "BMI CALCULATOR";
             // 
             // BMICalculatorControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::GymAdmin.Properties.Resources.Crossfit_9667;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -259,8 +276,9 @@
             this.Controls.Add(this.lblHeight);
             this.Controls.Add(this.lblWeight);
             this.Controls.Add(this.lblUsername);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BMICalculatorControl";
-            this.Size = new System.Drawing.Size(978, 640);
+            this.Size = new System.Drawing.Size(1304, 788);
             this.ResumeLayout(false);
             this.PerformLayout();
 

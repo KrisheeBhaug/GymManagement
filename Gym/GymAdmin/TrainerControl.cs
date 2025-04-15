@@ -9,49 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
-using System.Collections;
 
 namespace GymAdmin
 {
     public partial class TrainerControl : UserControl
-
-
     {
-        // HashTable to store trainer data temporarily in memory
-        private Hashtable trainerHashTable = new Hashtable();
         public TrainerControl()
         {
             InitializeComponent();
-            LoadTrainerDataToHashTable(); // Load existing trainer data to hash table at startup
-        }
-
-        // Load all trainer data into hash table for fast access
-        private void LoadTrainerDataToHashTable()
-        {
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "SELECT TrainerID, TrainerName FROM TrainerData";
-
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        int id = reader.GetInt32(0);
-                        string name = reader.GetString(1);
-                        if (!trainerHashTable.ContainsKey(id))
-                            trainerHashTable.Add(id, name);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading trainer data: " + ex.Message);
-            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -118,12 +83,6 @@ namespace GymAdmin
         //Add Trainer data
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(TrainerID.Text.Trim(), out int trainerID))
-            {
-                MessageBox.Show("Invalid Trainer ID.");
-                return;
-            }
-
             string trainerName = TrainerName.Text.Trim();
             string mobileNumber = txtMobileNumber.Text.Trim();
             string trainerEmail = TrainerEmail.Text.Trim();
@@ -132,44 +91,68 @@ namespace GymAdmin
             string trainerCertification = TrainerCertification.Text.Trim();
             string trainerSpeciality = TrainerSpeciality.Text.Trim();
 
-            if (string.IsNullOrEmpty(trainerName) || string.IsNullOrEmpty(mobileNumber) ||
-                string.IsNullOrEmpty(trainerEmail) || string.IsNullOrEmpty(availableDays) ||
-                string.IsNullOrEmpty(trainerCertification) || string.IsNullOrEmpty(trainerSpeciality))
+
+            // Validate all required fields
+            if (string.IsNullOrEmpty(trainerName))
             {
-                MessageBox.Show("All fields are required.");
+                MessageBox.Show("The 'Trainer Name' field should not be empty.");
                 return;
             }
 
-            // Check for duplicate Trainer ID in hash table
-            if (trainerHashTable.ContainsKey(trainerID))
+            if (string.IsNullOrEmpty(mobileNumber))
             {
-                MessageBox.Show("Trainer ID already exists.");
+                MessageBox.Show("The 'Mobile Number' field should not be empty.");
                 return;
             }
+
+            if (string.IsNullOrEmpty(trainerEmail))
+            {
+                MessageBox.Show("The 'Email' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(availableDays))
+            {
+                MessageBox.Show("The 'Available Days' field should not be empty.");
+                return;
+            }
+            if (string.IsNullOrEmpty(trainerCertification))
+            {
+                MessageBox.Show("The 'Trainer Certification' field should not be empty.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(trainerSpeciality))
+            {
+                MessageBox.Show("The 'Trainer Speciality' field should not be empty.");
+                return;
+            }
+
+
 
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
-            string query = "INSERT INTO TrainerData (TrainerID, TrainerName, TrainerMobileNumber, TrainerEmail, TrainerJoinDate, TrainerAvailableDays, TrainerCertification, TrainerSpeciality) VALUES (@TrainerID, @TrainerName, @TrainerMobileNumber, @TrainerEmail, @TrainerJoinDate, @TrainerAvailableDays, @TrainerCertification, @TrainerSpeciality)";
+            string query = "INSERT INTO TrainerData (TrainerName, TrainerMobileNumber, TrainerEmail, TrainerJoinDate, TrainerAvailableDays, TrainerCertification, TrainerSpeciality) VALUES (@TrainerName, @TrainerMobileNumber, @TrainerEmail, @TrainerJoinDate, @TrainerAvailableDays, @TrainerCertification, @TrainerSpeciality)";
+
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    conn.Open();
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        cmd.Parameters.AddWithValue("@TrainerID", trainerID);
-                        cmd.Parameters.AddWithValue("@TrainerName", trainerName);
-                        cmd.Parameters.AddWithValue("@TrainerMobileNumber", mobileNumber);
-                        cmd.Parameters.AddWithValue("@TrainerEmail", trainerEmail);
-                        cmd.Parameters.AddWithValue("@TrainerJoinDate", joinDate);
-                        cmd.Parameters.AddWithValue("@TrainerAvailableDays", availableDays);
-                        cmd.Parameters.AddWithValue("@TrainerCertification", trainerCertification);
-                        cmd.Parameters.AddWithValue("@TrainerSpeciality", trainerSpeciality);
+                        command.Parameters.AddWithValue("@TrainerName", trainerName);
+                        command.Parameters.AddWithValue("@TrainerMobileNumber", mobileNumber);
+                        command.Parameters.AddWithValue("@TrainerEmail", trainerEmail);
+                        command.Parameters.AddWithValue("@TrainerJoinDate", joinDate);
+                        command.Parameters.AddWithValue("@TrainerAvailableDays", availableDays);
+                        command.Parameters.AddWithValue("@TrainerCertification", trainerCertification);
+                        command.Parameters.AddWithValue("@TrainerSpeciality", trainerSpeciality);
 
-                        int result = cmd.ExecuteNonQuery();
+
+                        int result = command.ExecuteNonQuery();
                         if (result > 0)
                         {
-                            trainerHashTable.Add(trainerID, trainerName); // Add to hash table
                             MessageBox.Show("Trainer added successfully.");
                         }
                         else
@@ -279,30 +262,24 @@ namespace GymAdmin
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    conn.Open();
+                    connection.Open();
 
-                    // Delete from Classes
-                    string deleteClasses = "DELETE FROM Classes WHERE TrainerID = @TrainerID";
-                    using (SqlCommand cmd = new SqlCommand(deleteClasses, conn))
+                    // Delete dependent rows in Classes table (based on TrainerID)
+                    string deleteClassesQuery = "DELETE FROM Classes WHERE TrainerID = @TrainerID";
+                    using (SqlCommand deleteClassesCommand = new SqlCommand(deleteClassesQuery, connection))
                     {
-                        cmd.Parameters.AddWithValue("@TrainerID", trainerID);
-                        cmd.ExecuteNonQuery();
+                        deleteClassesCommand.Parameters.AddWithValue("@TrainerID", trainerID);
+                        deleteClassesCommand.ExecuteNonQuery();
                     }
 
-                    // Delete from TrainerData
-                    string deleteTrainer = "DELETE FROM TrainerData WHERE TrainerID = @TrainerID";
-                    using (SqlCommand cmd = new SqlCommand(deleteTrainer, conn))
+                    // Delete the trainer from the TrainerData table
+                    string deleteTrainerQuery = "DELETE FROM TrainerData WHERE TrainerID = @TrainerID";
+                    using (SqlCommand deleteTrainerCommand = new SqlCommand(deleteTrainerQuery, connection))
                     {
-                        cmd.Parameters.AddWithValue("@TrainerID", trainerID);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    // Remove from hash table
-                    if (int.TryParse(trainerID, out int id))
-                    {
-                        trainerHashTable.Remove(id);
+                        deleteTrainerCommand.Parameters.AddWithValue("@TrainerID", trainerID);
+                        deleteTrainerCommand.ExecuteNonQuery();
                     }
 
                     MessageBox.Show("Trainer and associated classes deleted successfully.");
