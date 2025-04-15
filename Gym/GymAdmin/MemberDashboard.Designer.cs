@@ -51,7 +51,7 @@
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 788);
             this.panel1.TabIndex = 0;
@@ -84,6 +84,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28082F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(257, 788);
             this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label4
             // 
@@ -105,7 +106,7 @@
             this.BillingButton.Image = global::GymAdmin.Properties.Resources.credit_card;
             this.BillingButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BillingButton.Location = new System.Drawing.Point(47, 591);
-            this.BillingButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BillingButton.Margin = new System.Windows.Forms.Padding(4);
             this.BillingButton.Name = "BillingButton";
             this.BillingButton.Size = new System.Drawing.Size(163, 49);
             this.BillingButton.TabIndex = 4;
@@ -123,7 +124,7 @@
             this.LogoutButton.Image = ((System.Drawing.Image)(resources.GetObject("LogoutButton.Image")));
             this.LogoutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LogoutButton.Location = new System.Drawing.Point(47, 705);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.LogoutButton.Name = "LogoutButton";
             this.LogoutButton.Size = new System.Drawing.Size(163, 49);
             this.LogoutButton.TabIndex = 6;
@@ -142,7 +143,7 @@
             this.ProfileManagementButton.Image = global::GymAdmin.Properties.Resources.group1;
             this.ProfileManagementButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProfileManagementButton.Location = new System.Drawing.Point(36, 135);
-            this.ProfileManagementButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ProfileManagementButton.Margin = new System.Windows.Forms.Padding(4);
             this.ProfileManagementButton.Name = "ProfileManagementButton";
             this.ProfileManagementButton.Size = new System.Drawing.Size(185, 66);
             this.ProfileManagementButton.TabIndex = 1;
@@ -161,7 +162,7 @@
             this.WorkoutPlanButton.Image = global::GymAdmin.Properties.Resources.gym;
             this.WorkoutPlanButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.WorkoutPlanButton.Location = new System.Drawing.Point(47, 248);
-            this.WorkoutPlanButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WorkoutPlanButton.Margin = new System.Windows.Forms.Padding(4);
             this.WorkoutPlanButton.Name = "WorkoutPlanButton";
             this.WorkoutPlanButton.Size = new System.Drawing.Size(163, 63);
             this.WorkoutPlanButton.TabIndex = 2;
@@ -180,7 +181,7 @@
             this.ClassButton.Image = global::GymAdmin.Properties.Resources.group_class;
             this.ClassButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ClassButton.Location = new System.Drawing.Point(53, 367);
-            this.ClassButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClassButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClassButton.Name = "ClassButton";
             this.ClassButton.Size = new System.Drawing.Size(151, 49);
             this.ClassButton.TabIndex = 5;
@@ -198,7 +199,7 @@
             this.CalculatorButton.Image = global::GymAdmin.Properties.Resources._7067484_finance_calculate_calculator_icon;
             this.CalculatorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CalculatorButton.Location = new System.Drawing.Point(35, 471);
-            this.CalculatorButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CalculatorButton.Margin = new System.Windows.Forms.Padding(4);
             this.CalculatorButton.Name = "CalculatorButton";
             this.CalculatorButton.Size = new System.Drawing.Size(187, 65);
             this.CalculatorButton.TabIndex = 3;
@@ -254,7 +255,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MemberDashboard";
             this.Text = "MemberDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

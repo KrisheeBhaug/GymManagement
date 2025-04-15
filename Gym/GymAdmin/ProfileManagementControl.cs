@@ -14,8 +14,14 @@ namespace GymAdmin
 {
     public partial class ProfileManagementControl: UserControl
     {
+        private string currentUserEmail;
         private string connectionString = "Data Source=localhost;Initial Catalog=GymManagementDB;Integrated Security=True";
-        private string currentUserEmail = "example@email.com"; //set this during login
+
+        public ProfileManagementControl(string userEmail)
+        {
+            InitializeComponent();
+            currentUserEmail = userEmail;
+        }
 
         public ProfileManagementControl()
         {
@@ -145,7 +151,7 @@ namespace GymAdmin
             // Save the profile picture first
             SaveProfilePicture(currentUserEmail);
 
-            // Now, update other profile details
+            // Now, update other profile details including preferences
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 string query = @"UPDATE MemberData 

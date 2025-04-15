@@ -83,14 +83,17 @@ namespace GymAdmin
                     conn.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
 
+                    // ✅ Updated section starts here:
                     if (reader.HasRows)
                     {
                         reader.Read();
                         string firstName = reader["MemberFirstName"].ToString();
+                        string email = reader["MemberEmail"].ToString(); // Get logged-in email
+
                         MessageBox.Show($"Welcome, {firstName}!");
 
-                        // Open the MemberDashboard form
-                        MemberDashboard dashboardForm = new MemberDashboard();
+                        // Pass the logged-in email to the dashboard
+                        MemberDashboard dashboardForm = new MemberDashboard(email);
                         dashboardForm.Show();
 
                         this.Hide();
@@ -99,6 +102,7 @@ namespace GymAdmin
                     {
                         MessageBox.Show("Invalid username or password.");
                     }
+                    // ✅ Updated section ends here.
                 }
                 catch (Exception ex)
                 {

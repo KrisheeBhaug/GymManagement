@@ -4,10 +4,16 @@ using System.Windows.Forms;
 namespace GymAdmin
 {
     public partial class MemberDashboard : Form
+
     {
-        public MemberDashboard()
+        private string currentUserEmail;
+
+        public MemberDashboard(string userEmail)
         {
             InitializeComponent();
+            currentUserEmail = userEmail; 
+            ProfileManagementControl profileControl = new ProfileManagementControl(currentUserEmail);
+            LoadControl(profileControl);
         }
 
         // Load controls into panel2
@@ -22,7 +28,7 @@ namespace GymAdmin
         // Profile Management
         private void ProfileManagementButton_Click(object sender, EventArgs e)
         {
-            ProfileManagementControl profileControl = new ProfileManagementControl();
+            ProfileManagementControl profileControl = new ProfileManagementControl(currentUserEmail);
             LoadControl(profileControl);
         }
 
@@ -59,7 +65,13 @@ namespace GymAdmin
             this.Close();
             Application.Restart(); // Will rerun Program.cs
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
-    
+
+
 }
 
