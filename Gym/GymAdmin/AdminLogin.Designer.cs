@@ -87,12 +87,8 @@
             this.Login_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_Button.ForeColor = System.Drawing.SystemColors.Window;
-<<<<<<< HEAD
             this.Login_Button.Location = new System.Drawing.Point(119, 373);
             this.Login_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-=======
-            this.Login_Button.Location = new System.Drawing.Point(77, 303);
->>>>>>> 056858665c17e49a5cd43040fffd6b0b4005e095
             this.Login_Button.Name = "Login_Button";
             this.Login_Button.Size = new System.Drawing.Size(123, 50);
             this.Login_Button.TabIndex = 16;
@@ -208,11 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(553, 540);
-=======
-            this.ClientSize = new System.Drawing.Size(419, 439);
->>>>>>> 056858665c17e49a5cd43040fffd6b0b4005e095
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminLogin";
