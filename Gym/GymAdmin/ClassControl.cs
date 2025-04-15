@@ -230,9 +230,61 @@ namespace GymAdmin
 
         }
 
+        //DeleteClass
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            //DeletedClass
+            string connectionString = ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                // Validate ClassID
+                if (!int.TryParse(textBox1.Text, out int classId))
+                {
+                    MessageBox.Show("Please enter a valid Class ID (integer).");
+                    return;
+                }
+
+                // Check if class exists
+                SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM Classes WHERE ClassID = @id", conn);
+                checkCmd.Parameters.AddWithValue("@id", classId);
+                int exists = (int)checkCmd.ExecuteScalar();
+                if (exists == 0)
+                {
+                    MessageBox.Show("Class ID does not exist.");
+                    return;
+                }
+
+                // Delete query
+                SqlCommand deleteCmd = new SqlCommand("DELETE FROM Classes WHERE ClassID = @id", conn);
+                deleteCmd.Parameters.AddWithValue("@id", classId);
+
+                int rowsAffected = deleteCmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Class deleted successfully!");
+
+                    //clear the input fields after deletion
+                    textBox1.Clear();  
+                    textBox2.Clear();  
+                    comboBox1.SelectedIndex = -1;  
+                    comboBox3.SelectedIndex = -1;  
+                    textBox4.Clear(); 
+                    textBox5.Clear();  
+                    comboBox2.SelectedIndex = -1;  
+
+                    // Explicitly clear comboBox text default values
+                    comboBox3.Text = string.Empty;
+                    comboBox2.Text = string.Empty;
+                }
+                else
+                {
+                    MessageBox.Show("Delete failed.");
+                }
+            }
+
         }
 
         //searchClass
@@ -278,7 +330,6 @@ namespace GymAdmin
 
                 dataGridView1.DataSource = table;
 
-                // If searching by ID and exactly one result found, fill the form fields
                 if (isIdSearch && table.Rows.Count == 1)
                 {
                     DataRow row = table.Rows[0];
