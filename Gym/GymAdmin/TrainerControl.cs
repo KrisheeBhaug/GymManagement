@@ -292,6 +292,29 @@ namespace GymAdmin
                         dataAdapter.Fill(dataTable);
 
                         dataGridView1.DataSource = dataTable;
+
+                        // Populate textboxes if exactly one row is returned
+                        if (dataTable.Rows.Count == 1)
+                        {
+                            DataRow row = dataTable.Rows[0];
+
+                            TrainerID.Text = row["TrainerID"].ToString();
+                            TrainerName.Text = row["TrainerName"].ToString();
+                            txtMobileNumber.Text = row["TrainerMobileNumber"].ToString();
+                            TrainerEmail.Text = row["TrainerEmail"].ToString();
+                            dateTimePicker1.Value = Convert.ToDateTime(row["TrainerJoinDate"]);
+                            textBox8.Text = row["TrainerAvailableDays"].ToString();
+                            TrainerCertification.Text = row["TrainerCertification"].ToString();
+                            TrainerSpeciality.Text = row["TrainerSpeciality"].ToString();
+                        }
+                        else if (dataTable.Rows.Count > 1)
+                        {
+                            MessageBox.Show("Multiple trainers found. Please refine your search to select one.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No trainer found with the given criteria.");
+                        }
                     }
                 }
             }
@@ -301,6 +324,9 @@ namespace GymAdmin
             }
         }
 
-        
+        private void TrainerID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
