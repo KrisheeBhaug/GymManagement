@@ -9,14 +9,49 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace GymAdmin
 {
     public partial class TrainerControl : UserControl
+
+
     {
+        // HashTable to store trainer data temporarily in memory
+        private Hashtable trainerHashTable = new Hashtable();
         public TrainerControl()
         {
             InitializeComponent();
+            LoadTrainerDataToHashTable(); // Load existing trainer data to hash table at startup
+        }
+
+        // Load all trainer data into hash table for fast access
+        private void LoadTrainerDataToHashTable()
+        {
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["GymDBConnection"].ConnectionString;
+            string query = "SELECT TrainerID, TrainerName FROM TrainerData";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        int id = reader.GetInt32(0);
+                        string name = reader.GetString(1);
+                        if (!trainerHashTable.ContainsKey(id))
+                            trainerHashTable.Add(id, name);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading trainer data: " + ex.Message);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -266,7 +301,7 @@ namespace GymAdmin
                 {
                     connection.Open();
 
-                    // Step 1: Delete dependent rows in Classes table (based on TrainerID)
+                    // Delete dependent rows in Classes table (based on TrainerID)
                     string deleteClassesQuery = "DELETE FROM Classes WHERE TrainerID = @TrainerID";
                     using (SqlCommand deleteClassesCommand = new SqlCommand(deleteClassesQuery, connection))
                     {
@@ -274,7 +309,7 @@ namespace GymAdmin
                         deleteClassesCommand.ExecuteNonQuery();
                     }
 
-                    // Step 2: Delete the trainer from the TrainerData table
+                    // Delete the trainer from the TrainerData table
                     string deleteTrainerQuery = "DELETE FROM TrainerData WHERE TrainerID = @TrainerID";
                     using (SqlCommand deleteTrainerCommand = new SqlCommand(deleteTrainerQuery, connection))
                     {
