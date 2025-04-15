@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +50,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.4\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
@@ -55,6 +73,18 @@
     </Compile>
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillingControl.Designer.cs">
+      <DependentUpon>BillingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMICalculatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BMICalculatorControl.Designer.cs">
+      <DependentUpon>BMICalculatorControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassControl.cs">
       <SubType>UserControl</SubType>
@@ -86,17 +116,49 @@
     <Compile Include="ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPasswordMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordMember.Designer.cs">
+      <DependentUpon>ForgotPasswordMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HealthRecord.cs" />
+    <Compile Include="HealthRecordManager.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMember.Designer.cs">
+      <DependentUpon>LoginMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memberClassControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="memberClassControl.Designer.cs">
+      <DependentUpon>memberClassControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemberControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MemberControl.Designer.cs">
       <DependentUpon>MemberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberDashboard.Designer.cs">
+      <DependentUpon>MemberDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberRegistration.Designer.cs">
+      <DependentUpon>MemberRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="Membership.cs">
       <SubType>Form</SubType>
@@ -110,6 +172,12 @@
     <Compile Include="PaymentControl.Designer.cs">
       <DependentUpon>PaymentControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfileManagementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfileManagementControl.Designer.cs">
+      <DependentUpon>ProfileManagementControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrainerControl.cs">
@@ -118,8 +186,22 @@
     <Compile Include="TrainerControl.Designer.cs">
       <DependentUpon>TrainerControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkoutPlan.cs" />
+    <Compile Include="WorkoutPlanControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkoutPlanControl.Designer.cs">
+      <DependentUpon>WorkoutPlanControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutPlanManager.cs" />
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillingControl.resx">
+      <DependentUpon>BillingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMICalculatorControl.resx">
+      <DependentUpon>BMICalculatorControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassControl.resx">
       <DependentUpon>ClassControl.cs</DependentUpon>
@@ -136,17 +218,35 @@
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordMember.resx">
+      <DependentUpon>ForgotPasswordMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginMember.resx">
+      <DependentUpon>LoginMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberClassControl.resx">
+      <DependentUpon>memberClassControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MemberControl.resx">
       <DependentUpon>MemberControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberDashboard.resx">
+      <DependentUpon>MemberDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberRegistration.resx">
+      <DependentUpon>MemberRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Membership.resx">
       <DependentUpon>Membership.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentControl.resx">
       <DependentUpon>PaymentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileManagementControl.resx">
+      <DependentUpon>ProfileManagementControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,6 +260,9 @@
     </Compile>
     <EmbeddedResource Include="TrainerControl.resx">
       <DependentUpon>TrainerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkoutPlanControl.resx">
+      <DependentUpon>WorkoutPlanControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -210,6 +313,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1633729.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1633741.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp7661160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16337411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216490_add_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29683261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5416547-crossfit-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7067484_finance_calculate_calculator_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-4-reasons-powerlifting-gym-01-1024x683.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit-card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crossfit-9667.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-class1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym-equipment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workout-limitless-endurance-gym-colorful-smoke-3440x1440-929.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp7661139.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp76611601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace GymAdmin
 {
     public partial class Home: Form
@@ -21,7 +22,9 @@ namespace GymAdmin
 
         private void LogAsMember_Click(object sender, EventArgs e)
         {
-            
+            LoginMember memberLoginForm = new LoginMember();
+            memberLoginForm.StartPosition = FormStartPosition.CenterScreen;
+            memberLoginForm.Show();
         }
 
         private void contactUsToolStripMenuItem_Click(object sender, EventArgs e)

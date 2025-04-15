@@ -34,7 +34,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.9.0.4\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +51,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BillingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillingControl.Designer.cs">
+      <DependentUpon>BillingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMICalculatorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BMICalculatorControl.Designer.cs">
+      <DependentUpon>BMICalculatorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ForgotPasswordMember.Designer.cs">
+      <DependentUpon>ForgotPasswordMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="HealthRecord.cs" />
+    <Compile Include="HealthRecordManager.cs" />
     <Compile Include="LoginMember.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginMember.Designer.cs">
       <DependentUpon>LoginMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="memberClassControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="memberClassControl.Designer.cs">
+      <DependentUpon>memberClassControl.cs</DependentUpon>
     </Compile>
     <Compile Include="MemberDashboard.cs">
       <SubType>Form</SubType>
@@ -76,16 +101,29 @@
     <Compile Include="ProfileManagementControl.Designer.cs">
       <DependentUpon>ProfileManagementControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkoutPlan.cs" />
     <Compile Include="WorkoutPlanControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="WorkoutPlanControl.Designer.cs">
       <DependentUpon>WorkoutPlanControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkoutPlanManager.cs" />
+    <EmbeddedResource Include="BillingControl.resx">
+      <DependentUpon>BillingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMICalculatorControl.resx">
+      <DependentUpon>BMICalculatorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordMember.resx">
+      <DependentUpon>ForgotPasswordMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginMember.resx">
       <DependentUpon>LoginMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberClassControl.resx">
+      <DependentUpon>memberClassControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberDashboard.resx">
       <DependentUpon>MemberDashboard.cs</DependentUpon>
@@ -103,6 +141,7 @@
     <EmbeddedResource Include="WorkoutPlanControl.resx">
       <DependentUpon>WorkoutPlanControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,9 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1633729.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1633741.jpg" />

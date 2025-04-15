@@ -1,4 +1,4 @@
-﻿namespace GymMembership
+﻿namespace GymAdmin
 {
     partial class LoginMember
     {
@@ -36,10 +36,11 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LoginButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +96,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(73, 251);
+            this.label5.Location = new System.Drawing.Point(66, 279);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 13);
@@ -105,20 +106,21 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(171, 251);
+            this.linkLabel1.Location = new System.Drawing.Point(162, 279);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(59, 13);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Click Here!";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // LoginButton
             // 
             this.LoginButton.BackColor = System.Drawing.SystemColors.Info;
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LoginButton.Location = new System.Drawing.Point(81, 288);
+            this.LoginButton.Location = new System.Drawing.Point(81, 309);
             this.LoginButton.Margin = new System.Windows.Forms.Padding(2);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(84, 37);
@@ -131,36 +133,37 @@
             this.ResetButton.BackColor = System.Drawing.SystemColors.Info;
             this.ResetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResetButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ResetButton.Location = new System.Drawing.Point(191, 288);
+            this.ResetButton.Location = new System.Drawing.Point(191, 309);
             this.ResetButton.Margin = new System.Windows.Forms.Padding(2);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(84, 37);
             this.ResetButton.TabIndex = 7;
             this.ResetButton.Text = "Reset";
             this.ResetButton.UseVisualStyleBackColor = false;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(76, 125);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 20);
-            this.textBox1.TabIndex = 8;
+            this.txtUsername.BackColor = System.Drawing.SystemColors.Info;
+            this.txtUsername.Location = new System.Drawing.Point(76, 125);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(208, 20);
+            this.txtUsername.TabIndex = 8;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
-            this.textBox2.Location = new System.Drawing.Point(79, 216);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Info;
+            this.txtPassword.Location = new System.Drawing.Point(79, 216);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(205, 20);
+            this.txtPassword.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(188, 352);
+            this.label6.Location = new System.Drawing.Point(188, 367);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 10;
@@ -169,12 +172,23 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(270, 352);
+            this.linkLabel2.Location = new System.Drawing.Point(269, 367);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(84, 13);
             this.linkLabel2.TabIndex = 11;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Please Register.\r\n";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // chkShowPassword
+            // 
+            this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.Location = new System.Drawing.Point(204, 241);
+            this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkShowPassword.TabIndex = 21;
+            this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.UseVisualStyleBackColor = true;
             // 
             // LoginMember
             // 
@@ -184,10 +198,11 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(379, 405);
+            this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.linkLabel1);
@@ -215,9 +230,10 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.Button ResetButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.CheckBox chkShowPassword;
     }
 }

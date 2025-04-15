@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GymAdmin;
 
-namespace GymMembership
+namespace GymAdmin
 {
     public partial class MemberRegistration: Form
     {
         public MemberRegistration()
         {
             InitializeComponent();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoginMember loginForm = new LoginMember();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

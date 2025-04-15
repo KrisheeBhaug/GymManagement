@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace GymAdmin
+{
+    public partial class MemberRegistration: Form
+    {
+        public MemberRegistration()
+        {
+            InitializeComponent();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoginMember loginForm = new LoginMember();
+            loginForm.StartPosition = FormStartPosition.CenterScreen;
+            loginForm.Show();
+
+            this.Close();
+        }
+    }
+}

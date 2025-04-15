@@ -1,4 +1,4 @@
-﻿namespace GymMembership
+﻿namespace GymAdmin
 {
     partial class ProfileManagementControl
     {

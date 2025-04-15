@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GymMembership.Properties
+namespace GymAdmin.Properties
 {
 
 

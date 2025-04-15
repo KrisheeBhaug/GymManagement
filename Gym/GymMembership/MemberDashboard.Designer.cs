@@ -1,4 +1,4 @@
-﻿namespace GymMembership
+﻿namespace GymAdmin
 {
     partial class MemberDashboard
     {
@@ -49,6 +49,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
@@ -110,6 +111,7 @@
             this.BillingButton.TabStop = false;
             this.BillingButton.Text = "     Billing Info";
             this.BillingButton.UseVisualStyleBackColor = false;
+            this.BillingButton.Click += new System.EventHandler(this.BillingButton_Click);
             // 
             // LogoutButton
             // 
@@ -127,6 +129,7 @@
             this.LogoutButton.TabStop = false;
             this.LogoutButton.Text = " Logout";
             this.LogoutButton.UseVisualStyleBackColor = false;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // ProfileManagementButton
             // 
@@ -146,6 +149,7 @@
             this.ProfileManagementButton.Text = "Profile Management";
             this.ProfileManagementButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ProfileManagementButton.UseVisualStyleBackColor = false;
+            this.ProfileManagementButton.Click += new System.EventHandler(this.ProfileManagementButton_Click);
             // 
             // WorkoutPlanButton
             // 
@@ -163,6 +167,7 @@
             this.WorkoutPlanButton.TabStop = false;
             this.WorkoutPlanButton.Text = "       Workout Plan";
             this.WorkoutPlanButton.UseVisualStyleBackColor = false;
+            this.WorkoutPlanButton.Click += new System.EventHandler(this.WorkoutPlanButton_Click);
             // 
             // ClassButton
             // 
@@ -181,6 +186,7 @@
             this.ClassButton.TabStop = false;
             this.ClassButton.Text = "   Class";
             this.ClassButton.UseVisualStyleBackColor = false;
+            this.ClassButton.Click += new System.EventHandler(this.ClassButton_Click);
             // 
             // CalculatorButton
             // 
@@ -196,8 +202,9 @@
             this.CalculatorButton.Size = new System.Drawing.Size(187, 65);
             this.CalculatorButton.TabIndex = 3;
             this.CalculatorButton.TabStop = false;
-            this.CalculatorButton.Text = "     Calorie/BMI \r\n     Calculator";
+            this.CalculatorButton.Text = "     BMI \r\n   Calculator";
             this.CalculatorButton.UseVisualStyleBackColor = false;
+            this.CalculatorButton.Click += new System.EventHandler(this.CalculatorButton_Click);
             // 
             // label3
             // 
@@ -218,20 +225,21 @@
             this.panel2.BackgroundImage = global::GymMembership.Properties.Resources._5416547_crossfit_wallpaper;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(263, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1295, 788);
+            this.panel2.Size = new System.Drawing.Size(1168, 640);
             this.panel2.TabIndex = 15;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(156, 170);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(302, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(946, 507);
             this.label1.TabIndex = 2;
@@ -243,11 +251,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1557, 788);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.panel2);
             this.Name = "MemberDashboard";
             this.Text = "MemberDashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
