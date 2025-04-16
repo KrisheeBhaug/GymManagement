@@ -1,0 +1,248 @@
+{AdminLogin.cs}
+CREATE TABLE AdminData (
+    AdminID INT IDENTITY(1,1) PRIMARY KEY,   
+    AdminName NVARCHAR(100) NOT NULL,         
+    AdminEmail NVARCHAR(100) NOT NULL,        
+    AdminDOB DATE,                           
+    AdminPassword NVARCHAR(255) NOT NULL      
+);
+
+
+SET IDENTITY_INSERT AdminData ON;
+
+INSERT INTO AdminData (AdminID, AdminName, AdminEmail, AdminDOB, AdminPassword)
+VALUES
+(98377, 'Krishee', 'k@gmail.com', '2003-02-12', 'passwordk1'),
+(45677, 'Aba', 'aba@gmail.com', '2005-05-03', 'passworda2'),
+(47874, 'Leynah', 'Ley@gmail.com', '2004-05-04', 'passwordl7'),
+(1245, 'Kritisha', 'kkt@gmail.com', '1999-03-03', 'passwordbss');
+
+SET IDENTITY_INSERT AdminData OFF;
+
+{MemberControl.cs}
+(Memberdata credentials with member)
+
+CREATE TABLE MemberData (
+    MemberFirstName VARCHAR(50) NOT NULL,
+    MemberSurname VARCHAR(50) NOT NULL,
+    MemberGender VARCHAR(10) NOT NULL CHECK (MemberGender IN ('Male', 'Female')),
+    MemberDOB DATE NOT NULL,
+    MemberJoinDate DATE NOT NULL,
+    MemberGymTime TIME,
+    MemberAddress VARCHAR(255),
+    MemberEmail VARCHAR(100) UNIQUE NOT NULL,
+    MemberMobile VARCHAR(15) UNIQUE NOT NULL,
+    MemberMembershipType VARCHAR(50),
+    MemberPassword VARCHAR(50) NOT NULL,
+    EmergencyContactName VARCHAR(100),
+    EmergencyContactNumber VARCHAR(15),
+    FitnessGoals TEXT,
+    PersonalPreferences TEXT,
+    ProfilePicture VARBINARY(MAX) -- To store image as binary
+);
+
+INSERT INTO MemberData (
+    MemberFirstName, MemberSurname, MemberGender, MemberDOB, MemberJoinDate, MemberGymTime,
+    MemberAddress, MemberEmail, MemberMobile, MemberMembershipType, MemberPassword,
+    EmergencyContactName, EmergencyContactNumber, FitnessGoals, PersonalPreferences, ProfilePicture
+)
+VALUES
+('Krishee', 'Kushmandaa', 'Female', '2003-02-12', '2025-01-10', '07:00:00',
+ '14 Orchid Ave, Quatre Bornes', 'krishee@gmail.com', '57689234', 'Premium', 'PassKri123',
+ 'Nalini Kushmandaa', '59001234', 'Weight Loss, Cardio', 'Prefers morning workouts', NULL),
+
+('Aba', 'Ssenyange', 'Female', '2005-05-03', '2025-02-05', '18:00:00',
+ '25 Phoenix Rise, Vacoas', 'aba@gmail.com', '58329410', 'Student', 'AbaPass45',
+ 'Miriam Ssenyange', '59876543', 'Strength training', 'No loud music', NULL),
+
+('Leynah', 'Veerapen', 'Female', '2004-05-04', '2025-03-12', '08:00:00',
+ '9 Tamarind Road, Curepipe', 'leynah@gmail.com', '59431082', 'Trial', 'Ley456Pass',
+ 'Ravi Veerapen', '59112233', 'General fitness', 'Prefers female trainers', NULL),
+
+('Kritisha', 'Sunjhoreea', 'Female', '1999-03-03', '2025-01-25', '17:00:00',
+ '7 Hibiscus Lane, Moka', 'kritisha@gmail.com', '57983210', 'Standard', 'Kriti789!',
+ 'Vinita Sunjhoreea', '57889900', 'Endurance & flexibility', 'Yoga lover', NULL),
+
+('David', 'Nguyen', 'Male', '1998-08-14', '2025-02-20', '09:00:00',
+ '31 Mango Street, Beau Bassin', 'david@gmail.com', '57129483', 'Basic', 'Nguy3n!@#',
+ 'Minh Nguyen', '59001122', 'Muscle gain', 'Does not like crowded areas', NULL),
+
+('Rayen', 'Lallchand', 'Male', '2002-10-30', '2025-03-05', '19:00:00',
+ '11 Flamboyant Blvd, Rose Hill', 'rayen@gmail.com', '58910234', 'Family', 'Rayen@Gym12',
+ 'Rishi Lallchand', '59999888', 'Overall wellness', 'Likes outdoor activities', NULL),
+
+('Melissa', 'Ramsamy', 'Female', '2001-07-22', '2025-02-15', '06:00:00',
+ '21 Coral Drive, Port Louis', 'melissa@gmail.com', '59013456', 'Premium', 'Mel456#Pass',
+ 'Sharon Ramsamy', '59223344', 'Toning & balance', 'No machines, prefers free weights', NULL),
+
+('Kevin', 'Appadoo', 'Male', '2000-09-10', '2025-03-01', '20:00:00',
+ '4 Garden View, Quatre Bornes', 'kevin@appadoo.com', '59982345', 'Standard', 'Kev!2025',
+ 'Jean Appadoo', '58887766', 'Strength & agility', 'Evening sessions only', NULL),
+
+('Nita', 'Sewraj', 'Female', '1997-11-19', '2025-01-30', '10:00:00',
+ '6 Banana Lane, Moka', 'nita@gmail.com', '57643210', 'Trial', 'NitaTrial22',
+ 'Reena Sewraj', '59445566', 'Rehabilitation', 'Needs one-on-one guidance', NULL),
+
+('Sameer', 'Hossen', 'Male', '2003-04-25', '2025-03-07', '11:00:00',
+ '88 Tamarind Heights, Curepipe', 'sameer.h@gmail.com', '58002345', 'Student', 'SamStu123!',
+ 'Mohammed Hossen', '59334455', 'Cardio & stamina', 'Loves running on treadmill', NULL);
+
+
+INSERT INTO MemberData (MemberFirstName, MemberSurname, MemberGender, MemberDOB, MemberJoinDate,MemberGymTime, MemberAddress, MemberEmail, MemberMobile, MemberMembershipType
+)
+VALUES 
+('Krishee', 'Kushmandaa', 'Female', '2003-02-12', '2025-01-10', '07:00:00', '14 Orchid Ave, Quatre Bornes', 'k@gmail.com', '57689234', 'Premium'),
+('Aba', 'Ssenyange', 'Female', '2005-05-03', '2025-02-05', '18:00:00', '25 Phoenix Rise, Vacoas', 'aba@gmail.com', '58329410', 'Student'),
+('Leynah', 'Veerapen', 'Female', '2004-05-04', '2025-03-12', '08:00:00', '9 Tamarind Road, Curepipe', 'Ley@gmail.com', '59431082', 'Trial'),
+('Kritisha', 'Sunjhoreea', 'Female', '1999-03-03', '2025-01-25', '17:00:00', '7 Hibiscus Lane, Moka', 'kkt@gmail.com', '57983210', 'Standard'),
+('David', 'Nguyen', 'Male', '1998-08-14', '2025-02-20', '09:00:00', '31 Mango Street, Beau Bassin', 'david@gmail.com', '57129483', 'Basic'),
+('Rayen', 'Lallchand', 'Male', '2002-10-30', '2025-03-05', '19:00:00', '11 Flamboyant Blvd, Rose Hill', 'rayen@gmail.com', '58910234', 'Family');
+
+{TrainerControl.cs}
+CREATE TABLE TrainerData (
+    TrainerID INT IDENTITY(1,1) PRIMARY KEY, -- Auto-incrementing ID
+    TrainerName NVARCHAR(100) NOT NULL,
+    TrainerMobileNumber NVARCHAR(20) NOT NULL,
+    TrainerEmail NVARCHAR(100) NOT NULL,
+    TrainerCertification NVARCHAR(100),
+    TrainerSpeciality NVARCHAR(100),
+    TrainerJoinDate DATE,
+    TrainerAvailableDays NVARCHAR(200)
+);
+
+INSERT INTO TrainerData 
+(TrainerName, TrainerMobileNumber, TrainerEmail, TrainerCertification, TrainerSpeciality, TrainerJoinDate, TrainerAvailableDays)
+VALUES 
+('Alex Jordan', '51234567', 'alex@gmail.com', 'ACE', 'Strength Training', '2023-01-10', 'Monday, Wednesday, Friday'),
+('Bella Smith', '52345678', 'bella@yahoo.com', 'NASM', 'Cardio', '2022-06-15', 'Tuesday, Thursday'),
+('Carlos Diaz', '53456789', 'carlos@hotmail.com', 'ISSA', 'CrossFit', '2021-09-01', 'Monday to Friday'),
+('Diana Lee', '54567890', 'diana@gmail.com', 'NSCA', 'Yoga', '2020-04-22', 'Weekends'),
+('Ethan Kim', '55678901', 'ethan@gmail.com', 'CPT', 'HIIT', '2022-12-01', 'Monday, Wednesday'),
+('Fiona Ray', '56789012', 'fiona@yahoo.com', 'ACSM', 'Zumba', '2021-08-08', 'Friday, Saturday'),
+('George West', '57890123', 'george@gmail.com', 'NCSF', 'Pilates', '2023-02-14', 'Tuesday, Thursday, Sunday');
+
+{EquipmentControl.cs}
+
+CREATE TABLE EquipmentData (
+    EquipmentID INT PRIMARY KEY IDENTITY(1,1),
+    EquipmentName NVARCHAR(100) NOT NULL,      
+    EquipmentDescription NVARCHAR(255),        
+    EquipmentCategory NVARCHAR(100),            
+    EquipmentCondition NVARCHAR(50),            
+    EquipmentQuantity INT NOT NULL,             
+    EquipmentLocation NVARCHAR(100),          
+    EquipmentMaintenance NVARCHAR(255)          
+);
+
+INSERT INTO EquipmentData 
+(EquipmentName, EquipmentDescription, EquipmentCategory, EquipmentCondition, EquipmentQuantity, EquipmentLocation, EquipmentMaintenance)
+VALUES 
+('Treadmill', 'Motorized treadmill with speed settings', 'Cardio', 'Good', 5, 'Room A1', 'Last serviced on 2024-12-15'),
+('Dumbbells Set', 'Set of dumbbells ranging from 2kg to 20kg', 'Strength', 'Excellent', 20, 'Weight Room', 'Wiped and checked weekly'),
+('Bench Press', 'Flat bench with barbell rack', 'Strength', 'Good', 2, 'Room B2', 'Checked monthly'),
+('Stationary Bike', 'Indoor cycling equipment', 'Cardio', 'Fair', 4, 'Room A2', 'Serviced on 2025-01-10'),
+('Yoga Mats', 'Non-slip mats for yoga and stretching', 'Flexibility', 'New', 15, 'Storage', 'Replace every 6 months'),
+('Rowing Machine', 'Water resistance rowing equipment', 'Cardio', 'Excellent', 3, 'Room A3', 'Last serviced on 2024-11-20'),
+('Kettlebells', 'Cast iron kettlebells from 8kg to 24kg', 'Strength', 'Good', 12, 'Weight Room', 'Cleaned weekly'),
+('Resistance Bands', 'Various resistance levels', 'Strength/Flexibility', 'Good', 25, 'Storage', 'Inspected every 2 weeks'),
+('Pull-Up Bar', 'Mounted bar for upper body training', 'Strength', 'Excellent', 3, 'Room B3', 'Checked monthly'),
+('Leg Press Machine', 'Adjustable seated leg press machine', 'Strength', 'Fair', 1, 'Room B1', 'Maintenance scheduled for 2025-05-01');
+
+
+
+{ClassControl.cs}
+CREATE TABLE Classes
+(
+    [ClassID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [ClassName] NVARCHAR(100) NOT NULL,
+    [Trainer] NVARCHAR(100) NOT NULL,
+    [Duration] NVARCHAR(50) NOT NULL,
+    [Location] NVARCHAR(100) NOT NULL,
+    [MaxCapacity] INT NOT NULL,
+    [Category] NVARCHAR(50) NOT NULL
+);
+
+ALTER TABLE Classes
+ADD TrainerID INT;
+
+-- Create a foreign key constraint to link Classes with TrainerData
+ALTER TABLE Classes
+ADD CONSTRAINT FK_Classes_TrainerData
+FOREIGN KEY (TrainerID) REFERENCES TrainerData(TrainerID);
+
+ALTER TABLE Classes
+DROP COLUMN Trainer;
+
+INSERT INTO Classes (ClassName, Duration, Location, MaxCapacity, Category, TrainerID)
+VALUES
+('Strength Training', '30 minutes', 'Room A', 20, 'Fitness', 1),   -- Alex Jordan
+('Cardio', '45 minutes', 'Room B', 15, 'Fitness', 2),              -- Bella Smith
+('Yoga', '120 minutes', 'Room D', 25, 'Wellness', 4),              -- Diana Lee
+('HIIT', '30 minutes', 'Room E', 20, 'Fitness', 5),                -- Ethan Kim
+('Zumba', '60 minutes', 'Room F', 30, 'Dance', 6),                 -- Fiona Ray
+('Pilates', '120 minutes', 'Room G', 20, 'Wellness', 7),           -- George West
+('Functional Training', '60 minutes', 'Room H', 25, 'Fitness', 9), -- Tina Rugs
+('Core Workout', '45 minutes', 'Room I', 20, 'Fitness', 10),       -- Dina Fritz
+('Stretching', '30 minutes', 'Room J', 15, 'Wellness', 11),        -- Pia
+('Bodyweight Circuit', '60 minutes', 'Room K', 20, 'Fitness', 12), -- Daksh
+('Aerobics', '50 minutes', 'Room L', 18, 'Dance', 13);             -- Tia
+
+
+-- Check column definition
+EXEC sp_help 'Classes';
+
+
+(Classes in member used same table added column status and Foreign key trainerId)
+
+(Add col boolean status)
+ALTER TABLE Classes
+ADD ClassStatus VARCHAR(20) NOT NULL DEFAULT 'NotJoint';
+
+
+-- Step 1: Add the TrainerID column to the Classes table
+ALTER TABLE Classes
+ADD TrainerID INT;
+
+-- Step 2: Add the foreign key constraint
+ALTER TABLE Classes
+ADD CONSTRAINT FK_Classes_Trainer
+FOREIGN KEY (TrainerID) REFERENCES TrainerData(TrainerID);
+
+{PaymentControl.cs}
+PaymentData
+
+CREATE TABLE PaymentData (
+    PaymentID INT IDENTITY(1,1) PRIMARY KEY,
+    MemberEmail VARCHAR(100) NOT NULL,
+    PaymentFullName VARCHAR(100) NOT NULL,
+    PaymentMembership VARCHAR(50) NOT NULL,
+    PaymentMethod VARCHAR(50) NOT NULL,
+    PaymentAmount DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATE NOT NULL DEFAULT GETDATE(),
+    FOREIGN KEY (MemberEmail) REFERENCES MemberData(MemberEmail)
+);
+
+{BillingControl.cs}
+CREATE TABLE BillingData (
+    BillingID INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    MembershipType NVARCHAR(50) NOT NULL,
+    PaymentMethod NVARCHAR(50) NOT NULL,
+    PaymentID NVARCHAR(50) NOT NULL UNIQUE,
+    Amount DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE()
+);
+
+
+**YOU CAN ADD HERE KRISHEE**
+{Contact us}
+CREATE TABLE ContactMessages (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    FullName NVARCHAR(100),
+    Email NVARCHAR(100),
+    Message NVARCHAR(MAX),
+    SubmissionDate DATETIME DEFAULT GETDATE()
+);
+
+
+
