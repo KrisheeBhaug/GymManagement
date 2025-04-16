@@ -1,0 +1,720 @@
+Meeting 1 - 27 January 2025
+------------------------------------------------------------
+Agenda:
+- SQL database design and setup
+- Assign backend tasks for PaymentControl and MemberControl
+- Member Registration module review
+
+Discussion Summary:
+- Began writing the final project report.
+- Tested MST insert and delete methods.
+- Resolved a bug in the MemberControl add functionality.
+
+Tasks Assigned:
+- Test registration form validations - Assigned to Krishee
+- Connect BillingControl to SQL - Assigned to Krishee
+- Fix MemberControl search bug - Assigned to Leynah
+
+Next Meeting Scheduled: 29 January 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 2 - 29 January 2025
+------------------------------------------------------------
+Agenda:
+- Member Registration module review
+- Bug fixes in ForgotPassword component
+- Unit testing preparation and allocation
+
+Discussion Summary:
+- Tested MST insert and delete methods.
+- Tested integration between BMICalculator and HealthRecord.
+- Team discussed issues encountered with DataGridView display.
+
+Tasks Assigned:
+- Implement MST insert function - Assigned to Krishee
+- Connect BillingControl to SQL - Assigned to Aba
+- Fix MemberControl search bug - Assigned to Leynah
+
+Next Meeting Scheduled: 31 January 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 3 - 31 January 2025
+------------------------------------------------------------
+Agenda:
+- Unit testing preparation and allocation
+- Testing MST insert/search functions
+- Sprint planning and task division
+
+Discussion Summary:
+- Finalized registration validation logic.
+- Planned UI layout and aesthetics for Home.cs.
+- Worked on connecting SQL Server tables to Payment module.
+
+Tasks Assigned:
+- Implement MST insert function - Assigned to Krishee
+- Refactor ForgotPasswordMember.cs - Assigned to Krishee
+- Design report structure - Assigned to Kritisha
+
+Next Meeting Scheduled: 02 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 4 - 02 February 2025
+------------------------------------------------------------
+Agenda:
+- Debugging Binary-Search Tree integration
+- Code documentation and commenting
+- Unit testing preparation and allocation
+
+Discussion Summary:
+- Began writing the final project report.
+- Tested integration between BMICalculator and HealthRecord.
+- Finalized registration validation logic.
+
+Tasks Assigned:
+- Design report structure - Assigned to Kritisha
+- Test registration form validations - Assigned to Kritisha
+- Connect BillingControl to SQL - Assigned to Aba
+
+Next Meeting Scheduled: 04 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 5 - 04 February 2025
+------------------------------------------------------------
+Agenda:
+- Member Registration module review
+- Sprint planning and task division
+- Weekly status updates and bug review
+
+Discussion Summary:
+- Reviewed code for STL/LINQ compliance.
+- Planned UI layout and aesthetics for Home.cs.
+- Finalized registration validation logic.
+
+Tasks Assigned:
+- Implement MST insert function - Assigned to Krishee
+- Design TrainerControl UI - Assigned to Leynah
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+
+Next Meeting Scheduled: 06 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 6 - 06 February 2025
+------------------------------------------------------------
+Agenda:
+- Weekly status updates and bug review
+- Payment system validation and logic implementation
+- Assign backend tasks for PaymentControl and MemberControl
+
+Discussion Summary:
+- Resolved a bug in the MemberControl add functionality.
+- Tested integration between BMICalculator and HealthRecord.
+- Planned UI layout and aesthetics for Home.cs.
+
+Tasks Assigned:
+- Test registration form validations - Assigned to Krishee
+- Fix MemberControl search bug - Assigned to Leynah
+- Refactor ForgotPasswordMember.cs - Assigned to Krishee
+
+Next Meeting Scheduled: 08 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 7 - 08 February 2025
+------------------------------------------------------------
+Agenda:
+- Payment system validation and logic implementation
+- Unit testing preparation and allocation
+- Testing MST insert/search functions
+
+Discussion Summary:
+- Team discussed issues encountered with DataGridView display.
+- Each member gave updates on their modules.
+- Tested integration between BMICalculator and HealthRecord.
+
+Tasks Assigned:
+- Fix MemberControl search bug - Assigned to Leynah
+- Implement MST insert function - Assigned to Aba
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+
+Next Meeting Scheduled: 10 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 8 - 10 February 2025
+------------------------------------------------------------
+Agenda:
+- SQL database design and setup
+- Linking SQL data to BillingControl
+- Member Registration module review
+
+Discussion Summary:
+- Tested MST insert and delete methods.
+- Reviewed code for STL/LINQ compliance.
+- Planned UI layout and aesthetics for Home.cs.
+
+Tasks Assigned:
+- Design report structure - Assigned to Aba
+- Connect BillingControl to SQL - Assigned to Kritisha
+- Test registration form validations - Assigned to Krishee
+
+Next Meeting Scheduled: 12 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 9 - 12 February 2025
+------------------------------------------------------------
+Agenda:
+- Sprint planning and task division
+- Debugging Binary-Search Tree integration
+- Finalizing Member Dashboard functionality
+
+Discussion Summary:
+- Finalized registration validation logic.
+- Worked on connecting SQL Server tables to Payment module.
+- Planned UI layout and aesthetics for Home.cs.
+
+Tasks Assigned:
+- Design report structure - Assigned to Aba
+- Fix MemberControl search bug - Assigned to Leynah
+- Implement MST insert function - Assigned to Krishee
+
+Next Meeting Scheduled: 14 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 10 - 14 February 2025
+------------------------------------------------------------
+Agenda:
+- Payment system validation and logic implementation
+- SQL database design and setup
+- Bug fixes in ForgotPassword component
+
+Discussion Summary:
+- Tested MST insert and delete methods.
+- Planned UI layout and aesthetics for Home.cs.
+- Finalized registration validation logic.
+
+Tasks Assigned:
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+- Fix MemberControl search bug - Assigned to Leynah
+- Test registration form validations - Assigned to Kritisha
+
+Next Meeting Scheduled: 16 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 11 - 16 February 2025
+------------------------------------------------------------
+Agenda:
+- UI refinement for AdminDashboard
+- Debugging Binary-Search Tree integration
+- SQL database design and setup
+
+Discussion Summary:
+- Began writing the final project report.
+- Reviewed code for STL/LINQ compliance.
+- Worked on connecting SQL Server tables to Payment module.
+
+Tasks Assigned:
+- Fix MemberControl search bug - Assigned to Aba
+- Test registration form validations - Assigned to Kritisha
+- Design TrainerControl UI - Assigned to Leynah
+
+Next Meeting Scheduled: 18 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 12 - 18 February 2025
+------------------------------------------------------------
+Agenda:
+- Unit testing preparation and allocation
+- Payment system validation and logic implementation
+- Bug fixes in ForgotPassword component
+
+Discussion Summary:
+- Worked on connecting SQL Server tables to Payment module.
+- Tested MST insert and delete methods.
+- Tested integration between BMICalculator and HealthRecord.
+
+Tasks Assigned:
+- Design TrainerControl UI - Assigned to Aba
+- Implement MST insert function - Assigned to Krishee
+- Test registration form validations - Assigned to Kritisha
+
+Next Meeting Scheduled: 20 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 13 - 20 February 2025
+------------------------------------------------------------
+Agenda:
+- Bug fixes in ForgotPassword component
+- Class scheduling logic discussion
+- Front-end DataGridView binding issues
+
+Discussion Summary:
+- Began writing the final project report.
+- Tested MST insert and delete methods.
+- Resolved a bug in the MemberControl add functionality.
+
+Tasks Assigned:
+- Connect BillingControl to SQL - Assigned to Kritisha
+- Fix MemberControl search bug - Assigned to Leynah
+- Design report structure - Assigned to Aba
+
+Next Meeting Scheduled: 22 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 14 - 22 February 2025
+------------------------------------------------------------
+Agenda:
+- Payment system validation and logic implementation
+- UI refinement for AdminDashboard
+- Unit testing preparation and allocation
+
+Discussion Summary:
+- Resolved a bug in the MemberControl add functionality.
+- Finalized registration validation logic.
+- Each member gave updates on their modules.
+
+Tasks Assigned:
+- Write documentation for PaymentControl - Assigned to Krishee
+- Test registration form validations - Assigned to Kritisha
+- Design report structure - Assigned to Aba
+
+Next Meeting Scheduled: 24 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 15 - 24 February 2025
+------------------------------------------------------------
+Agenda:
+- AdminLogin backend validation
+- Class scheduling logic discussion
+- Finalizing Member Dashboard functionality
+
+Discussion Summary:
+- Worked on connecting SQL Server tables to Payment module.
+- Tested MST insert and delete methods.
+- Resolved a bug in the MemberControl add functionality.
+
+Tasks Assigned:
+- Write documentation for PaymentControl - Assigned to Krishee
+- Connect BillingControl to SQL - Assigned to Kritisha
+- Fix MemberControl search bug - Assigned to Leynah
+
+Next Meeting Scheduled: 26 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 16 - 26 February 2025
+------------------------------------------------------------
+Agenda:
+- Unit testing preparation and allocation
+- Sprint planning and task division
+- Payment system validation and logic implementation
+
+Discussion Summary:
+- Began writing the final project report.
+- Tested MST insert and delete methods.
+- Resolved a bug in the MemberControl add functionality.
+
+Tasks Assigned:
+- Implement MST insert function - Assigned to Krishee
+- Design TrainerControl UI - Assigned to Aba
+- Write documentation for PaymentControl - Assigned to Krishee
+
+Next Meeting Scheduled: 28 February 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 17 - 28 February 2025
+------------------------------------------------------------
+Agenda:
+- Bug fixes in ForgotPassword component
+- SQL database design and setup
+- Class scheduling logic discussion
+
+Discussion Summary:
+- Finalized registration validation logic.
+- Reviewed code for STL/LINQ compliance.
+- Began writing the final project report.
+
+Tasks Assigned:
+- Design TrainerControl UI - Assigned to Aba
+- Implement MST insert function - Assigned to Krishee
+- Fix MemberControl search bug - Assigned to Leynah
+
+Next Meeting Scheduled: 02 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 18 - 02 March 2025
+------------------------------------------------------------
+Agenda:
+- Sprint planning and task division
+- Class scheduling logic discussion
+- Bug fixes in ForgotPassword component
+
+Discussion Summary:
+- Resolved a bug in the MemberControl add functionality.
+- Tested MST insert and delete methods.
+- Team discussed issues encountered with DataGridView display.
+
+Tasks Assigned:
+- Design TrainerControl UI - Assigned to Aba
+- Test registration form validations - Assigned to Kritisha
+- Implement MST insert function - Assigned to Krishee
+
+Next Meeting Scheduled: 04 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 19 - 04 March 2025
+------------------------------------------------------------
+Agenda:
+- Payment system validation and logic implementation
+- Debugging Multi-Search Tree integration
+- Testing MST insert/search functions
+
+Discussion Summary:
+- Each member gave updates on their modules.
+- Began writing the final project report.
+- Tested MST insert and delete methods.
+
+Tasks Assigned:
+- Connect BillingControl to SQL - Assigned to Kritisha
+- Fix MemberControl search bug - Assigned to Leynah
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+
+Next Meeting Scheduled: 06 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 20 - 06 March 2025
+------------------------------------------------------------
+Agenda:
+- SQL database design and setup
+- Member Registration module review
+- Weekly status updates and bug review
+
+Discussion Summary:
+- Reviewed code for STL/LINQ compliance.
+- Worked on connecting SQL Server tables to Payment module.
+- Planned UI layout and aesthetics for Home.cs.
+
+Tasks Assigned:
+- Fix MemberControl search bug - Assigned to Leynah
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+- Connect BillingControl to SQL - Assigned to Kritisha
+
+Next Meeting Scheduled: 08 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 21 - 08 March 2025
+------------------------------------------------------------
+Agenda:
+- Weekly status updates and bug review
+- Polishing report and video plan
+- Debugging Multi-Search Tree integration
+
+Discussion Summary:
+- Reviewed code for STL/LINQ compliance.
+- Planned UI layout and aesthetics for Home.cs.
+- Tested MST insert and delete methods.
+
+Tasks Assigned:
+- Write documentation for PaymentControl - Assigned to Krishee
+- Design TrainerControl UI - Assigned to Aba
+- Test registration form validations - Assigned to Kritisha
+
+Next Meeting Scheduled: 10 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 22 - 10 March 2025
+------------------------------------------------------------
+Agenda:
+- AdminLogin backend validation
+- Testing MST insert/search functions
+- Front-end DataGridView binding issues
+
+Discussion Summary:
+- Planned UI layout and aesthetics for Home.cs.
+- Resolved a bug in the MemberControl add functionality.
+- Worked on connecting SQL Server tables to Payment module.
+
+Tasks Assigned:
+- Test registration form validations - Assigned to Kritisha
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+- Connect BillingControl to SQL - Assigned to Kritisha
+
+Next Meeting Scheduled: 12 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 23 - 12 March 2025
+------------------------------------------------------------
+Agenda:
+- Linking SQL data to BillingControl
+- AdminLogin backend validation
+- Finalizing Member Dashboard functionality
+
+Discussion Summary:
+- Reviewed code for STL/LINQ compliance.
+- Worked on connecting SQL Server tables to Payment module.
+- Each member gave updates on their modules.
+
+Tasks Assigned:
+- Implement MST insert function - Assigned to Krishee
+- Test registration form validations - Assigned to Kritisha
+- Design TrainerControl UI - Assigned to Aba
+
+Next Meeting Scheduled: 14 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 24 - 14 March 2025
+------------------------------------------------------------
+Agenda:
+- Weekly status updates and bug review
+- GitHub version control sync check
+- Review progress on Gym Hive UI components
+
+Discussion Summary:
+- Finalized registration validation logic.
+- Each member gave updates on their modules.
+- Tested MST insert and delete methods.
+
+Tasks Assigned:
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+- Fix MemberControl search bug - Assigned to Leynah
+- Design report structure - Assigned to Aba
+
+Next Meeting Scheduled: 16 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 25 - 16 March 2025
+------------------------------------------------------------
+Agenda:
+- Unit testing preparation and allocation
+- Member Registration module review
+- Code documentation and commenting
+
+Discussion Summary:
+- Reviewed code for STL/LINQ compliance.
+- Tested integration between BMICalculator and HealthRecord.
+- Each member gave updates on their modules.
+
+Tasks Assigned:
+- Write documentation for PaymentControl - Assigned to Krishee
+- Design TrainerControl UI - Assigned to Aba
+- Implement MST insert function - Assigned to Krishee
+
+Next Meeting Scheduled: 18 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 26 - 18 March 2025
+------------------------------------------------------------
+Agenda:
+- UI refinement for AdminDashboard
+- Member Registration module review
+- AdminLogin backend validation
+
+Discussion Summary:
+- Team discussed issues encountered with DataGridView display.
+- Resolved a bug in the MemberControl add functionality.
+- Tested MST insert and delete methods.
+
+Tasks Assigned:
+- Design TrainerControl UI - Assigned to Aba
+- Fix MemberControl search bug - Assigned to Leynah
+- Test registration form validations - Assigned to Kritisha
+
+Next Meeting Scheduled: 20 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 27 - 20 March 2025
+------------------------------------------------------------
+Agenda:
+- Front-end DataGridView binding issues
+- SQL database design and setup
+- Class scheduling logic discussion
+
+Discussion Summary:
+- Finalized registration validation logic.
+- Worked on connecting SQL Server tables to Payment module.
+- Began writing the final project report.
+
+Tasks Assigned:
+- Test registration form validations - Assigned to Kritisha
+- Design TrainerControl UI - Assigned to Aba
+- Implement MST insert function - Assigned to Krishee
+
+Next Meeting Scheduled: 22 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 28 - 22 March 2025
+------------------------------------------------------------
+Agenda:
+- Sprint planning and task division
+- Finalizing Member Dashboard functionality
+- Assign backend tasks for PaymentControl and MemberControl
+
+Discussion Summary:
+- Finalized registration validation logic.
+- Each member gave updates on their modules.
+- Team discussed issues encountered with DataGridView display.
+
+Tasks Assigned:
+- Write documentation for PaymentControl - Assigned to Krishee
+- Design TrainerControl UI - Assigned to Aba
+- Implement MST insert function - Assigned to Krishee
+
+Next Meeting Scheduled: 24 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 29 - 24 March 2025
+------------------------------------------------------------
+Agenda:
+- UI refinement for AdminDashboard
+- Polishing report and video plan
+- Testing MST insert/search functions
+
+Discussion Summary:
+- Tested MST insert and delete methods.
+- Worked on connecting SQL Server tables to Payment module.
+- Finalized registration validation logic.
+
+Tasks Assigned:
+- Refactor ForgotPasswordMember.cs - Assigned to Leynah
+- Design TrainerControl UI - Assigned to Aba
+- Write documentation for PaymentControl - Assigned to Krishee
+
+Next Meeting Scheduled: 26 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
+Meeting 30 - 26 March 2025
+------------------------------------------------------------
+Agenda:
+- Class scheduling logic discussion
+- Bug fixes in ForgotPassword component
+- Unit testing preparation and allocation
+
+Discussion Summary:
+- Reviewed code for STL/LINQ compliance.
+- Finalized registration validation logic.
+- Began writing the final project report.
+
+Tasks Assigned:
+- Connect BillingControl to SQL - Assigned to Kritisha
+- Test registration form validations - Assigned to Kritisha
+- Implement MST insert function - Assigned to Krishee
+
+Next Meeting Scheduled: 28 March 2025
+
+Notes:
+- All members present unless otherwise mentioned.
+- Continued focus on integrating features, testing, and maintaining project structure and GitHub sync.
+
+
