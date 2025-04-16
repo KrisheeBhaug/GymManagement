@@ -73,5 +73,10 @@ namespace GymAdmin
                 MessageBox.Show($"Database Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

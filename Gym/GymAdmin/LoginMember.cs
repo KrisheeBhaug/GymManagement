@@ -83,7 +83,7 @@ namespace GymAdmin
                     conn.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    // ✅ Updated section starts here:
+                   
                     if (reader.HasRows)
                     {
                         reader.Read();
@@ -102,7 +102,7 @@ namespace GymAdmin
                     {
                         MessageBox.Show("Invalid username or password.");
                     }
-                    // ✅ Updated section ends here.
+                    
                 }
                 catch (Exception ex)
                 {

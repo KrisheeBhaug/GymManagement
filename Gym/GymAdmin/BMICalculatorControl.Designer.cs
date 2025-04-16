@@ -48,6 +48,7 @@
             // 
             // lblUsername
             // 
+            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -61,6 +62,7 @@
             // 
             // lblWeight
             // 
+            this.lblWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblWeight.AutoSize = true;
             this.lblWeight.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,6 +76,7 @@
             // 
             // lblHeight
             // 
+            this.lblHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHeight.AutoSize = true;
             this.lblHeight.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,6 +90,7 @@
             // 
             // lblAge
             // 
+            this.lblAge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAge.AutoSize = true;
             this.lblAge.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,6 +104,7 @@
             // 
             // lblGender
             // 
+            this.lblGender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblGender.AutoSize = true;
             this.lblGender.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +118,7 @@
             // 
             // lblActivity
             // 
+            this.lblActivity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblActivity.AutoSize = true;
             this.lblActivity.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblActivity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,6 +132,7 @@
             // 
             // lblResult
             // 
+            this.lblResult.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblResult.AutoSize = true;
             this.lblResult.BackColor = System.Drawing.SystemColors.Desktop;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,51 +145,55 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.BackColor = System.Drawing.SystemColors.Info;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtUsername.Location = new System.Drawing.Point(357, 150);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(177, 26);
             this.txtUsername.TabIndex = 7;
             // 
             // txtWeight
             // 
+            this.txtWeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtWeight.BackColor = System.Drawing.SystemColors.Info;
             this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWeight.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtWeight.Location = new System.Drawing.Point(357, 293);
-            this.txtWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWeight.Margin = new System.Windows.Forms.Padding(4);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(177, 26);
             this.txtWeight.TabIndex = 8;
             // 
             // txtHeight
             // 
+            this.txtHeight.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHeight.BackColor = System.Drawing.SystemColors.Info;
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHeight.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtHeight.Location = new System.Drawing.Point(357, 427);
-            this.txtHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHeight.Margin = new System.Windows.Forms.Padding(4);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(177, 26);
             this.txtHeight.TabIndex = 9;
-            this.txtHeight.TextChanged += new System.EventHandler(this.txtHeight_TextChanged);
             // 
             // txtAge
             // 
+            this.txtAge.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAge.BackColor = System.Drawing.SystemColors.Info;
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.ForeColor = System.Drawing.SystemColors.Desktop;
             this.txtAge.Location = new System.Drawing.Point(869, 150);
-            this.txtAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(4);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(177, 26);
             this.txtAge.TabIndex = 10;
             // 
             // cbGender
             // 
+            this.cbGender.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbGender.BackColor = System.Drawing.SystemColors.Info;
             this.cbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGender.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -191,13 +202,14 @@
             " Male",
             " Female"});
             this.cbGender.Location = new System.Drawing.Point(869, 293);
-            this.cbGender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbGender.Margin = new System.Windows.Forms.Padding(4);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(177, 28);
             this.cbGender.TabIndex = 11;
             // 
             // cbActivityLevel
             // 
+            this.cbActivityLevel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbActivityLevel.BackColor = System.Drawing.SystemColors.Info;
             this.cbActivityLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbActivityLevel.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -208,18 +220,19 @@
             "Active",
             "Very Active"});
             this.cbActivityLevel.Location = new System.Drawing.Point(869, 422);
-            this.cbActivityLevel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbActivityLevel.Margin = new System.Windows.Forms.Padding(4);
             this.cbActivityLevel.Name = "cbActivityLevel";
             this.cbActivityLevel.Size = new System.Drawing.Size(177, 28);
             this.cbActivityLevel.TabIndex = 12;
             // 
             // btnCalculate
             // 
+            this.btnCalculate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCalculate.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculate.ForeColor = System.Drawing.SystemColors.Info;
             this.btnCalculate.Location = new System.Drawing.Point(537, 529);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(156, 57);
             this.btnCalculate.TabIndex = 13;
@@ -228,6 +241,7 @@
             // 
             // lbHistory
             // 
+            this.lbHistory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbHistory.BackColor = System.Drawing.SystemColors.Info;
             this.lbHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -236,13 +250,14 @@
             this.lbHistory.Items.AddRange(new object[] {
             "BMI Calculation History"});
             this.lbHistory.Location = new System.Drawing.Point(927, 652);
-            this.lbHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbHistory.Margin = new System.Windows.Forms.Padding(4);
             this.lbHistory.Name = "lbHistory";
             this.lbHistory.Size = new System.Drawing.Size(333, 80);
             this.lbHistory.TabIndex = 14;
             // 
             // lblTitle
             // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Impact", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -276,7 +291,7 @@
             this.Controls.Add(this.lblHeight);
             this.Controls.Add(this.lblWeight);
             this.Controls.Add(this.lblUsername);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BMICalculatorControl";
             this.Size = new System.Drawing.Size(1304, 788);
             this.ResumeLayout(false);

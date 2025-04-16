@@ -41,9 +41,10 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(70, 40);
+            this.lblUsername.Location = new System.Drawing.Point(93, 49);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(156, 16);
+            this.lblUsername.Size = new System.Drawing.Size(193, 20);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Enter your Username:\r\n";
             // 
@@ -52,9 +53,10 @@
             this.lblDOB.AutoSize = true;
             this.lblDOB.BackColor = System.Drawing.Color.Transparent;
             this.lblDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(90, 84);
+            this.lblDOB.Location = new System.Drawing.Point(120, 103);
+            this.lblDOB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(117, 16);
+            this.lblDOB.Size = new System.Drawing.Size(149, 20);
             this.lblDOB.TabIndex = 1;
             this.lblDOB.Text = "Enter your DOB:\r\n";
             // 
@@ -62,9 +64,10 @@
             // 
             this.btnRecover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRecover.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecover.Location = new System.Drawing.Point(297, 128);
+            this.btnRecover.Location = new System.Drawing.Point(396, 158);
+            this.btnRecover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRecover.Name = "btnRecover";
-            this.btnRecover.Size = new System.Drawing.Size(84, 36);
+            this.btnRecover.Size = new System.Drawing.Size(112, 44);
             this.btnRecover.TabIndex = 2;
             this.btnRecover.Text = "Submit";
             this.btnRecover.UseVisualStyleBackColor = false;
@@ -73,17 +76,20 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(250, 35);
+            this.txtUsername.Location = new System.Drawing.Point(333, 43);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(185, 21);
+            this.txtUsername.Size = new System.Drawing.Size(245, 24);
             this.txtUsername.TabIndex = 3;
+            
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(209, 9);
+            this.lblResult.Location = new System.Drawing.Point(279, 11);
+            this.lblResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 13);
+            this.lblResult.Size = new System.Drawing.Size(0, 16);
             this.lblResult.TabIndex = 5;
             // 
             // dtpDOB
@@ -91,23 +97,25 @@
             this.dtpDOB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpDOB.CustomFormat = "yyyy-MM-dd";
             this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDOB.Location = new System.Drawing.Point(250, 84);
+            this.dtpDOB.Location = new System.Drawing.Point(333, 103);
+            this.dtpDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(184, 20);
+            this.dtpDOB.Size = new System.Drawing.Size(244, 22);
             this.dtpDOB.TabIndex = 6;
             // 
             // ForgotPasswordMember
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(487, 190);
+            this.ClientSize = new System.Drawing.Size(649, 234);
             this.Controls.Add(this.dtpDOB);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnRecover);
             this.Controls.Add(this.lblDOB);
             this.Controls.Add(this.lblUsername);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ForgotPasswordMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPasswordMember";

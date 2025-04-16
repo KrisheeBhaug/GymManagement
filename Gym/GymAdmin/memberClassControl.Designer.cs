@@ -52,7 +52,7 @@
             // 
             // comboBox3
             // 
-            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox3.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.FormattingEnabled = true;
@@ -62,7 +62,7 @@
             "90mins",
             "120mins"});
             this.comboBox3.Location = new System.Drawing.Point(212, 410);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(251, 34);
             this.comboBox3.TabIndex = 37;
@@ -70,7 +70,7 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox2.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
@@ -87,7 +87,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox5.BackColor = System.Drawing.SystemColors.Info;
             this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(771, 373);
@@ -99,7 +99,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox4.BackColor = System.Drawing.SystemColors.Info;
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(771, 256);
@@ -111,12 +111,12 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox1.BackColor = System.Drawing.SystemColors.Info;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(207, 315);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(256, 34);
             this.comboBox1.TabIndex = 33;
@@ -124,11 +124,11 @@
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox2.BackColor = System.Drawing.SystemColors.Info;
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(207, 226);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(256, 32);
             this.textBox2.TabIndex = 32;
@@ -136,11 +136,11 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox1.BackColor = System.Drawing.SystemColors.Info;
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(207, 129);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(256, 32);
             this.textBox1.TabIndex = 31;
@@ -148,7 +148,7 @@
             // 
             // label8
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,7 +161,7 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,7 +174,7 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -187,7 +187,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,7 +200,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,7 +214,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,7 +228,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -246,7 +246,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Location = new System.Drawing.Point(0, 569);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1304, 219);
@@ -255,11 +255,12 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Info;
             this.button1.Location = new System.Drawing.Point(355, 473);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 54);
             this.button1.TabIndex = 40;
@@ -269,11 +270,12 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Info;
             this.button2.Location = new System.Drawing.Point(563, 473);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 54);
             this.button2.TabIndex = 41;
@@ -283,11 +285,12 @@
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Info;
             this.button3.Location = new System.Drawing.Point(771, 473);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 54);
             this.button3.TabIndex = 42;
@@ -330,7 +333,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "memberClassControl";
             this.Size = new System.Drawing.Size(1304, 788);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

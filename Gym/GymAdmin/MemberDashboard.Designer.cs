@@ -152,25 +152,7 @@
             this.ProfileManagementButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ProfileManagementButton.UseVisualStyleBackColor = false;
             this.ProfileManagementButton.Click += new System.EventHandler(this.ProfileManagementButton_Click);
-            // 
-            // WorkoutPlanButton
-            // 
-            this.WorkoutPlanButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.WorkoutPlanButton.BackColor = System.Drawing.Color.LightGray;
-            this.WorkoutPlanButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.WorkoutPlanButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WorkoutPlanButton.Image = global::GymAdmin.Properties.Resources.gym;
-            this.WorkoutPlanButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.WorkoutPlanButton.Location = new System.Drawing.Point(47, 248);
-            this.WorkoutPlanButton.Margin = new System.Windows.Forms.Padding(4);
-            this.WorkoutPlanButton.Name = "WorkoutPlanButton";
-            this.WorkoutPlanButton.Size = new System.Drawing.Size(163, 63);
-            this.WorkoutPlanButton.TabIndex = 2;
-            this.WorkoutPlanButton.TabStop = false;
-            this.WorkoutPlanButton.Text = "       Workout Plan";
-            this.WorkoutPlanButton.UseVisualStyleBackColor = false;
-            this.WorkoutPlanButton.Click += new System.EventHandler(this.WorkoutPlanButton_Click);
-            // 
+            //  
             // ClassButton
             // 
             this.ClassButton.Anchor = System.Windows.Forms.AnchorStyles.None;

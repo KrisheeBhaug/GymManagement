@@ -186,14 +186,6 @@
     <Compile Include="TrainerControl.Designer.cs">
       <DependentUpon>TrainerControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkoutPlan.cs" />
-    <Compile Include="WorkoutPlanControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="WorkoutPlanControl.Designer.cs">
-      <DependentUpon>WorkoutPlanControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WorkoutPlanManager.cs" />
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,9 +252,6 @@
     </Compile>
     <EmbeddedResource Include="TrainerControl.resx">
       <DependentUpon>TrainerControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WorkoutPlanControl.resx">
-      <DependentUpon>WorkoutPlanControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

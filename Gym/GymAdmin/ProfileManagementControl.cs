@@ -164,13 +164,13 @@ namespace GymAdmin
 
                 SqlCommand cmd = new SqlCommand(query, conn);
 
-                // Add parameters to the SQL query
-                cmd.Parameters.AddWithValue("@FirstName", textBox1.Text);  // Login Name
-                cmd.Parameters.AddWithValue("@Password", textBox2.Text);   // Login Password
-                cmd.Parameters.AddWithValue("@ECName", textBox6.Text);     // Emergency Name
-                cmd.Parameters.AddWithValue("@ECNumber", textBox5.Text);   // Emergency Contact
-                cmd.Parameters.AddWithValue("@Preferences", richTextBox1.Text); // Personal Preferences
-                cmd.Parameters.AddWithValue("@Email", currentUserEmail);   // User's Email
+                // Adding parameters to the SQL query
+                cmd.Parameters.AddWithValue("@FirstName", textBox1.Text);  
+                cmd.Parameters.AddWithValue("@Password", textBox2.Text);   
+                cmd.Parameters.AddWithValue("@ECName", textBox6.Text);    
+                cmd.Parameters.AddWithValue("@ECNumber", textBox5.Text);   
+                cmd.Parameters.AddWithValue("@Preferences", richTextBox1.Text); 
+                cmd.Parameters.AddWithValue("@Email", currentUserEmail);   
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
@@ -200,6 +200,11 @@ namespace GymAdmin
         private void textBox5_TextChanged_1(object sender, EventArgs e)
         {
             //emergency contact number
+        }
+
+        private void ProfileManagementControl_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

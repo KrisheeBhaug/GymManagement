@@ -32,12 +32,6 @@ namespace GymAdmin
             LoadControl(profileControl);
         }
 
-        // Workout Plan
-        private void WorkoutPlanButton_Click(object sender, EventArgs e)
-        {
-            WorkoutPlanControl workoutControl = new WorkoutPlanControl();
-            LoadControl(workoutControl);
-        }
 
         // BMI Calculator
         private void CalculatorButton_Click(object sender, EventArgs e)
